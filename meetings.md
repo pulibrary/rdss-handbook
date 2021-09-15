@@ -22,3 +22,15 @@ At each meeting, the team works from the [DRDS Work Cycle ZenHub board](https://
 
 ### Other norms
 * The "drds-workcycle" label should be standardized as blue across all repositories, with the following hex value `#2ACEF2`.
+
+## Daily Check-ins
+
+The DRDS Team has daily check-in meetings on weekdays, excluding Work Cycle Planning days.
+
+The goal of the meeting is to briefly check in as a group, review what everyone is currently working on, and discuss items put on the agenda based on work from the past day.  A running agenda and notes document is internally kept by the team.
+
+The team views the [DRDS Work Cycle ZenHub board](https://app.zenhub.com/workspaces/drds-work-cycle-613b7b006feafc0013132d52/board?labels=drds-workcycle) during the meeting, which runs as follows:
+
+1. A Round Robin, where each team member shares their briefly shares their updates in turn, without going into too much detail but providing enough context so all team members know which tasks are being discussed.
+
+1. Review the written agenda populated with items where input from the team is needed, keeping to the time set for the check-in (15 minutes total, including Round Robin).
