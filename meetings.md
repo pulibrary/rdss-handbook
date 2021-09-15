@@ -34,3 +34,7 @@ The team views the [DRDS Work Cycle ZenHub board](https://app.zenhub.com/workspa
 1. A Round Robin, where each team member shares their briefly shares their updates in turn, without going into too much detail but providing enough context so all team members know which tasks are being discussed.
 
 1. Review the written agenda populated with items where input from the team is needed, keeping to the time set for the check-in (15 minutes total, including Round Robin).
+
+### Other norms
+
+* The Friday check-in is immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
