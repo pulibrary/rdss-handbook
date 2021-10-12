@@ -1,9 +1,8 @@
-##Install auto: brew tap intuit/auto https://github.com/intuit/auto
+## Create a new tag and a new release
 
-git checkout the main branch
-git tag -l will show you what tags exist
-git tag <versionOfTheTag>
-git push --tags to push the new tag on Github
-auto release
-
-
+`brew install auto` install auto
+`git checkout main`
+`git tag -l` will show what tags exist
+`git tag <versionOfTheTag>` create the tag
+`git push --tags` push the new tag on Github
+`auto release` will create a new release on Github
