@@ -20,6 +20,10 @@ At each meeting, the team works from the [DRDS Work Cycle ZenHub board](https://
 
 1. At the end of the meeting, the "Candidates" column is deleted from the board.
 
+### Other norms
+
+A work cycle planning meeting similar to the above-described format takes place at the same time on Mondays during the second week of the work cycle, to review tickets that are on the board that may warrant reorganization, that are off in terms of their GitHub estimate, and any issues that have been generated as a result of unplanned work (that is, work that came up or were escalated in priority due to needs from stakeholders, users, and/or Leadership within the last week).  
+
 ## Daily Check-ins
 
 The DRDS Team has daily check-in meetings on weekdays, excluding Work Cycle Planning days.
@@ -34,4 +38,30 @@ The team views the [DRDS Work Cycle ZenHub board](https://app.zenhub.com/workspa
 
 ### Other norms
 
-* The Friday check-in is immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
+The Friday check-in is immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
+
+## Work Cycle Wrap-up and Retrospective Meetings
+
+On the last day of each work cycle, the DRDS team meets for a meeting that is part wrap-up and part work cycle retrospective.  Each part is intended to take up no more than half of the meeting.
+
+1. The wrap-up portion is driven by an agenda that is prepopulated by attendees before the meeting, with topics of discussion, demos of work, etc.
+
+1. The retrospective portion of the meeting relies on the DRDS Team Retrium space for running the basic steps of the retrospective.  The Retrium space is created at least a few days prior to the retrospective and shared with the team, so that they can prepopulate it with items for the retrospective if desired.
+
+1. The meeting is open for anyone in the Library to attend, however it is the responsibility of DRDS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.
+
+1. After the agenda-driven portion of the meeting, the team reviews the [DRDS Work Cycle ZenHub board](https://app.zenhub.com/workspaces/drds-work-cycle-613b7b006feafc0013132d52/board) for the cycle that is wrapping up, to ensure that it is ready for work cycle planning next week.  This activity is budgeted at around 10 minutes.
+
+1. After the board review, the team runs a short retrospective focused on the latest work cycle.  This process uses the DRDS Retrium space.  Time is allotted for team members to anonymously add ideas, then as a team group them by theme, then anonymously vote on topics, and finally use the rest of the time to discuss the topic(s) with the votes.  
+
+1. In the last 5 minutes of the meeting, the team agrees upon a single action item to complete during the next work cycle, based on the retrospective.  This action item becomes a GitHub issue on the relevant board.  Action items that are not specific to an application go into the [DRDS Catchall](https://github.com/pulibrary/drds-catchall) repository.
+
+## Schedule
+
+Work cycles last for 2 weeks, starting on a Monday and ending on a Friday.  The DRDS standing meetings schedule looks like this:
+
+
+|Week|Monday|Tuesday|Wednesday|Thursday|Friday|
+|:---:|:---|:---|:---|:---|:---|
+|1|DRDS Work Cycle Planning|Daily Check-in|Daily Check-in|Daily Check-in|Daily Check-in and Learnings Chat|
+|2|DRDS Work Cycle Planning|Daily Check-in|Daily Check-in|Daily Check-in|Daily Check-in and Learnings Chat<br />Work Cycle Wrap-up and Retrospective|
