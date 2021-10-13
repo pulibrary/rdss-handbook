@@ -6,5 +6,6 @@ This is the handbook for the Digital Repository and Discovery Services (DRDS) Te
 
 ## Table of Contents
 
+* [DRDS Applications](applications.md)
 * [Work Cycles](work_cycles.md)
 * [Meetings](meetings.md)
