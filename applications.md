@@ -73,6 +73,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Technical Liaison(s): Bess Sadler
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
   * [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
+  * [Backup and restore instructions](ojs.md)
 * Orangelight
   * The [Blacklight](https://projectblacklight.org/)-based front end for our Library catalog
   * Status: In production
