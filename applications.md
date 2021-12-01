@@ -83,6 +83,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * An instance of [Vireo](https://github.com/TexasDigitalLibrary/Vireo) for managing the annual upload of student theses for inclusion in DataSpace; currently maintained by Library IT, hosted on OIT Amazon infrastructure
   * Status: In production
   * Public URL: https://thesis-central.princeton.edu
-  * Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo
+  * Code Base: https://github.com/PrincetonUniversityLibrary/pul-vireo
+  * Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo
   * Product Owner(s): Lynn Durgin
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
