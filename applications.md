@@ -23,6 +23,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
 * Electronic Theses and Dissertations Process
   * Data transformation and loading processes managed by Library IT to support Special Collections annual review and publication of electronic theses, and quarterly-ish publication of dissertations in DataSpace
+  * Documentation: [Dissertation import](https://pulibrary.github.io/etd_transformer/process-dissertations.html) and [Senior Theses import](https://pulibrary.github.io/etd_transformer/process-theses.html)
   * Status: In production
   * Public URLs: [Theses Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp019c67wm88m); [Doctoral Dissertations Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp01td96k251d)
   * Code Base: https://github.com/pulibrary/etd_transformer
