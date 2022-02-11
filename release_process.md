@@ -1,6 +1,14 @@
 ## Create a new tag and a new release
 
-* `brew install auto` install auto
+### Pre-requisites
+We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment. To install 'auto' [via brew](https://intuit.github.io/auto/docs/configuration/non-npm):
+
+* `brew tap intuit/auto https://github.com/intuit/auto`
+* `brew install auto`
+
+You will also need to create a GitHub token as indicated [here](https://intuit.github.io/auto/docs/configuration/non-npm#configuration).
+
+### To create and publish the tagged release
 * `git checkout main`
 * `git tag -l` will show what tags exist
 * `git tag <versionOfTheTag>` create the tag
