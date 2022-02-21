@@ -2,8 +2,9 @@
 Unless otherwise noted, all applications below are Open Source and run on Library IT-owned infrastructure.
 * Annotations server
   * A proof-of-concept deployment of an annotations server with a web-based GUI for creating annotations, built on Mirador and [SimpleAnnotationServer](https://github.com/glenrobson/SimpleAnnotationServer)
-  * Status: Deployed in staging
-  * Public URL: https://annotations-staging.princeton.edu
+  * Status: Deployed in staging and production
+  * Public URL: https://annotations.princeton.edu
+  * Staging URL: https://annotations-staging.princeton.edu
   * Code Base: [Ansible playbook in princeton_ansible](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/annotations_production.yml)
   * Product Owner(s): TBD
   * Slack channel(s): #annotations-development (user-centered and technical)
@@ -11,6 +12,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * A custom Rails application for managing metadata and discovery of the Digital Cicognara Library
   * Status: In production
   * Public URL: https://cicognara.org
+  * Staging URL: https://cicognara-staging.princeton.edu
   * Code Base: https://github.com/pulibrary/cicognara-rails
   * Product Owner(s): Holly Hatheway
   * Slack channel(s): #digital_library (user-centered), #cicognara (technical)
@@ -66,10 +68,11 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Code Base: https://github.com/pulibrary/ouranos
   * Product Owner(s): TBD
   * Slack channel(s): #robots (deployment), #devs (technical)
-* PDCDiscovery
+* PDC_Discovery
   * A Princeton Data Commons front end for discovery of Research Data, harvested from DataSpace
   * Status: In development
-  * Public URL: https://pdc-discovery-staging.princeton.edu
+  * Public URL: https://pdc-discovery-prod.princeton.edu
+  * Staging URL: https://pdc-discovery-staging.princeton.edu
   * Code Base: https://github.com/pulibrary/pdc_discovery
   * Product Owner(s): Princeton Research Data Service
   * Slack channel(s): #research_data_development (user-centered), #dspace-dev (technical)
