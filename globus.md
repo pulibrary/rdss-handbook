@@ -13,13 +13,13 @@ Download and install [Globus connect personal](https://www.globus.org/globus-con
 
 PRDS maintains [a spreadsheet](https://docs.google.com/spreadsheets/d/1etA_6llJT_H8F_Pe5UmtyP7cXRlUdiBvEqtIBgrYY2A/edit#gid=0) of data sets to be transferred. Look there to find the one you want to transfer. It needs to have a handle and a folder name (which is based on a DOI).
 
-#### 4. Find the data in DataSpace and download the files
+#### 3. Find the data in DataSpace and download the files
 
 Using the handle from the spreadsheet, find the item in DataSpace. Make a local folder using the folder name (DOI) from the spreadsheet. Download all the files for that object to that folder. 
 
 **NOTE:** Some of these files are very large and will take a long time to download. If you try to kick them all off at once they might crash your browser or bring your local network to its knees. You might want to kick these off as you leave for the day and let them run overnight.
 
-#### 5. Transfer the data to Globus
+#### 4. Transfer the data to Globus
 
 In the [Globus web app](https://app.globus.org/file-manager), select the double panel view:
 
@@ -35,6 +35,6 @@ Select the local folder you want to sync with the folder on Globus. From the lef
 
 ![Globus upload](images/globus_upload.jpg "Princeton Research Data Repository upload")
 
-#### 6. Ask PRDS to check that it uploaded correctly
+#### 5. Ask PRDS to check that it uploaded correctly
 
 Once the upload is complete, check that the files in DataSpace match the files in Globus. Then, inform the #research_data_management channel on slack and ask someone from PRDS to verify the upload. Give them a link to the ticket and ask them to indicate in the ticket that it has been checked. Once it has been checked and deemed correct, the ticket can be closed. 
