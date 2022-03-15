@@ -9,3 +9,9 @@ This is the handbook for the Research Data and Scholarship Services (RDSS) Team.
 * [RDSS Applications](applications.md)
 * [Work Cycles](work_cycles.md)
 * [Meetings](meetings.md)
+
+### Tools
+
+* [Globus](globus.md)
+* [Open Journal System](ojs.md)
+* [Plausible](plausible.md)
