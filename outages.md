@@ -8,6 +8,6 @@ We are still tuning our process to deal with application outages, some applicati
 
 Our current setup is to check the application once a minute and report after two failures (i.e. we get notified after two minutes), see [PDC Discovery Monitoring](https://github.com/pulibrary/pdc_discovery#monitoring).
 
-We configure applications to send a message to the Slack `#rdss-team` channel.
+We configure applications to send outage notifications to the Slack `#incident_reports` channel.
 
-It is also advisable that each team member subscribe to uptime notifications via email.
+It is also advisable that each team member subscribe to uptime notifications via email or SMS.
