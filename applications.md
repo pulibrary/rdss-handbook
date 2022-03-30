@@ -20,7 +20,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * A DSpace 5.x instance for institutional data including research data content, select Library-owned PDFs, and electronic theses and dissertations
   * Status: In production
   * Public URL: https://dataspace.princeton.edu
-  * Code Base: Contractor-managed GitLab repository (contact technical liaisons for access)
+  * Code Base: [Please see the documentation for the git repository details](dataspace/git.md)
   * Product Owner(s): DSpace Migration Working Group
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
 * Electronic Theses and Dissertations Process
@@ -35,7 +35,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * A DSpace 5.x instance for access and discovery of faculty publications
   * Status: In production
   * Public URL: https://oar.princeton.edu
-  * Code Base: Contractor-managed GitLab repository (contact technical liaisons for access)
+  * Code Base: [Please see the documentation for the git repository details](oar/git.md)
   * Product Owner(s): Yuan Li
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
 * OAWaiver
