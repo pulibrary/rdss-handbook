@@ -2,6 +2,10 @@
 
 RDSS relies on product owners (POs) to help our team understand use cases and feature requests for the software they represent.  Product owners also help prioritize the order of importance and reasoning behind that order, for which needs to address in what order.
 
+[This video](#) summarizes some of the norms and ideas of agile product ownership embraced by the RDSS team.
+
+[![Agile Product Ownership in a Nutshell](http://img.youtube.com/vi/502ILHjX9EE/0.jpg)](http://www.youtube.com/watch?v=502ILHjX9EE "Agile Product Ownership in a Nutshell")
+
  ## Meetings
 
  In the RDSS Sprint Planning Meetings, up to the first 30 minutes of the meeting is devoted to the PO's role, when the PO's software is the focus of that sprint.  After this, the rest of the meeting is necessarily devoted to planning the RDSS development sprint sprint.  The following norms are understood:
