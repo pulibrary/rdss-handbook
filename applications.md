@@ -53,14 +53,21 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Product Owner: Alan Stahl
   * Slack channel(s): #catalog (user-centered), #devs (technical)
 * Open Publishing
-  * An instance of OJS for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access peer-reviewed journals
-  * Status: In development, near launch (launching end of October 2021)
+  * An instance of Open Journal System (OJS) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access peer-reviewed journals
+  * Status: In production
   * Public URL: https://openpublishing.princeton.edu
   * Code Base: https://github.com/pulibrary/openpublishing
   * Product Owner: TBD
-  * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   * [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
   * [Backup and restore instructions](ojs.md)
+* Open Books
+  * An instance of Open Monograph Press (OMP) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access books
+  * Status: In development, near launch (launching summer 2022)
+  * Public URL: https://openbooks.princeton.edu
+  * Code Base: https://github.com/pulibrary/openbooks
+  * Product Owner: TBD
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
 * Ouranos
   * A deployment service for PUL applications that uses [Capistrano](https://capistranorb.com/) and [heaven](https://github.com/atmos/heaven)
   * Status: In development
@@ -75,7 +82,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Staging URL: https://pdc-describe-staging.princeton.edu (must be connected to VPN)
   * Code Base: https://github.com/pulibrary/pdc_describe
   * Product Owner: Hannah Hadley
-  * Slack channel(s): #research_data_development (user-centered), #dspace-dev (technical)
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
 * PDC_Discovery
   * A Princeton Data Commons front end for discovery of Research Data, harvested from DataSpace
   * Status: In production
@@ -83,14 +90,14 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Staging URL: https://pdc-discovery-staging.princeton.edu
   * Code Base: https://github.com/pulibrary/pdc_discovery
   * Product Owner: Hannah Hadley
-  * Slack channel(s): #research_data_development (user-centered), #dspace-dev (technical)
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
 * Symplectic Elements
-  * An instance of Symplectic Elements used to harvest and review open access articles to publish in the OAR; currently maintained by Library IT, hosted on OIT Windows server infrastructure
+  * An instance of Symplectic Elements used to harvest and review open access articles to publish in the OAR; currently maintained by Library IT, hosted on OIT Windows server infrastructure; in the process of migrating to a hosted solution with the vendor Digital Science
   * Status: In production
   * Public URL: https://oaworkflow.princeton.edu
   * Code Base: N/A (externally managed by Digital Science)
   * Product Owner: Hannah Hadley
-  * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
 * ThesisCentral
   * An instance of [Vireo](https://github.com/TexasDigitalLibrary/Vireo) for managing the annual upload of student theses for inclusion in DataSpace; currently maintained by Library IT, hosted on OIT Amazon infrastructure
   * Status: In production
