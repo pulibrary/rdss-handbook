@@ -6,6 +6,7 @@ This is the handbook for the Research Data and Scholarship Services (RDSS) Team.
 
 ## Table of Contents
 
+* [Onboarding](onboarding.md)
 * [RDSS Applications](applications.md)
 * [Work Cycles](work_cycles.md)
 * [Meetings](meetings.md)
