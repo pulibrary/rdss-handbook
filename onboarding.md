@@ -14,12 +14,14 @@ RDSS maintains S3 buckets on AWS for storing research data. Here are the necessa
 
 ### 1. Set up AWS account
 1. Go to [https://princeton.edu/aws](https://princeton.edu/aws) and log in with Princeton credentials.
-2. From the "Services" menu, select "IAM". Create a new user, with AWS credential type "Access Key". Add the new account to the group `rdss`. 
+2. From the "Services" menu, select "IAM". (You might need to search for IAM in the search bar.) Under the "User" menu, create a new user. Use any user name you prefer, as long as it would be clear to your team mates that this name is associated with you. Choose AWS credential type "Access Key". Add the new account to the group `rdss`. 
 3. Record the Access Key ID and the Secret access key you'll get on the `Success` screen. You will need to add these to your local user profile when you set up AWS command line access. 
 
 ### 2. Install and configure aws cli
 1. Install the aws cli: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
-2. Configure it using the Access key ID and Secret Access key attached to your account
+2. Configure it using the Access key ID and Secret Access key attached to your account. Do this by running `aws configure` or following instructions [here](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-quickstart.html). 
+  * Use default region `us-east-1`
+  * Use default format `json`
 3. You will also need to install jq: `brew install jq` (assuming you use homebrew)
 
 ### 3. Test whether it worked
