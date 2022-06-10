@@ -4,10 +4,5 @@
 
 For a quick intro to Globus take a look at [Globus for newbies](https://docs.google.com/document/d/1d8u3KhsoX-x3k59GgWfhC7325R6616j8RytccTelPWM/edit#).
 
-### Moving files from dataspace to Globus
-
-When datasets have large files to download, we like to make of copy of the data on Globus to make re-use easier. Here is how to do that:
-
-#### THIS PROCESS IS BEING RE-IMAGINED.
-
-The procedure of downloading files from Data Space to a staff member's laptop and then re-uploading to Globus has been deemed inefficient and error prone. We will come up with a new process and document it here.
+## Account setup
+In order to help maintain our Globus infrastructure you'll need an AWS account with the right permission. See the [onboarding](onboarding.md) documentation for how to set that up.
