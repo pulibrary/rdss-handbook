@@ -2,7 +2,7 @@
 
 The Research Data and Scholarship Services (RDSS) team develops, maintains, and supports software solutions in support of research data and scholarship, especially open access scholarship, for the Princeton research community.  We support the ingest, publication, discovery, and preservation of research data and scholarship content, and working closely with Library and campus partners, aim to continuously improve software-based solutions around these services over time.
 
-### Goals
+### Guiding Principles
 
 In RDSS, our internally-held guiding principles and overarching mission, in the context of our [portofolio](applications.md) and the [Library's mission and vision](https://library.princeton.edu/about) are:
 
