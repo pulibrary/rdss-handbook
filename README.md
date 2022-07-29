@@ -11,7 +11,7 @@ This is the handbook for the Research Data and Scholarship Services (RDSS) Team.
 * [Meetings](meetings.md)
 * [Release Process](release_process.md)
 * [Product Owners](product_owners.md)
-* [Roadmap][roadmap.md]
+* [Roadmap](roadmap.md)
 
 
 ### Tools
