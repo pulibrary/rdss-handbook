@@ -1,5 +1,3 @@
-**[See the old DRDS Handbook (deprecated August 2021)](https://github.com/pulibrary/drds-handbook-deprecated)**
-
 # Research Data and Scholarship Services (RDSS) Team Handbook
 
 This is the handbook for the Research Data and Scholarship Services (RDSS) Team.  It contains information about our team, projects, workflows, tools, and best practices.
@@ -13,6 +11,7 @@ This is the handbook for the Research Data and Scholarship Services (RDSS) Team.
 * [Meetings](meetings.md)
 * [Release Process](release_process.md)
 * [Product Owners](product_owners.md)
+* [Roadmap][roadmap.md]
 
 
 ### Tools
