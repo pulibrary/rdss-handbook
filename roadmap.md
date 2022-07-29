@@ -16,7 +16,7 @@ gantt
     PDC Describe launch tasks: pd6, after pd5, 30d
     section DSpace Support
     2022 Thesis migration :active, dsp1, 2022-08, 30d
-    DataSpace maintenance :active dsp2, 2022-08, 2023-02
+    DataSpace maintenance :active, dsp2, 2022-08, 2023-02
     OAR maintenance :active, dsp2, 2022-08, 2023-02
     section Dataspace Sunsetting
     Hosted Elements migration :active, ds1, 2022-08, 60d
