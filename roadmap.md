@@ -32,6 +32,7 @@ gantt
     Onboarding: td1, 2023-01, 30d
     section Open Source Community Work
     " ": os1
+
 ```
 
 ## Past Sprints
@@ -42,7 +43,7 @@ This section documents past RDSS sprints.  This documentation began in late July
 
 ```mermaid
 gantt
-    title RDSS 2022 Summer - 2023 Winter Timeline
+    title RDSS Sprint, 2022/07/18 - 2022/07/29
     axisFormat  %Y-%m-%dd
     dateformat YYYY-MM-DD
     excludes    weekends
