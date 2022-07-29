@@ -10,9 +10,14 @@ gantt
     section PDC_Decribe
     Submission/curation workflow           :active, pd1, 2022-08, 60d
     Metadata schema, file submission :active, pd2, 2022-08, 60d
-    Globus staging/production implementation     :active, pd3, 2022-08, 30d
-    Curation station integration/testing: pd4, after pd3, 30d
-    PDC Describe launch tasks: pd5, after pd4, 30d
+    Research Data content reconciliation/migration :active, pd3, 2022-08, 90d
+    Globus implementation     :active, pd4, 2022-08, 30d
+    Curation station integration: pd5, after pd4, 30d
+    PDC Describe launch tasks: pd6, after pd5, 30d
+    section DSpace Support
+    2022 Thesis migration :active, dsp1, 2022-08, 30d
+    DataSpace maintenance :active dsp2, 2022-08, 2023-02
+    OAR maintenance :active, dsp2, 2022-08, 2023-02
     section Dataspace Sunsetting
     Hosted Elements migration :active, ds1, 2022-08, 60d
     Implementing embargoes in Figgy: ds2, 2022-10, 30d
@@ -21,11 +26,12 @@ gantt
     Migrating Theses to Figgy/Orangelight: ds6, after ds2, 60d
     PPPL OSTI reporting: ds3, after pd5,60d
     section POAPP
-    Open Publishing soft launch: po1, 2022-09, 15d
-    Open Books soft launch: po2, 2022-12, 15d
+    OJS launch: po1, 2022-09, 15d
+    OMP launch: po2, 2022-12, 15d
     section TigerData
-    Onboarding with software/documentation: td1, 2023-01, 30d
-
+    Onboarding: td1, 2023-01, 30d
+    section Open Source Community Work
+    " ": os1
 ```
 
 ## Past Sprints
