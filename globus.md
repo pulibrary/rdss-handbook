@@ -13,7 +13,7 @@ Current Globus collections for dataspace
 #### Storage gateways
   There are currently four storage gateways:
   * Princeton DSS Gateway - S3 Gateway `dss-server-data3` (defunct)
-  * Princeton Dataspace Posix Gateway  - POSIX Gateway - ??? (defunct)
+  * Princeton Dataspace Posix Gateway  - POSIX Gateway (defunct)
   * Princeton Dataspace s3 Gateway - S3 Gateway `prds-globus`
   * Princeton Research Data Dataspace Gateway - S3 Gateway `prds-dataspace`
 #### Collections
@@ -170,14 +170,14 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Click create new bucket
 1. Name the bucket
    For PDC describe the name should be one of the four choices below:
-   * pdc-globus-staging-precuration
-   * pdc-globus-staging-postcuration
-   * pdc-globus-prod-precuration
-   * pdc-globus-prod-postcuration
-1. Under `Copy settings from existing bucket` choose `prds-dataspace` 
+   * pdc-describe-staging-precuration
+   * pdc-describe-staging-postcuration
+   * pdc-describe-prod-precuration
+   * pdc-describe-prod-postcuration
+1. Under `Copy settings from existing bucket` choose `pdc-describe-staging-precuration` (assumes it has been set up)
 1. Under `Object Ownership` choose enable ACLs
 1. uncheck `Block all public access` and acknowledge `Turning off block all public access might result in this bucket ...`
-1. click `Save`
+1. click `Create Bucket`
 1. (Optionally) Copy the data using the aws cli: `aws s3 sync s3://prds-dataspace s3://pdc-globus-prod`
 
     **Note:** that the copy will take about five hours. 
@@ -195,36 +195,36 @@ To make a new S3 bucket with a copy of the PDC Globus data:
     * pdc-globus-prod-precuration
     * pdc-globus-prod-postcuration
 
+1. To access the aws console first go to [AWS login](https://princeton.edu/aws)
 1. See your new instance in [AWS](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running)  Note the IP address you will need it to configure Globus in following steps
 
 
 ### Configure Globus Connect Server
 To register a Globus Endpoint do the following:
 1. Go to [developers.globus.org](https://developers.globus.org), sign in as rdssglobus  
-2. Add a new Globus Connect Server and fill out the form in the **Princeton Data Commmons Production** or **Princeton Data Commmons Staging** Projects. 
+1. Add a new Globus Connect Server and fill out the form in the **Princeton Data Commmons Production** or **Princeton Data Commmons Staging** Projects. 
    1. Type in the new name
       The name should be one of the following:
       * PDC Precuration
       * PDC Postcuration
-      * PDC Precuration
-      * PDC Postcuration
    1. click Register Globus Connect Server 
-3. Generate a client secret.  Be ready to save the value off, you will only see it once.
+1. Generate a client secret.  Be ready to save the value off, you will only see it once.
    1. Click Generate a New Client Secret within the new section on the website created by the step above
    1. Fill in the description of the secret (can be anything)
    1. Click Save
    1. **Save the Client ID and Client Secret values in a note in "Shared-ITMS-Passwords" in Lastpass** (They are needed in the next step) 
-4. Log into the virtual machine and configure globus:
+1. Log into the virtual machine and configure globus:
    1. `ssh pulsys@<public IP>`
-   1. On the server set the endpoint name you utilized above
+   1. On the server set the endpoint name you utilized above and generated client id.  This will allow a copy and paste of the commands in the next step to work without editing
       ```bash
-      export endpoint_name=<name from above>
+      export endpoint_name=<name from above (include staging or production)>
+      export client_id=<client id from above step>
       ```
    1. On the server run
       ```bash
       mkdir app_config
       cd app_config
-      globus-connect-server endpoint setup $endpoint_name  --organization "Princeton University Library" --client-id "<your client id>" --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu
+      globus-connect-server endpoint setup "$endpoint_name"  --organization "Princeton University Library" --client-id $client_id --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu
       ```
          1. you will be prompted for the client secret
          1. Accept Let's Encrypt ToS
@@ -245,12 +245,18 @@ To register a Globus Endpoint do the following:
          1. This will also create a `deployment-key.json` file in the `app_config` directory. This is an important file that connects the localhost to the globus web network
 
 ### Configure Globus Node
-Still in your VM in the `app_config` directory 
-1. run the following command to configure your node: (note: use of `sudo`)
+1. `ssh pulsys@<public IP>`
+1. On the server set the endpoint name you utilized above and generated client id.  This will allow a copy and paste of the commands in the next step to work without editing
+   ```bash
+   cd app_config
+   export endpoint_name=<name from above (include staging or production)>
+   export client_id=<client id from above step>
+   ```
+1. run the following command to configure your node: (note: use of `sudo`) You will be prompted for the client secret you saved in lastpass.
 
    ```bash
    sudo globus-connect-server node setup \
-      --client-id "your client id"
+      --client-id $client_id
    sudo systemctl restart apache2
    ```
 1. Finish the setup by running this on the VM
@@ -265,10 +271,10 @@ Still in your VM in the `app_config` directory
 
    1. ssh onto the EC2 instance `ssh pulsys@<public IP>`
    1. run `sudo globus-connect-server endpoint show`
-   1. email `tengi@princeton.edu` with subject `Register Globus Endpoint`
+   1. email `cses@princeton.edu` with subject `Register Globus Endpoint`
 
       ```
-      Hello Chris,
+      Hello,
 
       Can you please register the following Princeton Research Data Globus endpoint to be managed by Research Computing's Globus account:
 
@@ -284,8 +290,11 @@ Still in your VM in the `app_config` directory
 
 ### Register all admin users on the endpoint
    1. go to [Globus Endpoints](https://app.globus.org/console/endpoints) and sign in as rdssglobus (see last pass)
-   1.  click on New endpoint you created above and Continue for Authentication Consent
-         1. you will need to add the aws key here
+   1.  click on New endpoint you created above 
+   1. click on the `Roles` tab and Continue for Authentication Consent
+      1. you may need to add the aws key here
+         1. In princeton_ansible directory on your local machine, see the aws key information needed
+            `ansible-vault view group_vars/globus/vault.yml`
 
    1. Add administrators via the command line `ssh pulsys@<public IP>` and run
       ```
@@ -306,9 +315,28 @@ Still in your VM in the `app_config` directory
          * paste the url in to your browser
       **NOTE:** Depending on the browser you paste the url into, you will be logged in as that person.  If you put it into an incognito and login with rdssglobus you will be rdssglobus.  If you use a browser that you are logged into then you will be logged into the connect server as yourself.  If you receive messages like `None of your identities have been granted a role to access this resource` you may need to get administrator access for your account, or login as rdssglobus instead. 
 
+   1. Put the bucket name and gateway in a variable. Choose one of the following:
+      * pdc-describe-staging-precuration
+      * pdc-describe-staging-postcuration
+      * pdc-describe-prod-precuration
+      * pdc-describe-prod-postcuration
+
+      ```
+      export bucket_name=<bucket name>
+      ```
+   1. Put the gateway name in a variable. Choose one of the following
+      * pdc s3 storage gateway precuration
+      * pdc s3 storage gateway postcuration
+      * pdc s3 storage gateway precuration
+      * pdc s3 storage gateway postcuration
+
+      ```
+      export gateway_name=<gateway name>
+      ```
+
    1. Add the S3 bucket as 
       ```
-      sudo globus-connect-server storage-gateway create s3     "S3 Storage Gateway"     --domain princeton.edu     --s3-endpoint https://s3.amazonaws.com --s3-authenticated    --bucket pdc-globus-staging-precuration
+      sudo globus-connect-server storage-gateway create s3   "$gateway_name" --domain princeton.edu --s3-endpoint https://s3.amazonaws.com --s3-user-credential --bucket $bucket_name
       ```
       **Note** the id returned by this command, you will need it in the following
 
@@ -324,36 +352,40 @@ Still in your VM in the `app_config` directory
          * Princeton Data Commons Staging Postcuration
          * Princeton Data Commons Precuration
          * Princeton Data Commons Postcuration
+      `export collection_name=<name>`
       * Utilize one of the following for the `<info link>`
          *  https://pdc-describe-staging.princeton.edu/about
          * https://pdc-describe.princeton.edu/about
+       `export info_link=<info link>`
       * Utilize one of the following for the `<description>`
       * if this is a staging system add `--user-message "Staging data!  Please do not store production data here"`
 
          ```
-         sudo globus-connect-server collection create $gateway_id / <name>  --organization 'princeton.edu' --contact-email prds@princeton.edu --info-link <info link> --description <description> --keywords princeton.edu,RDOS,research  --allow-guest-collections  --enable-https
+         sudo globus-connect-server collection create $gateway_id / "$collection_name"  --organization 'princeton.edu' --contact-email prds@princeton.edu --info-link $info_link --description "$collection_name Globus Collection for curators" --keywords princeton.edu,RDOS,research  --allow-guest-collections  --enable-https
          ```   
          
          **Note** the id returned by this command, you will need it in the next step
 
    1. Assign the collection id to a variable
-          ```
-          export collection_id=<output from above command>
-          ```
+      ```
+      export collection_id=<output from above command>
+      ```
    1. Add administrators via the command line
-            ```
-            sudo globus-connect-server collection role create $collection_id administrator rdssglobus@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator cac9@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator fkayiwa@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator bs3097@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator hc8719@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator jrg5@princeton.edu
-            sudo globus-connect-server collection role create $collection_id administrator kl37@princeton.edu
-            ```
+      ```
+      sudo globus-connect-server collection role create $collection_id administrator rdssglobus@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator cac9@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator fkayiwa@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator bs3097@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator hc8719@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator jrg5@princeton.edu
+      sudo globus-connect-server collection role create $collection_id administrator kl37@princeton.edu
+      ```
          
+   1. In princeton_ansible directory on your local machine, see the aws key information needed
+      `ansible-vault view group_vars/globus/vault.yml`
 
    1. visit the collection on https://app.globus.org/collections?scope=administered-by-me
-      1. setup the credentials for accessing s3 (utilize the IAM key from ` ansible-vault edit group_vars/globus/vault.yml`)
+      1. Click on the credentials tab and click continue to setup the credentials for accessing s3 (utilize the IAM key from above)
 
 
 ### Create a guest Collection for public access to the mapped collection
@@ -369,6 +401,7 @@ Still in your VM in the `app_config` directory
    1. click on the collection you just created
    1. click on the collections tab
    1. click on "Add a guest Collection"
+      * You may need to authorize (click rdssglobus@princeton.edu and allow)
    1. click bowse and select the s3 bucket top path
    1. Fill in the name and description
    1. Click create collection
