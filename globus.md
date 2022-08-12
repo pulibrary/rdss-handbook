@@ -4,7 +4,7 @@
 
 For a quick intro to Globus take a look at [Globus for newbies](https://docs.google.com/document/d/1d8u3KhsoX-x3k59GgWfhC7325R6616j8RytccTelPWM/edit#).
 
-## Current Globus Setup
+## Historic Globus Setup
 
 There are currently two EC2 Servers serving up the exact samne globus structure.  Need to find out why that is...
 Current Globus collections for dataspace
@@ -27,7 +27,7 @@ Current Globus collections for dataspace
   
   **Note:** There seem to be collections for PDC, DSS, Dataspace and the POSIX collection.  We should figure out what these collections are all for...
 
-## New Globus Setup
+## Princeton Data Commons (PDC) Globus Setup
 
 Our globus setup consists of four globus collections connected to two s3 buckets on two globus endpoints.
 
