@@ -56,7 +56,7 @@ gantt
     section PDC_Describe
     File uploading: pd1, 2022-08-01, 5d
     DataCite implementation and ingest form: pd2, 2022-08-01, 10d
-    Globus staging deployment: 2022-08-01, 10d
+    Globus staging and production deployment: 2022-08-01, 10d
     section OpenPublishing
     OJS launch prep: ojs1, 2022-08-01, 5d
     section DataSpace Sunsetting
