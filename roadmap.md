@@ -49,9 +49,13 @@ gantt
     excludes    weekends
     section 2022 Theses
     Import to DataSpace: th1, 2022-08-01, 10d
+    section DSpace Support
+    EZID fixes: 2022-08-11, 1d
+    section Emergency Response
+    Secrets leak fixes: 2022-08-10, 2d
     section PDC_Describe
     File uploading: pd1, 2022-08-01, 5d
-    DataCite: pd2, 2022-08-01, 10d
+    DataCite implementation and ingest form: pd2, 2022-08-01, 10d
     Globus staging deployment: 2022-08-01, 10d
     section OpenPublishing
     OJS launch prep: ojs1, 2022-08-01, 5d
