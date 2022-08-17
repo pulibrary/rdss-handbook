@@ -1,4 +1,5 @@
 ## Create a new tag and a new release
+  We create a new release before deploying software to our production servers.  In general we should release and deploy for each bug fix, or feature that is completed.
 
 ### Pre-requisites
 We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment. To install 'auto' [via brew](https://intuit.github.io/auto/docs/configuration/non-npm):
