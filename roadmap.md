@@ -4,7 +4,7 @@ Below is the current roadmap and timeline for RDSS, summer 2022 through January 
 
 ```mermaid
 gantt
-    title RDSS 2022 Summer - 2023 Winter Roadmap
+    title RDSS 2022 - 2023 Roadmap
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC_Decribe
@@ -21,18 +21,18 @@ gantt
     section Dataspace Sunsetting
     Hosted Elements migration :active, ds1, 2022-08, 60d
     Working with embargoes in Figgy: ds2, 2022-10, 30d
-    Migrating Library PDFs to Figgy: ds4, after ds2, 60d
-    Migrating Dissertations to Figgy/Orangelight: ds5, after ds2, 60d
-    Migrating Theses to Figgy/Orangelight: ds6, after ds2, 60d
+    Migrating Library PDFs to Figgy: ds4, after td2, 60d
+    Migrating Dissertations to Figgy/Orangelight: ds5, after td2, 60d
+    Migrating Theses to Figgy/Orangelight: ds6, after td2, 60d
     PPPL OSTI reporting: ds3, after pd5,60d
     section POAPP
     OJS launch: po1, 2022-09, 15d
     OMP launch: po2, 2022-12, 15d
     section TigerData
-    Onboarding: td1, 2023-01, 30d
+    API spike and requirements evaluation: td1, 2022-11, 30d
+    Onboarding: td2, 2023-01, 30d
     section Open Source Community Work
     " ": os1
-
 ```
 
 ## Past Sprints
