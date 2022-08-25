@@ -39,6 +39,31 @@ gantt
 
 This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### 2022/08/15 - 2022/08/26
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/08/15 - 2022/08/26
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section 2022 Theses
+    Import to DataSpace and enhance metadata: th1, 2022-08-15, 10d
+    Thesis form fixes: 2022-08-15, 3d
+    section DSpace Support
+    IP range fixes: 2022-08-17, 4d
+    section PDC_Describe
+    File handling: pd1, 2022-08-15, 10d
+    DataCite implementation and ingest form: pd2, 2022-08-15, 10d
+    DOI handling and approval workflow: pd2, 2022-08-15, 10d
+    State machine backing: pd2, 2022-08-15, 10d
+    section OpenPublishing
+    OJS launch prep: ojs1, 2022-08-22, 3d
+    section DataSpace Sunsetting
+    Elements migration: 2022-08-15, 10d
+```
+
+
 ### 2022/08/01 - 2022/08/12
 
 ```mermaid
