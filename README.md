@@ -13,7 +13,6 @@ This is the handbook for the Research Data and Scholarship Services (RDSS) Team.
 * [Product Owners](product_owners.md)
 * [Roadmap](roadmap.md)
 
-
 ### Tools
 
 * [Globus](globus.md)
