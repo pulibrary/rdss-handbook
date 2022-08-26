@@ -12,6 +12,6 @@ Feature refinement meetings with the PO are devoted to structured conversation a
 
  * The PO comes to this meeting with up to five GitHub issues, created in advance of the meeting, that are related to upcoming work.  It is the expectation that the PO has an idea of the relative order of priority for these issues, and can help the RDSS team understand both the order of priority and the reasoning behind it.
 
- * The RDSS team and the PO discuss the tickets and work together to make them actionable, answer any questions the team has about them, and determine if they are sizable by  RDSS.
+ * The RDSS team and the PO discuss the tickets and work together to make them actionable, answer any questions the team has about them, and determine if they are sizable by RDSS.
 
  * Issues discussed with the PO during the meeting will be appropriately documented and labeled to indicate workflow needs, level of priority, etc, per the standards outlined in the [sprints](work_sprints.md) document.
