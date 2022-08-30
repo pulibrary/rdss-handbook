@@ -8,10 +8,10 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC_Decribe
-    Submission/curation workflow           :active, pd1, 2022-08, 60d
+    Submission/curation workflow :active, pd1, 2022-08, 60d
     Metadata schema, file submission :active, pd2, 2022-08, 60d
     Research Data content reconciliation/migration :active, pd3, 2022-08, 90d
-    Globus implementation     :active, pd4, 2022-08, 30d
+    Globus implementation :active, pd4, 2022-08, 30d
     Curation station integration: pd5, after pd4, 30d
     PDC Describe launch tasks: pd6, after pd5, 30d
     section DSpace Support
@@ -32,7 +32,7 @@ gantt
     API spike and requirements evaluation: td1, 2022-11, 30d
     Onboarding: td2, 2023-01, 30d
     section Open Source Community Work
-    " ": os1
+    N/A: os1
 ```
 
 ## Past Sprints
