@@ -20,6 +20,7 @@ gantt
     OAR maintenance :active, dsp2, 2022-08, 2023-02
     section Dataspace Sunsetting
     Hosted Elements migration :active, ds1, 2022-08, 60d
+    Working with embargoes in Figgy: ds2, 2022-10, 30d
     Migrating Library PDFs to Figgy: ds4, after td2, 60d
     Migrating Dissertations to Figgy/Orangelight: ds5, after td2, 60d
     Migrating Theses to Figgy/Orangelight: ds6, after td2, 60d
