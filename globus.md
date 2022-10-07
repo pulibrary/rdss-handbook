@@ -409,3 +409,14 @@ To register a Globus Endpoint do the following:
    1. Choose "Public"
    1. Click write if this is an upload collection
    1. Click Add Permissions
+
+### Certificate Authority Updates
+
+  1. We have a [Globus Certs Playbook](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/globus_certs.yml) set up to automatically update the certificates for Globus VMs. Run this Playbook.
+  2. When completed check the `/var/lib/globus-connect-server/grid-security/certificates`  to see if old certificates still exist. 
+
+For **ca-update-2022** the following files should be removed if the playbook fails to remove them
+
+```
+7a42187f.* 4b828555.* c7ab88a4.* globus_transfer_ca_2.* globus_transfer_ca_2_int.*
+```
