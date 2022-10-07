@@ -20,7 +20,6 @@ gantt
     OAR maintenance :active, dsp2, 2022-08, 2023-02
     section Dataspace Sunsetting
     Hosted Elements migration :active, ds1, 2022-08, 60d
-    Working with embargoes in Figgy: ds2, 2022-10, 30d
     Migrating Library PDFs to Figgy: ds4, after td2, 60d
     Migrating Dissertations to Figgy/Orangelight: ds5, after td2, 60d
     Migrating Theses to Figgy/Orangelight: ds6, after td2, 60d
@@ -38,6 +37,37 @@ gantt
 ## Past Sprints
 
 This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
+
+### 2022/09/26 - 2022/10/07
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/09/26 - 2022/10/07
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    File handling: pd1, 2022-09-26, 10d
+    DataCite implementation and ingest form: pd2, 2022-09-26, 10d
+    Improved error handling: pd3, 2022-09-26, 10d
+    Indexing to PDC Discovery: pd4, 2022-09-26, 10d
+    Globus trust root: pd5, 2022-09-26, 10d
+    section OpenPublishing
+    OJS launch prep and translation support: ojs1, 2022-09-26, 4d
+    section Cicognara
+    Item count troubleshooting and version support: 2022-10-03, 3d
+    section DataSpace maintenance
+    New collections and users: dsm1, 2022-09-26, 5d
+    OAR cleanup: dsm2, 2022-10-04, 2d
+    section DataSpace Sunsetting
+    Elements migration: dss1, 2022-09-26, 10d
+    section Open Source Community
+    Blacklight Summit: osc1, 2022-10-03, 3d
+```
+
+### 2022/09/12 - 2022/09/23
+
+### 2022/08/29 - 2022/09/09
 
 ### 2022/08/15 - 2022/08/26
 
