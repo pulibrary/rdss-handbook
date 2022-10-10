@@ -39,7 +39,7 @@ gantt
 
 This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
-### 2022/09/26 - 2022/10/07
+### 2022/09/26 - 2022/10/07 🚌
 
 ```mermaid
 gantt
@@ -66,11 +66,11 @@ gantt
     Blacklight Summit: osc1, 2022-10-03, 3d
 ```
 
-### 2022/09/12 - 2022/09/23
+### 2022/09/12 - 2022/09/23 🍂
 
-### 2022/08/29 - 2022/09/09
+### 2022/08/29 - 2022/09/09 🚂
 
-### 2022/08/15 - 2022/08/26
+### 2022/08/15 - 2022/08/26 🍔
 
 ```mermaid
 gantt
@@ -95,7 +95,7 @@ gantt
 ```
 
 
-### 2022/08/01 - 2022/08/12
+### 2022/08/01 - 2022/08/12 🍉
 
 ```mermaid
 gantt
@@ -119,7 +119,7 @@ gantt
     Elements migration: 2022-08-01, 10d
 ```
 
-### 2022/07/18 - 2022/07/29
+### 2022/07/18 - 2022/07/29 🫐
 
 ```mermaid
 gantt
