@@ -68,6 +68,23 @@ gantt
 
 ### 2022/09/12 - 2022/09/23
 
+```mermaid
+gantt
+    title RDSS Sprint, 2022/09/12 - 2022/10/23
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    Launch plan: pd1, 2022-09-12, 10d
+    DataCite implementation: pd2, 2022-09-12, 10d
+    Submission form improvements: pd3, 2022-09-12, 10d
+    Storage workflow: pd4, 2022-09-12, 10d
+    ARK and DOI handling: pd5, 2022-09-12, 10d
+    Collection save and show: pd6, 2022-09-12, 10d
+    section DataSpace Sunsetting
+    Elements migration: dss1, 2022-09-12, 10d
+```
+
 ### 2022/08/29 - 2022/09/09
 
 ```mermaid
