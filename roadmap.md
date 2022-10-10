@@ -57,7 +57,7 @@ gantt
     OJS launch prep and translation support: ojs1, 2022-09-26, 4d
     section Cicognara
     Item count troubleshooting and version support: 2022-10-03, 3d
-    section DataSpace maintenance
+    section DSpace support
     New collections and users: dsm1, 2022-09-26, 5d
     OAR cleanup: dsm2, 2022-10-04, 2d
     section DataSpace Sunsetting
@@ -86,6 +86,28 @@ gantt
 ```
 
 ### 2022/08/29 - 2022/09/09
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/08/29 - 2022/09/09
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    File handling: pd1, 2022-08-29, 10d
+    DataCite implementation and serialization: pd2, 2022-08-29, 10d
+    Submission workflow: pd2, 2022-08-29, 10d
+    Test suite improvements: pd2, 2022-08-29, 10d
+    section DSpace support
+    Mudd IP Range Fixes: dsm1, 2022-09-05, 4d
+    2022 Thesis Reports for Alumni/Donor records: po2, 2022-09-05, 4d
+    section DataSpace Sunsetting
+    Elements migration: dss1, 2022-08-29, 10d
+    section Professional Development
+    Product Owner Training - September Cohort: po1, 2022-09-06, 3d
+    section OpenPublishing
+    Translation and theme support: ojs1, 2022-09-06, 4d 
+```
 
 ### 2022/08/15 - 2022/08/26
 
