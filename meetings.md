@@ -61,7 +61,7 @@ On the last day of each work cycle, the RDSS team meets for a meeting that is pa
 Work cycles last for 2 weeks, starting on a Wednesday and ending on a Tuesday.  The RDSS standing meetings schedule looks like this:
 
 
-|Week|Monday|Tuesday|Wednesday|Thursday|Friday|
+|Week|Wednesday|Thursday|Friday|Monday|Tuesday|
 |:---:|:---|:---|:---|:---|:---|
-|1|Daily Check-in|Daily Check-in|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in and Learnings Chat|
-|2|Daily Check-in|Daily Check-in<br />Work Cycle Wrap-up and Retrospective|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in and Learnings Chat|
+|1|Work Cycle Planning (sprint begins)|Daily Check-in|Daily Check-in and Learnings Chat|Daily Check-in| Daily Check-in|
+|2|Mid-Sprint Planning Check-in|Daily Check-in|Daily Check-in and Learnings Chat|Daily Check-in|Daily Check-in<br />Work Cycle Wrap-up and Retrospective|
