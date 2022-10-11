@@ -56,14 +56,14 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * An instance of Open Journal System (OJS) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access peer-reviewed journals
   * Status: In production
   * Public URL: https://openpublishing.princeton.edu
-  * Code Base: https://github.com/pulibrary/openpublishing
+  * Code Bases: https://github.com/pulibrary/openpublishing; https://github.com/pulibrary/ojs_styles
   * Product Owner: TBD
   * Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   * [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
   * [Backup and restore instructions](ojs.md)
 * Open Books
   * An instance of Open Monograph Press (OMP) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access books
-  * Status: In development, near launch (launching summer 2022)
+  * Status: In production
   * Public URL: https://openbooks.princeton.edu
   * Code Base: https://github.com/pulibrary/openbooks
   * Product Owner: TBD
@@ -106,3 +106,9 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   * Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo
   * Product Owner: Lynn Durgin
   * Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+* TigerData
+  * A collaboratively developed frontend for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology (OIT).
+  * Status: Coming soon
+  * Code Base: Coming soon
+  * Product Owner: Matt Chandler
+  * Slack channel(s): #digital_open_data_and_research (user-centered and technical)

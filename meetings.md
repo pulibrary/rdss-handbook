@@ -22,7 +22,7 @@ At each meeting, the team works from the [RDSS Work Cycle ZenHub board](https://
 
 ### Other norms
 
-A work cycle planning meeting similar to the above-described format takes place at the same time on Mondays during the second week of the work cycle, to review tickets that are on the board that may warrant reorganization, that are off in terms of their GitHub estimate, and any issues that have been generated as a result of unplanned work (that is, work that came up or were escalated in priority due to needs from stakeholders, users, and/or Leadership within the last week).  
+A work cycle planning meeting similar to the above-described format takes place in the same timeslot during the second week of the work cycle, to review tickets that are on the board that may warrant reorganization and address any issues that have been generated as a result of unplanned work (that is, work that came up or was escalated in priority due to needs from stakeholders, users, and/or Leadership within the last week).  
 
 ## Daily Check-ins
 
@@ -38,7 +38,7 @@ The team views the [RDSS Work Cycle ZenHub board](https://app.zenhub.com/workspa
 
 ### Other norms
 
-The Friday check-in is immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
+The "Check-in and Coffee Chat" is a check-in immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
 
 ## Work Cycle Wrap-up and Retrospective Meetings
 
@@ -58,10 +58,10 @@ On the last day of each work cycle, the RDSS team meets for a meeting that is pa
 
 ## Schedule
 
-Work cycles last for 2 weeks, starting on a Monday and ending on a Friday.  The RDSS standing meetings schedule looks like this:
+Work cycles last for 2 weeks, starting on a Wednesday and ending on a Tuesday.  The RDSS standing meetings schedule looks like this:
 
 
 |Week|Monday|Tuesday|Wednesday|Thursday|Friday|
 |:---:|:---|:---|:---|:---|:---|
-|1|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in|Daily Check-in|Daily Check-in and Learnings Chat|
-|2|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in|Daily Check-in|Daily Check-in and Learnings Chat<br />Work Cycle Wrap-up and Retrospective|
+|1|Daily Check-in|Daily Check-in|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in and Learnings Chat|
+|2|Daily Check-in|Daily Check-in<br />Work Cycle Wrap-up and Retrospective|RDSS Work Cycle Planning|Daily Check-in|Daily Check-in and Learnings Chat|
