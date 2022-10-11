@@ -19,12 +19,12 @@ The RDSS team's work is structured in 2-week cycles.  These cycles begin with a 
 
 ### During the Work Cycle
 1. Any new tickets that must be added to the board during the work cycle (e.g., for production emergencies) gets a label of `unplanned work`. [Our goal is to keep unplanned work to a minimum.](https://www.pagerduty.com/blog/5-ways-unplanned-work-disrupting-business/)
-2. The mid-workcycle Monday meeting is a chance to sanity check our progress. Are we on track to finish what we thought we'd finish? Or do we need to adjust expectations?
+2. The mid-workcycle planning meeting is a chance to check our progress and reflect.  Are we on track to finish what we thought we'd finish? Or do we need to adjust expectations?
 
 ### Work Cycle Wrap-up and Retro
 1. We close out any tickets that can be closed. If any tickets are still open, we decide whether to move them to the next sprint.
 2. We record how many story points we completed in this work cycle and how many of them were unplanned work.
-3. We close the sprint and get ready to start again on Monday.
+3. We close the sprint and get ready to start the next one.
 4. We have a retrospective about the work cycle and we pick one thing that we want to do to improve our process next time.
 
 ## Labels
