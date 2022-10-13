@@ -14,4 +14,4 @@ Feature refinement meetings with the PO are devoted to structured conversation a
 
  * The RDSS team and the PO discuss the tickets and work together to make them actionable, answer any questions the team has about them, and determine if they are sizable by RDSS.
 
- * Issues discussed with the PO during the meeting will be appropriately documented and labeled to indicate workflow needs, level of priority, etc, per the standards outlined in the [sprints](work_sprints.md) document.
+ * Issues discussed with the PO during the meeting will be appropriately documented and labeled to indicate workflow needs, level of priority, etc, per the standards outlined in the [sprints](work_cycles.md) document.
