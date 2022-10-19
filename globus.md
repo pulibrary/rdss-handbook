@@ -178,6 +178,18 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Under `Object Ownership` choose enable ACLs
 1. uncheck `Block all public access` and acknowledge `Turning off block all public access might result in this bucket ...`
 1. click `Create Bucket`
+1. click `Properties` tab on the bucket you just created
+1. Enable Versions
+    1. click on the Edit button to the far right of `Bucket Versioning` section
+    1. choose `Enable` and click on `Save`
+    1. click `Management` tab
+    1. click on `Create lifecycle rule`
+    1. Fill in `Remove old deleted versions` for the name
+    1. choose `Apply to all objects in the bucket`
+    1. check `I acknowledge...`
+    1. check `Permanently delete noncurrent versions of objects`
+    1. Fill in 30 in `Days after objects become noncurrent`
+    1. Click on `Create Rule`
 1. (Optionally) Copy the data using the aws cli: `aws s3 sync s3://prds-dataspace s3://pdc-globus-prod`
 
     **Note:** that the copy will take about five hours. 
