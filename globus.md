@@ -176,7 +176,6 @@ To make a new S3 bucket with a copy of the PDC Globus data:
    * pdc-describe-prod-postcuration
 1. Under `Copy settings from existing bucket` choose `pdc-describe-staging-precuration` (assumes it has been set up)
 1. Under `Object Ownership` choose enable ACLs
-1. uncheck `Block all public access` and acknowledge `Turning off block all public access might result in this bucket ...`
 1. click `Create Bucket`
 1. click `Properties` tab on the bucket you just created
 1. Enable Versions
