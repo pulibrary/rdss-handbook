@@ -64,4 +64,4 @@ We use labels to help with prioritization and process improvement.
 ![](images/add_sprint_emoji.png)
 
 ### Changing sprint schedules
-If we need to change the schedule of our sprints we can also do that under the green plus sign at the top right of the Zen Hub board. Click the plus sign, then click "Modify Recurring Sprints", then choose "Change Sprint Schedule." Select when you want the next sprint to begin and when it should end. Make sure you hit the "Save" button at the bottom left of the sprint list.  
+If we need to change the schedule of our sprints we can also do that under the green plus sign at the top right of the Zen Hub board. Click the plus sign, then click "Modify Recurring Sprints", then choose "Change Sprint Schedule." Select when you want the next sprint to begin and when it should end. Make sure you hit the "Save" button at the bottom left of the sprint list. Note that doing this will cause all the tickets in your current sprint to move to the new sprint, which might leave you with a gap in your sprint schedule. 
