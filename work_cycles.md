@@ -57,6 +57,11 @@ We use labels to help with prioritization and process improvement.
   We sometimes assign project- or feature-specific labels to make it easier to group issues. These are somewhat ad hoc, and can be created on an as-needed basis.
 
 ## Notes
+
+### Emojis
 [1] New sprints are created automatically, but we like to customize them to add an emoji. This makes it easier to talk about our work and recognize relevant issues on the board. To add an emoji to the auto-created sprint, click on the green plus sign at the top right of the Zen Hub board, and go to the "Modify recurring sprints" menu item. From there you can rename a sprint, including adding an emoji.
 
 ![](images/add_sprint_emoji.png)
+
+### Changing sprint schedules
+If we need to change the schedule of our sprints we can also do that under the green plus sign at the top right of the Zen Hub board. Click the plus sign, then click "Modify Recurring Sprints", then choose "Change Sprint Schedule." Select when you want the next sprint to begin and when it should end. Make sure you hit the "Save" button at the bottom left of the sprint list. Note that doing this will cause all the tickets in your current sprint to move to the new sprint, which might leave you with a gap in your sprint schedule. 
