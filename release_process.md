@@ -6,7 +6,8 @@ We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment.
 
 1. `brew tap intuit/auto https://github.com/intuit/auto`
 1. `brew install auto`
-1. You will also need to create a GitHub token as indicated [here](https://intuit.github.io/auto/docs/configuration/non-npm#configuration).
+1. [Create a new Github Token](https://github.com/settings/tokens) with `write:packages` privs.
+1. Add the token to the approapriate startup file for your shell. Something like: `echo 'export GH_TOKEN="YourTokenHere"' >> ~/.bash_profile`
 
 ### To create and publish the tagged release
 * `git checkout main`
