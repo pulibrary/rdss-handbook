@@ -39,6 +39,25 @@ gantt
 
 This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### 2022/11/02 - 2022/11/15 🌼
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/11/02 - 2022/11/15
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section TigerData
+    MediaFlux desktop client exploration: td1, 2022-11-02, 10d
+    MediaFlux aterm/Ruby exploration: td1, 2022-11-02, 10d
+    TigerData and MediaFlux project research: td1, 2022-11-02, 10d
+    section PDC_Describe
+    Finalize DataCite fixtures: pdc1, 2022-11-02, 10d
+    DataSpace data migration preparation: pdc1, 2022-11-02, 10d
+    section Open Source Community
+    Samvera Community maintenance: osc1, 2022-11-10, 3d
+```
+
 ### 2022/09/26 - 2022/10/07 🚌
 
 ```mermaid
