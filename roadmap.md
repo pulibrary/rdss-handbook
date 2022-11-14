@@ -8,31 +8,32 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC_Decribe
-    Submission/curation workflow :active, pd1, 2022-08, 60d
-    Metadata schema, file submission :active, pd2, 2022-08, 60d
-    Research Data content reconciliation/migration :active, pd3, 2022-08, 90d
-    Globus implementation :active, pd4, 2022-08, 30d
-    Curation station integration: pd5, after pd4, 30d
-    PDC Describe launch tasks: pd6, after pd5, 30d
+    Submission/curation workflow: pd1, 2022-08-01, 90d
+    Metadata schema, file submission: pd2, 2022-08-01, 90d
+    Research Data content reconciliation/migration: pd3, 2022-08-01, 90d
+    Globus implementation: pd4, 2022-08-01, 60d
+    Curation station integration: pd5, 2023-02-15, 45d
+    PDC Describe data migration and review: pd6, 2023-02-01, 60d
+    PDC Describe launch tasks: pd6, 2023-04-01, 30d
     section DSpace Support
-    2022 Thesis migration :active, dsp1, 2022-08, 30d
-    DataSpace maintenance :active, dsp2, 2022-08, 2023-02
-    OAR maintenance :active, dsp2, 2022-08, 2023-02
+    2022 Thesis migration: dsp1, 2022-08, 30d
+    DataSpace maintenance: dsp2, 2022-08, 2023-07
+    OAR maintenance: dsp2, 2022-08, 2023-07
     section Dataspace Sunsetting
-    Hosted Elements migration :active, ds1, 2022-08, 60d
-    Working with embargoes in Figgy: ds2, 2022-10, 30d
-    Migrating Library PDFs to Figgy: ds4, after td2, 60d
-    Migrating Dissertations to Figgy/Orangelight: ds5, after td2, 60d
-    Migrating Theses to Figgy/Orangelight: ds6, after td2, 60d
-    PPPL OSTI reporting: ds3, after pd5,60d
+    Hosted Elements migration: ds1, 2022-08-01, 90d
+    Working with embargoes in Figgy: ds2, 2022-11, 60d
+    Migrating Library PDFs to Figgy: ds3, 2023-06, 60d
+    Migrating Dissertations to Figgy/Orangelight: ds4, 2023-06, 60d
+    Migrating Theses to Figgy/Orangelight: ds5, 2023-06, 60d
+    PPPL OSTI reporting: ds6, 2023-01,60d
     section POAPP
     OJS launch: po1, 2022-09, 15d
     OMP launch: po2, 2022-12, 15d
     section TigerData
-    API spike and requirements evaluation: td1, 2022-11, 30d
-    Onboarding: td2, 2023-01, 30d
+    Research spike: td1, 2022-11, 30d
+    TigerData web application development: td2, 2023-01, 180d
     section Open Source Community Work
-    N/A: os1
+    N/A: os1, 2022-08, 2023-07
 ```
 
 ## Past Sprints
