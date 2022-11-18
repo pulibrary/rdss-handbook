@@ -35,4 +35,3 @@ atmire  https://princeton:$SECRET@git.atmire.com/clients/princeton-5.git (push)
 origin  https://jrgriffiniii:$SECRET@github.com/PrincetonUniversityLibrary/princeton-5.git (fetch)
 origin  https://jrgriffiniii:$SECRET@github.com/PrincetonUniversityLibrary/princeton-5.git (push)
 ```
-

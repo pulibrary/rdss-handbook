@@ -8,35 +8,35 @@ The Google Cloud Platform is currently used by RDSS and Operations in order to s
 
 The network segments for these are partitioned in order to align with the architectural patterns followed by those servers utilized within the Princeton University Library network:
 
-| Host | Description |
-| ---- | ----------- |
-| gcp-dataspace-dev1 | `development` deployment environment for DataSpace |
-| gcp-dataspace-staging1 | `staging` deployment environment for DataSpace |
-| gcp-dataspace-prod1 | `production` deployment environment for DataSpace |
-| gcp-oar-dev1 | `development` deployment environment for the OAR |
-| gcp-oar-staging1 | `staging` deployment environment for the OAR |
-| gcp-oar-prod1 | `production` deployment environment for the OAR |
-| proquestdrop1 | SFTP server used for transferring MARC-8 files from ProQuest to colleagues within the Library |
+| Host                     | Description                                                                                   |
+| ------------------------ | --------------------------------------------------------------------------------------------- |
+| `gcp-dataspace-dev1`     | `development` deployment environment for DataSpace                                            |
+| `gcp-dataspace-staging1` | `staging` deployment environment for DataSpace                                                |
+| `gcp-dataspace-prod1`    | `production` deployment environment for DataSpace                                             |
+| `gcp-oar-dev1`           | `development` deployment environment for the OAR                                              |
+| `gcp-oar-staging1`       | `staging` deployment environment for the OAR                                                  |
+| `gcp-oar-prod1`          | `production` deployment environment for the OAR                                               |
+| `proquestdrop1`          | SFTP server used for transferring MARC-8 files from ProQuest to colleagues within the Library |
 
 ### Bastion Hosts
 
 In order to access these, one must connect using a bastion proxy host. There exists three of these, one for each deployment environment:
 
-| Host |
-| ---- |
-| pul-gcdc-bastion-dev1 |
-| pul-gcdc-staging-bastion1 |
-| pul-gcdc-prod-bastion1 |
+| Host                        |
+| --------------------------- |
+| `pul-gcdc-bastion-dev1`     |
+| `pul-gcdc-staging-bastion1` |
+| `pul-gcdc-prod-bastion1`    |
 
 ### Load Balancer Hosts
 
 Finally, there also exist load balancer hosts for each network segment:
 
-| Host |
-| ---- |
-| pul-gcdc-adc |
-| pul-gcdc-staging-adc |
-| pul-gcdc-prod-adc |
+| Host                   |
+| ---------------------- |
+| `pul-gcdc-adc`         |
+| `pul-gcdc-staging-adc` |
+| `pul-gcdc-prod-adc`    |
 
 ### Accessing Hosts Over SSH
 
@@ -65,23 +65,23 @@ ssh: connect to host $BASTION_HOST port 22: Operation timed out
 
 One must first access one of the three VPC networks:
 
-| VPC Network |
-| ------- |
-| pul-gcdc-dev |
-| pul-gcdc-staging |
-| pul-gcdc-prod |
+| VPC Network        |
+| ------------------ |
+| `pul-gcdc-dev`     |
+| `pul-gcdc-staging` |
+| `pul-gcdc-prod`    |
 
 ...which will then allow one to access one of the following associated firewall rules:
 
-| Firewall Rules |
-| -------------- |
-| pul-gcdc-dev-allow-ssh |
-| pul-gcdc-staging-allow-ssh |
-| pul-gcdc-prod-allow-ssh |
+| Firewall Rules               |
+| ---------------------------- |
+| `pul-gcdc-dev-allow-ssh`     |
+| `pul-gcdc-staging-allow-ssh` |
+| `pul-gcdc-prod-allow-ssh`    |
 
 Here, one must please add an IP address range to the `Source filters`. The address is found within the `Gateway IP` entry for the GlobalProtect, and one formats this using the CIDR syntax (e. g. `192.168.1.1/32`). Please see the following screenshot for a visual reference:
 
 ![Screenshot of the Gateway IP within the GlobalProtect client](./images/global_protect0.png)
 ![Screenshot of the Gateway IP within the GlobalProtect client](./images/global_protect1.png)
 
-Should further difficulties be encountered, please seek support from the `#infrastructure` Channel on the Princeton University Library Slack.
+Should further difficulties be encountered, please seek support from the `#infrastructure` Channel on the [Princeton University Library Slack](https://pulibrary.slack.com).

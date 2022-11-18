@@ -1,0 +1,13 @@
+{
+  "name": "rdss-handbook",
+  "version": "1.0.0",
+  "description": "Research Data and Scholarship Services Team Handbook",
+  "main": "README.md",
+  "repository": "https://github.com/pulibrary/rdss-handbook.git",
+  "author": "jrgriffiniii <1443986+jrgriffiniii@users.noreply.github.com>",
+  "license": "Apache-2.0",
+  "private": true,
+  "devDependencies": {
+    "prettier-eslint": "^15.0.1"
+  }
+}

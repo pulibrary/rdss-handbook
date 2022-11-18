@@ -1,6 +1,6 @@
 # Roadmap
 
-Below is the current roadmap and timeline for RDSS, summer 2022 through January 2023.  It is subject to change as needed, however it is written in markdown, so all history is recorded.
+Below is the current roadmap and timeline for RDSS, summer 2022 through January 2023. It is subject to change as needed, however it is written in markdown, so all history is recorded.
 
 ```mermaid
 gantt
@@ -37,7 +37,7 @@ gantt
 
 ## Past Sprints
 
-This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
+This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
 ### 2022/11/02 - 2022/11/15 🌼
 
@@ -56,7 +56,7 @@ gantt
     DataSpace data migration preparation: pdc1, 2022-11-02, 10d
     section Open Source Community
     Samvera Community maintenance: osc1, 2022-11-10, 3d
-````
+```
 
 ### 2022/10/10 - 2022/11/01 🎃
 
@@ -151,7 +151,7 @@ gantt
     section Professional Development
     Product Owner Training - September Cohort: po1, 2022-09-06, 3d
     section OpenPublishing
-    Translation and theme support: ojs1, 2022-09-06, 4d 
+    Translation and theme support: ojs1, 2022-09-06, 4d
 ```
 
 ### 2022/08/15 - 2022/08/26 🍔
@@ -177,7 +177,6 @@ gantt
     section DataSpace Sunsetting
     Elements migration: 2022-08-15, 10d
 ```
-
 
 ### 2022/08/01 - 2022/08/12 🍉
 
