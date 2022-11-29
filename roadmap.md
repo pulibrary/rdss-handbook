@@ -39,6 +39,29 @@ gantt
 
 This section documents past RDSS sprints.  This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### 2022/11/16 - 2022/11/29 🍠
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/11/16 - 2022/11/29
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section TigerData
+    TigerData and MediaFlux project research: td1, 2022-11-16, 10d
+    TigerData Rails application and VMs: td2, 2022-11-16, 10d
+    section PDC_Describe
+    Finalize DataCite fixtures: pdc1, 2022-11-16, 10d
+    DataSpace data migration preparation: pdc 2022-11-16, 10d
+    section DataSpace Maintenance
+    Masters Thesis Collections: dsm1, 2022-11-16, 5d
+    Permissions troubleshooting and dissertation ark matching: dsm2, 2022-11-22, 3d
+    Dissertation loading: dsm1, 2022-11-28, 2d
+    section Cicognara
+    Harvard item count troubleshooting: cic1, 2022-11-21, 4d
+````
+
+
 ### 2022/11/02 - 2022/11/15 🌼
 
 ```mermaid
