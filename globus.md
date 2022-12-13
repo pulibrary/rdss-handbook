@@ -37,7 +37,7 @@ There are currently six collections:
 
 ## Princeton Data Commons (PDC) Globus Setup
 
-Our globus setup consists of four globus collections connected to two s3 buckets on two globus endpoints.
+Our globus setup consists of three globus collections connected to two s3 buckets on two globus endpoints.
 
 We are creating a separate Endpoint and EC2 instance to make sure that Upload does not impact download and vice versa. We also believe this might scale better into the future.
 
@@ -53,7 +53,6 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
          subgraph ec2_sp [" "]
             subgraph "PreCuration Globus Endpoint [pdc precuration]]"
                SG1[["Precuration Storage Gateway [pdc s3 storage gateway precuration]"]]-->B(["Pre Curation Collection (private) [Princeton Data Commons * Precuration]"])
-               SG1-->F(["Pre Curation Guest Collection (public read/write) [Princeton Data Commons * Upload]"]);
             end
          end
          end
@@ -115,12 +114,10 @@ Precurated guest collection - Should be restricted to any researcher
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
 
-- Each Mapped collection will have a guest collection attached to the corresponding mapped collection
+- Each Mapped post-curation collection will have a guest collection attached to the corresponding mapped collection.   This will give public read access to the post-curated data in Globus.
   - staging
-    - Princeton Data Commons Staging Upload
     - Princeton Data Commons Staging
   - prod
-    - Princeton Data Commons Upload
     - Princeton Data Commons
 
 ## Data management
