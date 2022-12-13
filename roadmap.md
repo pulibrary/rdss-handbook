@@ -40,6 +40,25 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### 2022/11/30 - 2022/12/13 🎄
+
+```mermaid
+gantt
+    title RDSS Sprint, 2022/11/30 - 2022/12/13
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    DataCite XML validation and fixture building: pdc1, 2022-11-30, 10d
+    Production data migration preparation: pdc2, 2022-11-30, 10d
+    Improvements to S3 file management: pdc3, 2022-11-30, 10d
+    Ingest form improvements: pdc3, 2022-11-30, 10d
+    section Open Publishing
+    Upgrade OJS to PHP 8.1: ojs1, 2022-11/30, 10d
+    section DataSpace Maintenance
+    HR Feed Implementation for Elements: dsm1, 2022-12-07, 5d
+````
+
 ### 2022/11/16 - 2022/11/29 🍠
 
 ```mermaid
