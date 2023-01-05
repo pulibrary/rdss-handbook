@@ -480,7 +480,7 @@ Choose one of the following for the name:
  1. Click on "Assign new Role"
    1. Choose Group
    1. Enter "Princeton Curators"
-   1. Choose "Activity Manager"
+   1. Choose "Administrator"
    1. Click "Add Role"
 
 ### Certificate Authority Updates
