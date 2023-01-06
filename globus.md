@@ -461,7 +461,7 @@ Choose one of the following for the name:
 
 ### Create a group for Curator Access
 
-1.  visit https://app.globus.org (and login as rdssglobs)
+1.  visit https://app.globus.org (and login as rdssglobus)
 1.  click on "Groups" on the left hand side
 1.  click on "Create New Group" on the left hand side
 1.  Type in "Princeton Curators" for the group name
