@@ -444,9 +444,7 @@ To register a Globus Endpoint do the following:
 ** this is a manual step **
 Choose one of the following for the name:
 
-- Princeton Data Commons Staging Upload
 - Princeton Data Commons Staging
-- Princeton Data Commons Upload
 - Princeton Data Commons
 
 1.  visit https://app.globus.org/collections?scope=administered-by-me
@@ -459,8 +457,31 @@ Choose one of the following for the name:
 1.  Click create collection
 1.  Click "Add Permissions - Share With"
 1.  Choose "Public"
-1.  Click write if this is an upload collection
 1.  Click Add Permissions
+
+### Create a group for Curator Access
+
+1.  visit https://app.globus.org (and login as rdssglobus)
+1.  click on "Groups" on the left hand side
+1.  click on "Create New Group" on the left hand side
+1.  Type in "Princeton Curators" for the group name
+1.  For each Curator invote them into the group
+      
+### Add the Curator Group as a manager of all the collections
+      
+  - Utilize one of the following for the `<name>`:
+    - Princeton Data Commons Staging Precuration
+    - Princeton Data Commons Staging Postcuration
+    - Princeton Data Commons Precuration
+    - Princeton Data Commons Postcuration
+ 1. visit https://app.globus.org (and login as rdssglobus)
+ 1. Find the collection you need to update in Collections
+ 1. Click on the Roles Tab
+ 1. Click on "Assign new Role"
+   1. Choose Group
+   1. Enter "Princeton Curators"
+   1. Choose "Administrator"
+   1. Click "Add Role"
 
 ### Certificate Authority Updates
 
