@@ -495,18 +495,18 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
 ```
 ### Rotating the client secret key
 1. visit [developers.globus.org](https://auth.globus.org/v2/web/developers) (and login as rdssglobus)
-   1. click on the ednpoint you would like to rotate the client secret for
+   1. click on the endpoint you would like to rotate the client secret for
    1. click on `Generate new Client Secret`
    1. copy the client secret to last pass or somewhere safe
 1. ssh onto the EC2 instance `ssh pulsys@<public IP>`
    1. run sudo globus-connect-server node set-configuration client_secret
    1. enter the new client secret when prompted
-   1. sudo systemctl restart gcs_manager_assistant
-   1. sudo systemctl restart gcs_manager
+   1. `sudo systemctl restart gcs_manager_assistant`
+   1. `sudo systemctl restart gcs_manager`
    1. globus-connect-server endpoint show (should now work)
 1. go back to [developers.globus.org](https://auth.globus.org/v2/web/developers) (and login as rdssglobus if not already logged in)
-   1. click on the enpoint you just rotated
-   1. Delete the client seccret that should now be invalidated
+   1. click on the endpoint you just rotated
+   1. Delete the client secret that should now be invalidated
 
 ### Creating AWS IAM Keys for Curators
 1. visit princeton.edu/aws and log in
