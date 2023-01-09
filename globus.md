@@ -499,7 +499,7 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
    1. click on `Generate new Client Secret`
    1. copy the client secret to last pass or somewhere safe
 1. ssh onto the EC2 instance `ssh pulsys@<public IP>`
-   1. run sudo globus-connect-server node set-configuration client_secret
+   1. run `sudo globus-connect-server node set-configuration client_secret`
    1. enter the new client secret when prompted
    1. `sudo systemctl restart gcs_manager_assistant`
    1. `sudo systemctl restart gcs_manager`
