@@ -2,6 +2,8 @@
 
 This is the handbook for the Research Data and Scholarship Services (RDSS) Team. It contains information about our team, projects, workflows, tools, and best practices.
 
+Uptime monitoring for our applicaitons: https://app.honeybadger.io/status_pages/B1JSo7
+
 ## Table of Contents
 
 - [About RDSS](about.md)
