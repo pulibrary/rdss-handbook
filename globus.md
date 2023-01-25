@@ -47,7 +47,7 @@ You must be on VPN to ssh onto the Globus EC2 instances
 1. On the EC2 server run `globus-connect-server endpoint show`.  This will display the `GCS Manager URL`
 
 ## Adding a new URL to Honey Badger
-A new URL once it is determined via the steps above can be added to Honey Bager by:
+A new URL once it is determined via the steps above can be added to Honey Badger by:
 1. visiting [Honey Badger](https://app.honeybadger.io/projects/103564/sites)
 1. click `Add uptime check`
 1. fill in the Name appropriately for the endpoint
