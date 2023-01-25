@@ -535,11 +535,15 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
 1. Click on the Users on the left hand side
 1. Click Add User in the top right
 1. Fill in User Name with `pdc-<netid>`
-1. choose `Access key - Programmatic access`
-1. Click `Next: Permissions`
+1. Click `Next`
 1. Choose `pdc-curator` as the group
-1. Click `Next: Tag`
+1. Click `Next`
 1. Fill in `RDOS` & `PDC` as tags
+1. Click `Next`
+1. find your new user `pdc-<netid>` and click on the name
+1. Click on `Security Credentail` tab
+1. Click `Create Access Key`
+1. Choose `Application running outside AWS`
 1. Click `Next`
 1. Show Private key and copy contents
 1. On a new browser tab, Add an SSH Key to LastPasss
