@@ -35,6 +35,27 @@ There are currently six collections:
 
 **Note:** There seem to be collections for PDC, DSS, Dataspace and the POSIX collection. We should figure out what these collections are all for...
 
+## Monitoring
+Our globus endpoints are being monitored by [Honey Badger](https://app.honeybadger.io/projects/103564/sites)
+Additional sites can be configured for monitoring by adding the sites `GCS Manager URL` to honey badger.
+
+### Determining the `GCS Manager URL`
+You must be on VPN to ssh onto the Globus EC2 instances
+1. To access the aws console first got to https://princeton.edu/aws and log in
+1. Access the [EC2 instances](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:search=:pdc;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false) to view the public IP address for the endpoint you would like to monitor
+1. SSH onto the EC2 instance by runnning `pulsys@<public ip address>`
+1. On the EC2 server run `globus-connect-server endpoint show`.  This will display the `GCS Manager URL`
+
+## Adding a new URL to Honey Badger
+A new URL once it is determined via the steps above can be added to Honey Badger by:
+1. visiting [Honey Badger](https://app.honeybadger.io/projects/103564/sites)
+1. click `Add uptime check`
+1. fill in the Name appropriately for the endpoint
+1. fill in the url with `<GCS Manager URL>/api/info`
+1. Choose `Page includes string` from match type
+1. Fill in Match with `"code":"success"`
+1. Click Save Changes 
+
 ## Princeton Data Commons (PDC) Globus Setup
 
 Our globus setup consists of three globus collections connected to two s3 buckets on two globus endpoints.
