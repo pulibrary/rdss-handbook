@@ -39,7 +39,7 @@ There are currently six collections:
 Our globus endpoints are being monitored by [Honey Badger](https://app.honeybadger.io/projects/103564/sites)
 Additional sites can be configured for monitoring by adding the sites `GCS Manager URL` to honey badger.
 
-### Detrmining the `GCS Manager URL`
+### Determining the `GCS Manager URL`
 You must be on VPN to ssh onto the Globus EC2 instances
 1. To access the aws console first got to https://princeton.edu/aws and log in
 1. Access the [EC2 instances](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:search=:pdc;v=3;$case=tags:true%5C,client:false;$regex=tags:false%5C,client:false) to view the public IP address for the endpoint you would like to monitor
