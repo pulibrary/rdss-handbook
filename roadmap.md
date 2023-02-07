@@ -40,6 +40,37 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### 2023/01/25 - 2023/02/07 🎠 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/01/25 - 2023/02/07
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    DataSpace data migration and fixtures enhancement: pdc1, 2023-01-25, 10d
+    Improvements to S3 file retrieval: pdc3, 2023-01-25, 10d
+    Ingest form improvements: pdc4, 2023-01-25, 10d
+    Ark ID validation/handling improvements: pdc5, 2023-01-25, 10d
+    Globus onboarding in PRDS: pdc6, 2023-01-25, 3d
+    section DataSpace Maintenance
+    HR Feed Implementation for Elements: dsm1, 2023-01-25, 8d
+    DataSpace preservation workflow development and testing: dsm2, 2023-01-25, 10d
+    Dissertation loading, January 2023: dsm2, 2023-02-02, 4d
+    New Masters Theses Collection: dsm3, 2023-02-02, 2d
+    section Security
+    LastPass secrets rotation: sec1, 2023-01-25, 10d
+    section Samvera
+    Samvera Core Components Maintenance: sam1, 2023-01-25, 10d
+    section Organizational
+    Annual self appraisals and goals: org1, 2023-01-25, 10d
+```
+### 2023/01/11 - 2023/01/24 🕯
+
+### 2022/12/28 - 2023/01/10 🧃
+
+### 2022/12/14 - 2022/12/27 🍪
+
 ### 2022/11/30 - 2022/12/13 🎄
 
 ```mermaid
