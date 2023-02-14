@@ -2,9 +2,10 @@
 
 When a new staff member joins RDSS here are some tasks that need to happen for them to have the right access:
 
+1. On their development machine, confirm that the user account has admin access, and that [homebrew](https://brew.sh/) can be installed. (Laptops configured by PUL will typically give the user admin access, but this is not the default for OIT laptops.)
 1. Add github account to `pulibrary` organization.
-2. Add their account to [the shared `.gitmessage`](https://github.com/pulibrary/pul-the-hard-way/blob/main/gitmessage.md)
-3. Set up AWS permissions for RDSS S3 access (see instructions below)
+1. Add their account to [the shared `.gitmessage`](https://github.com/pulibrary/pul-the-hard-way/blob/main/gitmessage.md)
+1. Set up AWS permissions for RDSS S3 access (see instructions below)
 
 ## AWS Setup for S3 access
 
