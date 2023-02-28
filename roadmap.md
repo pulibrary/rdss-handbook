@@ -67,6 +67,29 @@ gantt
 ```
 ### 2023/01/11 - 2023/01/24 🕯
 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/01/11 - 2023/01/24
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    Curator workflow improvements: pdc1, 2023-01-11, 10d
+    Indexing file information to PDC Discovery: pdc2, 2023-01-11, 10d
+    Globus training for new curators: pdc3, 2023-01-18, 2d
+    Provenance log UI enhancements: pdc4, 2023-01-11, 10d
+    Email notification system: pdc5, 2023-01-11, 10d
+    section PDC_Discovery
+    Deduplication of indexing between DataSpace and PDC Describe: pdd1, 2023-01-11, 10d
+    Indexing file information to PDC Discovery: pdd2, 2023-01-11, 10d
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-01-11, 10d
+    section DataSpace Maintenance
+    Serials collection audit: dsp1, 2023-01-16, 5d
+    ThesisCentral QA maintenance: dsp2, 2023-01-11, 10d
+    section Open Source Community
+    Samvera Community maintenance: osc1, 2023-01-11, 10d
+```
+
 ### 2022/12/28 - 2023/01/10 🧃
 
 ```mermaid
