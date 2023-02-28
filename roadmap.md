@@ -92,6 +92,27 @@ gantt
 
 ### 2022/12/28 - 2023/01/10 🧃
 
+```mermaid
+gantt
+    title RDSS Sprint, 2022/12/28 - 2023/01/10
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    Email notifications system: pdc1, 2022-12-28, 10d
+    Add licenses to migration specs: pdc2, 2022-12-28, 3d
+    User license acceptance workflow: pdc3, 2023-01-02, 4d
+    Provenance log enhancements: pdc4, 2022-12-28, 5d
+    section Open Publishing
+    Upgrade OJS to PHP 8.1: ojs1, 2022-12-28, 10d
+    section DataSpace Maintenance
+    Matching arks to dissertation XML: dsp1, 2022-12-28, 4d
+    OAR usage metrics report generation: dsp2, 2023-01-02, 3d
+    IP restriction fixes for 693 Alexander: dsp3, 2023-01-05, 3d    
+    section Cicognara
+    Static site theming: cic1, 2023-01-02, 2d
+```
+
 ### 2022/12/14 - 2022/12/27 🍪
 
 ```mermaid
@@ -127,7 +148,7 @@ gantt
     Improvements to S3 file management: pdc3, 2022-11-30, 10d
     Ingest form improvements: pdc3, 2022-11-30, 10d
     section Open Publishing
-    Upgrade OJS to PHP 8.1: ojs1, 2022-11/30, 10d
+    Upgrade OJS to PHP 8.1: ojs1, 2022-11-30, 10d
     section DataSpace Maintenance
     HR Feed Implementation for Elements: dsm1, 2022-12-07, 5d
 ````
