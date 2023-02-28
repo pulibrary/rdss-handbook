@@ -115,6 +115,25 @@ gantt
 
 ### 2022/12/14 - 2022/12/27 🍪
 
+```mermaid
+gantt
+    title RDSS Sprint, 2022/12/14 - 2022/12/27
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    DataSpace data migration and fixtures enhancement: pdc1, 2022-12-14, 10d
+    Indexing to PDC Discovery: pdc2, 2022-12-14, 10d
+    Ingest form UI enhancements: pdc3, 2022-12-14, 10d
+    Adding funders to DataCite: pdc4, 2022-12-14, 10d
+    section Open Publishing
+    Upgrading PHP: ojs1, 2022-12-14, 10d
+    section DataSpace Maintenance
+    Matching arks to dissertation XML: dsp1, 2022-12-14, 4d
+    section Cicognara
+    Static site theming: cic1, 2022-12-19, 4d
+```
+
 ### 2022/11/30 - 2022/12/13 🎄
 
 ```mermaid
