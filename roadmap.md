@@ -166,7 +166,7 @@ gantt
     TigerData Rails application and VMs: td2, 2022-11-16, 10d
     section PDC_Describe
     Finalize DataCite fixtures: pdc1, 2022-11-16, 10d
-    DataSpace data migration preparation: pdc 2022-11-16, 10d
+    DataSpace data migration preparation: pdc, 2022-11-16, 10d
     section DataSpace Maintenance
     Masters Thesis Collections: dsm1, 2022-11-16, 5d
     Permissions troubleshooting and dissertation ark matching: dsm2, 2022-11-22, 3d
