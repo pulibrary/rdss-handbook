@@ -1,6 +1,6 @@
 # Work Cycles
 
-The RDSS team's work is structured in 2-week cycles. These cycles begin with a cycle planning meeting, and end with a cycle wrap-up and retrospective. See [Meetings](meetings.md) for information on how these meetings run.
+The RDSS team's work is structured in 2-week cycles. These cycles begin with a cycle planning meeting, and end with a cycle wrap-up. See [Meetings](meetings.md) for information on how these meetings run.  We also have a bi-weekly retrospective meeting, see [Retrospectives](retros.md) for information on these.
 
 ## Norms
 
@@ -23,12 +23,11 @@ The RDSS team's work is structured in 2-week cycles. These cycles begin with a c
 1. Any new tickets that must be added to the board during the work cycle (e.g., for production emergencies) gets a label of `unplanned work`. [Our goal is to keep unplanned work to a minimum.](https://www.pagerduty.com/blog/5-ways-unplanned-work-disrupting-business/)
 2. The mid-workcycle planning meeting is a chance to check our progress and reflect. Are we on track to finish what we thought we'd finish? Or do we need to adjust expectations?
 
-### Work Cycle Wrap-up and Retro
+### Work Cycle Wrap-up
 
 1. We close out any tickets that can be closed. If any tickets are still open, we decide whether to move them to the next sprint.
 2. We record how many story points we completed in this work cycle and how many of them were unplanned work.
 3. We close the sprint and get ready to start the next one.
-4. We have a retrospective about the work cycle and we pick one thing that we want to do to improve our process next time.
 
 ## Labels
 
