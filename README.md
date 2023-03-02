@@ -11,6 +11,7 @@ Uptime monitoring for our applications: https://app.honeybadger.io/status_pages/
 - [RDSS Applications](applications.md)
 - [Work Cycles](work_cycles.md)
 - [Meetings](meetings.md)
+- [Retrospectives](retros.md)
 - [Release Process](release_process.md)
 - [Product Owners](product_owners.md)
 - [Roadmap](roadmap.md)
