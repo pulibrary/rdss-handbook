@@ -4,6 +4,11 @@
 - Most PRs (beyond documentation changes) should be deployed to `production` after merge to get features out to users.
 - Most redeployments will also be new versioned releases, but a release is not strictly necessary for every redeployment.
 
+### Release schedule
+
+- Software releases are made in advance of Feature Refinement meetings with Product Owners.  This is managed through an automated reminder on the RDSS team Slack channel the morning prior.  Whoever acknowledges the reminder first is taking point on putting out the release by doing so.  Any additional features/bug fixes/code work that happens after the release is not guaranteed as a subject of review during the next day's meeting. 
+- As much as possible, software releases of completed features and bug fixes are completed the day before expected demos, such as during the RDOS Repository Roundup meeting or larger public demos.  The team self manages in terms of reminding each other and taking point on performing these releases/being aware of the state of the software in the leadup to the demo.
+
 ### Release
 
 #### Release pre-requisites
