@@ -40,6 +40,51 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/04/05 - 2023/04/18 🐞
+```mermaid
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
+    Ingest status bar improvements: pdc3, 2023-04-05, 5d
+    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    section PDC_Discovery
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
+    section Cicognara
+    Static site changes: cic1, 2023-04-05, 8d
+    section DataSpace Maintenance
+    Dissertation loading: dsp1, 2023-04-11, 2d
+    Expand ETD Transformer for new dissertation workflows: dsp2, 2023-04-05, 5d
+    ThesisCentral emergency work (database and file linking): dsp3, 2023-04-05, 5d
+    section TigerData
+    MediaFlux documentation for local development: td1, 2023-04-05, 3d
+    Refactoring Ruby code from TigerData demo: td2, 2023-04-05, 3d
+```
+
+### 2023/03/22 - 2023/04/04 🕸️ 
+```mermaid
+
+```
+
+### 2023/03/08 - 2023/03/21 🕷️ 
+```mermaid
+
+```
+
+### 2023/02/22 - 2023/03/07 ☔ 
+```mermaid
+
+```
+
+### 2023/02/08 - 2023/02/21 💝 
+```mermaid
+
+```
+
 ### 2023/01/25 - 2023/02/07 🎠 
 ```mermaid
 gantt
@@ -65,6 +110,7 @@ gantt
     section Organizational
     Annual self appraisals and goals: org1, 2023-01-25, 10d
 ```
+
 ### 2023/01/11 - 2023/01/24 🕯
 
 ```mermaid
