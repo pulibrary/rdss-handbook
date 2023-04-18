@@ -111,3 +111,29 @@ create a cron job to run daily with the following
 # m h  dom mon dow   command
 25 5 * * * /usr/bin/gsutil rsync -ru /var/backups/postgresql gs://google-bucket-name > ~/logs/gsutil.log 2>&1
 ```
+
+## Restore files
+
+The following files are created:
+
+* `pg_globals_{YYYY-MM-DDT00:00:00-00}.sql`: definition of roles and tablespaces, dumped with
+  `pg_dumpall -g`. This file is restored with `psql`.
+* `ident_file_{YYYY-MM-DDT00:00:00-00}.out`: the full contents of the `pg_ident.conf` file,
+  usually located in the data directory.
+* `hba_file_{YYYY-MM-DDT00:00:00-00}.out`: the full contents of the `pg_hba.conf` file, usually
+  located in the data directory.
+* `{thesis-prod-db}_{YYYY-MM-DDT00:00:00-00}.createdb.sql`: an SQL file containing the definition of the
+  database and parameters set at the database or "role in database" level. It
+  is mostly useful when using a version of `pg_dump` older than 11. It is
+  restored with `psql`.
+* `{thesis-prod-db}_{YYYY-MM-DDT00:00:00-00}.sql`: the dump of the database,
+  `sql` and must be restored with `psql`.
+
+When checksum are computed, for each file described above, a text file of the
+same name with a suffix naming the checksum algorithm is produced.
+
+
+To sum up, when restoring:
+
+1. Create the roles and tablespaces by executing `pg_globals_{YYYY-MM-DDT00:00:00-00}.sql` with `psql`.
+2. Create the database with `{thesis-prod-db}_{YYYY-MM-DDT00:00:00-00}.createdb.sql` if necessary.
