@@ -76,12 +76,16 @@ gantt
     dateformat YYYY-MM-DD
     excludes    weekends
     section PDC_Describe
-    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
-    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
-    Ingest status bar improvements: pdc3, 2023-04-05, 5d
-    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    PPPL specs finalizing and loading: pdc1, 2023-03-22, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-03-22, 10d
     section PDC_Discovery
-    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
+    Add OSTI reporting endpoint specs finalizing and loading: pdcd1, 2023-03-27, 5d 
+    section DataSpace Maintenance
+    New dissertation loading process: dsm1, 2023-03-22, 5d  
+    section ImageCat
+    ImageCat Rails application development: imc1, 2023-03-22, 10d
+    section IT Fellowship
+    IT Fellowship interviews: itf1, 2023-03-22, 3d
 ```
 
 ### 2023/03/08 - 2023/03/21 🕷️ 
@@ -91,29 +95,31 @@ gantt
     axisFormat  %Y-%m-%dd
     dateformat YYYY-MM-DD
     excludes    weekends
-    section PDC_Describe
-    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
-    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
-    Ingest status bar improvements: pdc3, 2023-04-05, 5d
-    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
-    section PDC_Discovery
-    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
+    section RDSS Retreat 
+    Retreat: rdss1, 2023-03-13, 1d
+    section Professional Development 
+    Code4Lib 2023: c4l1, 2023-03-14, 4d
+    section IT Fellowship
+    IT Fellowship interviews: itf1, 2023-03-20, 2d
 ```
 
 ### 2023/02/22 - 2023/03/07 ☔ 
 ```mermaid
 gantt
-    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    title RDSS Sprint, 2023/02/22 - 2023/03/07
     axisFormat  %Y-%m-%dd
     dateformat YYYY-MM-DD
     excludes    weekends
     section PDC_Describe
-    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
-    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
-    Ingest status bar improvements: pdc3, 2023-04-05, 5d
-    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    PPPL specs finalizing and loading: pdc1, 2023-02-22, 10d
+    File upload improvements: pdc2, 2023-02-22, 10d
+    Describe form enhancements (ROR for funders and pause/notification): pdc3, 2023-02-22, 10d
     section PDC_Discovery
-    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
+    Add OSTI reporting endpoint specs finalizing and loading: pdc1, 2023-02-22, 10d       
+    section TigerData
+    Test MediaFlux local development: td2, 2023-02-22, 5d
+    section Professional Development
+    Code4Lib Preparation: td2, 2023-02-27, 5d
 ```
 
 ### 2023/02/08 - 2023/02/21 💝 
