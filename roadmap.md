@@ -59,7 +59,10 @@ gantt
     section DataSpace Maintenance
     Dissertation loading: dsp1, 2023-04-11, 2d
     Expand ETD Transformer for new dissertation workflows: dsp2, 2023-04-05, 5d
-    ThesisCentral emergency work (database and file linking): dsp3, 2023-04-05, 5d
+    section ThesisCentral Emergency Work
+    Database emergency service restore: tc1, 2023-04-05, 5d
+    Pre-emergency restore service re-linking: tc2, 2023-04-05, 5d
+    Database EC2 sustainable restore and cutover: tc3, 2023-04-10, 5d
     section TigerData
     MediaFlux documentation for local development: td1, 2023-04-05, 3d
     Refactoring Ruby code from TigerData demo: td2, 2023-04-05, 3d
@@ -67,22 +70,77 @@ gantt
 
 ### 2023/03/22 - 2023/04/04 🕸️ 
 ```mermaid
-
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
+    Ingest status bar improvements: pdc3, 2023-04-05, 5d
+    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    section PDC_Discovery
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
 ```
 
 ### 2023/03/08 - 2023/03/21 🕷️ 
 ```mermaid
-
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
+    Ingest status bar improvements: pdc3, 2023-04-05, 5d
+    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    section PDC_Discovery
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
 ```
 
 ### 2023/02/22 - 2023/03/07 ☔ 
 ```mermaid
-
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
+    Ingest status bar improvements: pdc3, 2023-04-05, 5d
+    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    section PDC_Discovery
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
 ```
 
 ### 2023/02/08 - 2023/02/21 💝 
 ```mermaid
-
+gantt
+    title RDSS Sprint, 2023/02/08 - 2023/02/21
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-02-08, 10d
+    Improvements to S3 file upload and retrieval: pdc3, 2023-02-08, 10d
+    Show page improvements: pdc3, 2023-02-08, 10d
+    section DataSpace Maintenance
+    Dissertation loading, January 2023: dsm1, 2023-02-08, 4d
+    Enable emailing service in hosted Elements: dsm2, 2023-02-13, 5d    
+    section TigerData
+    TigerData project review: td1, 2023-02-08, 3d
+    MediaFlux Developer 101 Training: td2, 2023-02-20, 5d
+    Generate baseline Rails application: td3, 2023-02-08, 10d
+    CAS authentication on TigerData app: td4, 2023-02-13, 5d
+    TigerData application deployment: td4, 2023-02-08, 10d
+    section Security
+    OAR secrets rotation: sec1, 2023-02-08, 5d
+    OAWaiver secrets rotation: sec1, 2023-02-08, 5d
+    section Samvera
+    Samvera Core Components Maintenance: sam1, 2023-02-08, 10d  
 ```
 
 ### 2023/01/25 - 2023/02/07 🎠 
