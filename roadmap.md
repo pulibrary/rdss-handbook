@@ -40,6 +40,115 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/04/05 - 2023/04/18 🐞
+```mermaid
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-04-05, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-04-05, 10d
+    Ingest status bar improvements: pdc3, 2023-04-05, 5d
+    Downloadable report for PPPL/OSTI: pdc4, 2023-04-05, 10d
+    section PDC_Discovery
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-04-05, 10d
+    section Cicognara
+    Static site changes: cic1, 2023-04-05, 8d
+    section DataSpace Maintenance
+    Dissertation loading: dsp1, 2023-04-11, 2d
+    Expand ETD Transformer for new dissertation workflows: dsp2, 2023-04-05, 5d
+    section ThesisCentral Emergency Work
+    Database emergency service restore: tc1, 2023-04-05, 5d
+    Pre-emergency restore service re-linking: tc2, 2023-04-05, 5d
+    Database EC2 sustainable restore and cutover: tc3, 2023-04-10, 5d
+    section TigerData
+    MediaFlux documentation for local development: td1, 2023-04-05, 3d
+    Refactoring Ruby code from TigerData demo: td2, 2023-04-05, 3d
+```
+
+### 2023/03/22 - 2023/04/04 🕸️ 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-03-22, 10d
+    Feature to import DataSpace file payloads: pdc2, 2023-03-22, 10d
+    section PDC_Discovery
+    Add OSTI reporting endpoint specs finalizing and loading: pdcd1, 2023-03-27, 5d 
+    section DataSpace Maintenance
+    New dissertation loading process: dsm1, 2023-03-22, 5d  
+    section ImageCat
+    ImageCat Rails application development: imc1, 2023-03-22, 10d
+    section IT Fellowship
+    IT Fellowship interviews: itf1, 2023-03-22, 3d
+```
+
+### 2023/03/08 - 2023/03/21 🕷️ 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/04/05 - 2023/04/18
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section RDSS Retreat 
+    Retreat: rdss1, 2023-03-13, 1d
+    section Professional Development 
+    Code4Lib 2023: c4l1, 2023-03-14, 4d
+    section IT Fellowship
+    IT Fellowship interviews: itf1, 2023-03-20, 2d
+```
+
+### 2023/02/22 - 2023/03/07 ☔ 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/02/22 - 2023/03/07
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-02-22, 10d
+    File upload improvements: pdc2, 2023-02-22, 10d
+    Describe form enhancements (ROR for funders and pause/notification): pdc3, 2023-02-22, 10d
+    section PDC_Discovery
+    Add OSTI reporting endpoint specs finalizing and loading: pdc1, 2023-02-22, 10d       
+    section TigerData
+    Test MediaFlux local development: td2, 2023-02-22, 5d
+    section Professional Development
+    Code4Lib Preparation: td2, 2023-02-27, 5d
+```
+
+### 2023/02/08 - 2023/02/21 💝 
+```mermaid
+gantt
+    title RDSS Sprint, 2023/02/08 - 2023/02/21
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC_Describe
+    PPPL specs finalizing and loading: pdc1, 2023-02-08, 10d
+    Improvements to S3 file upload and retrieval: pdc3, 2023-02-08, 10d
+    Show page improvements: pdc3, 2023-02-08, 10d
+    section DataSpace Maintenance
+    Dissertation loading, January 2023: dsm1, 2023-02-08, 4d
+    Enable emailing service in hosted Elements: dsm2, 2023-02-13, 5d    
+    section TigerData
+    TigerData project review: td1, 2023-02-08, 3d
+    MediaFlux Developer 101 Training: td2, 2023-02-20, 5d
+    Generate baseline Rails application: td3, 2023-02-08, 10d
+    CAS authentication on TigerData app: td4, 2023-02-13, 5d
+    TigerData application deployment: td4, 2023-02-08, 10d
+    section Security
+    OAR secrets rotation: sec1, 2023-02-08, 5d
+    OAWaiver secrets rotation: sec1, 2023-02-08, 5d
+    section Samvera
+    Samvera Core Components Maintenance: sam1, 2023-02-08, 10d  
+```
+
 ### 2023/01/25 - 2023/02/07 🎠 
 ```mermaid
 gantt
@@ -65,6 +174,7 @@ gantt
     section Organizational
     Annual self appraisals and goals: org1, 2023-01-25, 10d
 ```
+
 ### 2023/01/11 - 2023/01/24 🕯
 
 ```mermaid
