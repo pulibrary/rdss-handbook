@@ -31,6 +31,15 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
+- DataSpace Embargo Lifter
+  - A command-line script that executes as a scheduled cronjob on the DataSpace production server, to audit all embargoed items in DataSpace and lift embargoes if they have expired.  Runs at 8am EST Monday - Friday and sends an email to select members of RDSS and Special Collections with a report on which items have had embargoes lifted.
+  - Status: In production
+  - Public URL: None
+  - Code Base: https://github.com/pulibrary/dataspace_embargo_lifter
+  - Product Owner: Lynn Durgin
+  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Analytics: none
+  - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Electronic Theses and Dissertations Process
   - Data transformation and loading processes managed by Library IT to support Special Collections annual review and publication of electronic theses, and quarterly-ish publication of dissertations in DataSpace
   - Documentation: [Dissertation import](https://pulibrary.github.io/etd_transformer/process-dissertations.html) and [Senior Theses import](https://pulibrary.github.io/etd_transformer/process-theses.html)
