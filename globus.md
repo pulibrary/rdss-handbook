@@ -559,3 +559,63 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
 1. Click Invite
 1. Click Save
 1. Contact the Curator to let them know about the key
+
+### Increasing size of Drive
+
+ 1. Run the following command to list all volumes with volume id and name below:
+    ```bash
+    aws ec2 describe-instances --query 'Reservations[*].Instances[*].[Tags[?Key==`Name`].Value,InstanceId,BlockDeviceMappings[*].Ebs.VolumeId]' --output text
+    ```
+    you will see results with the following:
+
+    ```bash
+    i-043b67b2b215d180b
+    prds-dataspace-endpoint1
+    vol-0c02aca34398ea8e5   vol-0e8522f82fd721b25
+    i-03d6cd75ba1fca824
+    ...
+    ...
+    ```
+
+ 2. Select the volume you wish to create a snapshot of in the event something goes wrong. Then create a snapshot of it with the following. In my example below I will create a snapshot of `prds-dataspace-endpoint1` with the volume ID `vol-0c02aca34398ea8e5` and instance ID of `i-043b67b2b215d180b`
+
+   ```bash
+   aws ec2 create-snapshot --volume-id vol-0c02aca34398ea8e5 --description "This is the prds-dataspace-endpoint root volume snapshot"
+   ```
+
+ 3. Modify the volume of your instance. We will continue to use the VM in step two. Our goal is to resize it to have 100GB. We do that with the following (this can take a while so grab some :coffee: ):
+    ```bash
+    aws ec2 modify-volume --volume-type gp2 --size 100 --volume-id vol-0c02aca34398ea8e5 
+    ```
+
+ 1. Check to see if the results if your server has a larger disk size by running the following:
+
+   ```bash
+   sudo lsblk
+   ```
+   You will see results similar to this:
+   ```bash
+   NAME         MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+   loop0          7:0    0 24.4M  1 loop /snap/amazon-ssm-agent/6312
+   loop1          7:1    0 25.1M  1 loop /snap/amazon-ssm-agent/5656
+   loop2          7:2    0 55.6M  1 loop /snap/core18/2714
+   loop3          7:3    0 63.3M  1 loop /snap/core20/1852
+   loop4          7:4    0 63.3M  1 loop
+   loop6          7:6    0 91.9M  1 loop /snap/lxd/24061
+   loop7          7:7    0 55.6M  1 loop /snap/core18/2721
+   loop8          7:8    0 49.9M  1 loop /snap/snapd/18357
+   loop9          7:9    0 91.8M  1 loop /snap/lxd/23991
+   loop10         7:10   0 63.3M  1 loop /snap/core20/1828
+   loop11         7:11   0 49.9M  1 loop /snap/snapd/18596
+   nvme0n1      259:0    0  100G  0 disk
+   ├─nvme0n1p1  259:1    0  7.9G  0 part /
+   ├─nvme0n1p14 259:2    0    4M  0 part
+   └─nvme0n1p15 259:3    0  106M  0 part /boot/efi
+   ```
+ 5. Expand the volume so the Operating System can use it with the following command (note the space between the ones which matter):
+   ```bash
+   sudo growpart /dev/nvme0n1 1
+   ```
+
+  6. You can now delete your snapshot in step 1 if successful.
+   
