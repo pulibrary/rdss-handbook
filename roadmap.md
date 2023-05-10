@@ -4,36 +4,21 @@ Below is the current roadmap and timeline for RDSS, summer 2022 through January 
 
 ```mermaid
 gantt
-    title RDSS 2022 - 2023 Roadmap
+    title RDSS 2023
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC_Decribe
-    Submission/curation workflow: pd1, 2022-08-01, 90d
-    Metadata schema, file submission: pd2, 2022-08-01, 90d
-    Research Data content reconciliation/migration: pd3, 2022-08-01, 90d
-    Globus implementation: pd4, 2022-08-01, 60d
-    Curation station integration: pd5, 2023-02-15, 45d
-    PDC Describe data migration and review: pd6, 2023-02-01, 60d
-    PDC Describe launch tasks: pd6, 2023-04-01, 30d
-    section DSpace Support
-    2022 Thesis migration: dsp1, 2022-08, 30d
-    DataSpace maintenance: dsp2, 2022-08, 2023-07
-    OAR maintenance: dsp2, 2022-08, 2023-07
-    section Dataspace Sunsetting
-    Hosted Elements migration: ds1, 2022-08-01, 90d
-    Working with embargoes in Figgy: ds2, 2022-11, 60d
-    Migrating Library PDFs to Figgy: ds3, 2023-06, 60d
-    Migrating Dissertations to Figgy/Orangelight: ds4, 2023-06, 60d
-    Migrating Theses to Figgy/Orangelight: ds5, 2023-06, 60d
-    PPPL OSTI reporting: ds6, 2023-01,60d
-    section POAPP
-    OJS launch: po1, 2022-09, 15d
-    OMP launch: po2, 2022-12, 15d
+    MVP launch: pd1,2023-05-01,60d
+    Post-launch support: pd2,2023-07-01,92d
+    PDC post-MVP features: pd3,2023-10-01,31d
     section TigerData
-    Research spike: td1, 2022-11, 30d
-    TigerData web application development: td2, 2023-01, 180d
-    section Open Source Community Work
-    N/A: os1, 2022-08, 2023-07
+    TigerData training and MVP: td1,2023-07-01,92d
+    TigerData MVP: td2,2023-11-01,61d
+    section DSpace Support
+    2023 Thesis import: dsp1,2023-06-18,45d
+    Sunsetting DSpace recommendations: dsp2,2023-05-01,100d
+    DataSpace maintenance: dsp3,2023-05-01,245d
+    OAR maintenance: dsp4,2023-05-01,245d
 ```
 
 ## Past Sprints
