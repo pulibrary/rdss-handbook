@@ -7,7 +7,7 @@ gantt
     title RDSS 2023
     axisFormat  %Y-%m
     dateformat YYYY-MM
-    section PDC_Decribe
+    section PDC
     MVP launch: pd1,2023-05-01,60d
     Post-launch support: pd2,2023-07-01,92d
     PDC post-MVP features: pd3,2023-10-01,31d
@@ -19,6 +19,9 @@ gantt
     Sunsetting DSpace recommendations: dsp2,2023-05-01,100d
     DataSpace maintenance: dsp3,2023-05-01,245d
     OAR maintenance: dsp4,2023-05-01,245d
+    section Open Publishing
+    OJS maintenance: op1,2023-05-01,245d
+    OMP maintenance: op2,2023-05-01,245d
 ```
 
 ## Past Sprints
