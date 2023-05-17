@@ -28,6 +28,32 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/05/02 - 2023/05/16 🐛
+```mermaid
+gantt
+    title RDSS Sprint, 2023/05/02 - 2023/05/16
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC
+    PPPL specs finalizing and reloading: pdc1, 2023-05-02, 10d
+    Improvements to file import process for migration: pdc2, 2023-05-02, 10d
+    Ingestion form and input formatting improvements: pdc3, 2023-05-02, 10d
+    Migration specs enhancements (ORCID IDs, related DOIs, etc): pdc4, 2023-05-02, 10d
+    Preservation research and development: pdc5, 2023-05-02, 10d
+    Indexing records to PDC Discovery from Describe: pdd3, 2023-05-02, 10d
+    section DSpace Maintenance
+    DataSpace file upload issues: dsp1, 2023-05-02, 4d
+    OAR file upload issues: dsp2, 2023-05-02, 4d
+    Elements vendor work cleanup: dsp3, 2023-05-08, 4d
+    Mudd Reading Room machines support: dsp4, 2023-05-10, 5d
+    DSpace secrets review and rotation: dsp5, 2023-05-02, 10d
+    section Open Publishing
+    Publishing workflow troubleshooting: op1, 2023-05-02, 4d
+    section Professional Development
+    Samvera Virtual Connect: td1, 2023-05-02, 2d
+```
+
 ### RDSS Sprint, 2023/04/05 - 2023/04/18 🐞
 ```mermaid
 gantt
