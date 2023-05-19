@@ -7,11 +7,7 @@
 ## The Monitoring Systems
 1. [Honeybadger](https://app.honeybadger.io) - for capturing exceptions in a running application. This makes it easier for us to fix bugs, because it gives us a stack trace and lots of context about how the exception occurred. We sometimes use honeybadger uptime monitoring too, but it is very simple (just a binary Up or Down) and only works for systems that are available on the open Internet. New staff need to be added to Honeybadger manually. 
 2. [DataDog](https://app.datadoghq.com) - for Application Performance Monitoring (APM). This service can be expensive, so we only turn it on as needed, and [we follow practices to keep costs down](https://github.com/pulibrary/pul-it-handbook/blob/main/services/datadog.md#tips-for-controlling-costs). However, it can be invaluable for diagnosing performance issues.
-<<<<<<< HEAD
 3. [Sensu](https://lib-monitor.princeton.edu/) - We want to use Sensu for most system monitoring, e.g., disk space, application responsiveness, TLS cert expiration, generally whether the application is running as expected. We are in the process of migrating some monitoring tasks from Honeybadger and DataDog to Sensu.
-=======
-3. [Sensu](https://lib-monitor.princeton.edu/) - We want to use Sensu for most system monitoring, e.g., disk space, application responsiveness, whether the application is running as expected. We are in the process of migrating some monitoring tasks from Honeybadger and DataDog to Sensu.
->>>>>>> 69a7e21a63c02851742c32a19e587e3479613a53
 
 **Note**: To log into Sensu, use your Princeton SSO credentials, and then check your 2-factor device. It requires 2-factor auth but the login process doesn't indicate this well.
 
