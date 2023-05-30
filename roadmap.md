@@ -28,6 +28,28 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/05/17 - 2023/05/30 🏕️
+```mermaid
+gantt
+    title RDSS Sprint, 2023/05/17 - 2023/05/30
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes    weekends
+    section PDC
+    Ingest form updates: pdc1, 2023-05-17, 10d
+    Preservation workflow: pdc2, 2023-05-17, 10d
+    Large file upload improvements: pdc3, 2023-05-17, 10d
+    Uptime and performance monitoring: pdc4, 2023-05-17, 10d
+    section DataSpace Maintenance
+    Bitstream download fixes: dsp1, 2023-05-22, 5d
+    Sunsetting group work: dsp1, 2023-05-17, 10d
+    section All Hands
+    Poster and team meetings prep: ah1, 2023-05-17, 10d
+    section TigerData
+    Search committee work: td1, 2023-05-17, 10d
+```
+
+
 ### RDSS Sprint, 2023/05/02 - 2023/05/16 🐛
 ```mermaid
 gantt
