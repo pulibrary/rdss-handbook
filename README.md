@@ -7,15 +7,16 @@ Uptime monitoring for our applications: https://app.honeybadger.io/status_pages/
 ## Table of Contents
 
 - [About RDSS](about.md)
-- [Onboarding](onboarding.md)
-- [RDSS Applications](applications.md)
-- [Monitoring](monitoring.md)
-- [Work Cycles](work_cycles.md)
+- [Applications](applications.md)
+- [Incidents and Outages](outages.md)
 - [Meetings](meetings.md)
-- [Retrospectives](retros.md)
-- [Release Process](release_process.md)
+- [Monitoring](monitoring.md)
+- [Onboarding](onboarding.md)
 - [Product Owners](product_owners.md)
+- [Release Process](release_process.md)
+- [Retrospectives](retros.md)
 - [Roadmap](roadmap.md)
+- [Work Cycles](work_cycles.md)
 
 ### Infrastructure
 
