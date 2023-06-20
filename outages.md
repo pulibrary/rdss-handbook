@@ -11,6 +11,12 @@ If, on the other hand, it takes a little longer to fix the issue, but we all lea
 
 ## Process
 
+### Roles
+1. The incident point person
+2. The note taker, who will also schedule the post-mortem meeting
+3. An IT manager, whose job is to communicate to external stakeholders
+4. Supporting cast -- anyone who helps to resolve the problem 
+
 ### During the incident
 1. First, [create a post-mortem document](https://drive.google.com/drive/u/0/folders/1EImhSsuZGQb2VNW2ELLTWrVPWoqdFAg1). Assign a notetaker who will keep that document updated.
    1. Goals: Establish a timeline of what happened and what responses were taken. It's best to write this down as it is happening, instead of trying to re-build it afterwards.  
@@ -22,7 +28,7 @@ If, on the other hand, it takes a little longer to fix the issue, but we all lea
 7. Once service is restored, be sure to communicate about that too. 
 
 ### After the incident
-1. Once service is restored and users have been informed, schedule a post-mortem meeting. Invite the RDSS team plus anyone who was involved in the incident, and schedule the meeting as soon as possible so it will still be fresh in people's minds. Link to the post-mortem document in the meeting invite. 
+1. Once service is restored and users have been informed, the note taker should schedule a post-mortem meeting. Invite the RDSS team plus anyone who was involved in the incident, and schedule the meeting as soon as possible so it will still be fresh in people's minds. Link to the post-mortem document in the meeting invite. 
 2. During the meeting, review the document together and ensure we have an accurate record of events. 
 3. The most important outcome of the meeting should be analysis about WHY this incident happened. The goal for the conversation is not to place blame, but to better understand the nature of our current system. Assume good intent on everyone's part, and assume that everyone made the best choices they could with the information they had. 
 4. MOST IMPORTANT: Make tickets for any actions the team identifies that might prevent such an outage in the future. Communicate with stakeholders about why the incident happened and what we're doing to improve the system going forward.
