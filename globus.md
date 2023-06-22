@@ -374,6 +374,17 @@ To register a Globus Endpoint do the following:
    sudo globus-connect-server endpoint role create administrator kl37@princeton.edu
    ```
 
+### Troubleshooting staging VM that reboots with new IP
+
+1. After rebooting the VM take note of the new AWS provided IP. Retrieve the UUID with the following.
+   ```
+   globus-connect-server node list --use-explicit-host localhost
+   ```
+1. Update your Nodes (IP)s
+   ```
+   globus-connect-server node update ${yourNodesUUID} -i ${yourNewIP} --use-explicit-host localhost
+   ```
+
 ### Connect globus endpoint to S3 bucket
 
 1.  login to globus
