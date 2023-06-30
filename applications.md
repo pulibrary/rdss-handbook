@@ -82,7 +82,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: In production
   - Public URL: https://openpublishing.princeton.edu
   - Code Bases: https://github.com/pulibrary/openpublishing; https://github.com/pulibrary/ojs_styles
-  - Product Owner: TBD
+  - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   - [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
   - [Backup and restore instructions](ojs.md)
@@ -93,7 +93,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: In production
   - Public URL: https://openbooks.princeton.edu
   - Code Base: https://github.com/pulibrary/openbooks
-  - Product Owner: TBD
+  - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
