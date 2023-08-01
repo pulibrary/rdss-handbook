@@ -145,7 +145,7 @@ Precurated guest collection - Should be restricted to any researcher
 
 ### pre-curation
 
-Our Pre-Curation Globus instance is for research data that has not yet gone through curation. It may or may not have a DOI depending on how the data is put into our s3 bucket.
+Our Pre-Curation Globus instance is for research data that has not yet gone through curation. It should have a DOI that matches the draft one created by PDC Describe.
 
 Our legacy Globus instance does not have the concept of pre curated data sets.
 
