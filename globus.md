@@ -309,6 +309,7 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 
 1. To access the aws console first go to [AWS login](https://princeton.edu/aws)
 1. See your new instance in [AWS](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running) Note the IP address you will need it to configure Globus in following steps
+1. Create the elastic IP < see it handbook>
 
 ### Configure Globus Connect Server
 
@@ -434,9 +435,14 @@ To register a Globus Endpoint do the following:
 ### Troubleshooting staging VM that reboots with new IP
 
 1. After rebooting the VM take note of the new AWS provided IP. Retrieve the UUID with the following.
-   ```
-   globus-connect-server node list --use-explicit-host localhost
-   ```
+   1. login following the prompts
+      ```
+      globus-connect-server login localhost
+      ```
+   1. see the node UUID
+      ```
+      globus-connect-server node list --use-explicit-host localhost
+      ```
 1. Update your Nodes (IP)s
    ```
    globus-connect-server node update ${yourNodesUUID} -i ${yourNewIP} --use-explicit-host localhost
@@ -456,6 +462,7 @@ To register a Globus Endpoint do the following:
     - pdc-describe-staging-postcuration
     - pdc-describe-prod-precuration
     - pdc-describe-prod-postcuration
+    - pdc-describe-deposit
 
     ```
     export bucket_name=<bucket name>
@@ -467,6 +474,7 @@ To register a Globus Endpoint do the following:
     - pdc s3 storage gateway postcuration
     - pdc s3 storage gateway precuration
     - pdc s3 storage gateway postcuration
+    - pdc s3 storage gateway deposit
 
     ```
     export gateway_name=<gateway name>
@@ -494,6 +502,7 @@ To register a Globus Endpoint do the following:
       - Princeton Data Commons Staging Postcuration
       - Princeton Data Commons Precuration
       - Princeton Data Commons Postcuration
+      - Princeton Data Commons Deposit
         `export collection_name=<name>`
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
