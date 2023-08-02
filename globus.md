@@ -309,7 +309,7 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 
 1. To access the aws console first go to [AWS login](https://princeton.edu/aws)
 1. See your new instance in [AWS](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running) Note the IP address you will need it to configure Globus in following steps
-1. Create the elastic IP < see it handbook>
+1. Create the [Elastic IP](https://github.com/pulibrary/pul-it-handbook/blob/main/services/aws.md)
 
 ### Configure Globus Connect Server
 
@@ -390,7 +390,7 @@ To register a Globus Endpoint do the following:
 
 ### Register the Endpoint with OIT
 
-**This ia a manual step.**
+**This is a manual step.**
 
 1.  ssh onto the EC2 instance `ssh pulsys@<public IP>`
 1.  run `sudo globus-connect-server endpoint show`
