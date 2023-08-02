@@ -58,14 +58,15 @@ A new URL once it is determined via the steps above can be added to Honey Badger
 
 ## Princeton Data Commons (PDC) Globus Setup
 
-Our globus setup consists of three globus collections connected to two s3 buckets on two globus endpoints.
+Our globus setup consists of four globus collections connected to three s3 buckets on two globus endpoints.
 
-We are creating a separate Endpoint and EC2 instance to make sure that Upload does not impact download and vice versa. We also believe this might scale better into the future.
+We are creating a separate Endpoint and EC2 instance to make sure that Upload does not impact download/ deposit and vice versa. We also believe this might scale better into the future.
 
 ```mermaid
   graph LR;
       S31[("Precuration S3 (private) [pdc-describe-*-precuration]")]-->SG1
          S32[("Postcuration S3 (private)  [pdc-describe-*-postcuration]")]-->SG2
+      S33[("Deposit S3 (private)  [pdc-describe-deposit]")]-->SG3
       subgraph project ["Princeton Data Commons * Project for Staging or Production"]
       subgraph project_space [" "]
       style project fill:#fff,stroke:#000,stroke-width:4px,color:#000,stroke-dasharray: 5 5
@@ -85,18 +86,25 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
             end
          end
          end
+         subgraph EC2b ["Deposit EC2 [pdc-globus-deposit]]"]
+         subgraph ec2b_sp [" "]
+            subgraph "Deposit Globus Endpoint [pdc deposit]]"
+               SG3[["Deposit Storage Gateway [pdc s3 storage gateway deposit]"]]-->DE(["Curation Collection(curator controlled read/write) [Princeton Data Commons Deposit]"]);
+            end
+         end
+         end
       end
    end
 
    classDef ecclass fill:#00f,stroke:#00f,stroke-width:0px,color:#fff;
-   class EC2,EC2a,ec2_sp,ec2a_sp ecclass;
+   class EC2,EC2a,EC2b,ec2_sp,ec2a_sp,ec2b_sp ecclass;
 
 ```
 
 Pre Curation collections should be private (Not show up in the collections search on globus)
-Precurated guest collection - Should be restricted to any researcher
+Postcuration guest collection - Should be public
 
-- There should be two globus endpoints for each environment (staging & prod)
+- There should be two globus endpoints for each environment (staging & prod) and a deposit endpoint
 
   - staging
     - pdc precuration
@@ -104,21 +112,26 @@ Precurated guest collection - Should be restricted to any researcher
   - prod
     - pdc precuration
     - pdc postcuration
+  - pdc deposit
 
-- The globus endpoints should exist on two separate EC2 instances
+- The globus endpoints should exist on five separate EC2 instances
   - staging
     - pdc-globus-staging-precuration
     - pdc-globus-staging-postcuration
   - prod
     - pdc-globus-prod-precuration
     - pdc-globus-prod-postcuration
-- There will be two s3 buckets
+  - deposit
+    - pdc-globus-deposit
+- There will be two s3 buckets for each environment and a deposit bucket
   - staging
     - pdc-describe-staging-precuration
     - pdc-describe-staging-postcuration
   - prod
     - pdc-describe-prod-precuration
     - pdc-describe-prod-postcuration
+  - deposit
+    - pdc-describe-deposit
 - Each bucket will have a storage gateway attached to the correct globus endpoint
   - staging
     - pdc s3 storage gateway precuration
@@ -126,6 +139,8 @@ Precurated guest collection - Should be restricted to any researcher
   - prod
     - pdc s3 storage gateway precuration
     - pdc s3 storage gateway postcuration
+  - deposit
+    - pdc s3 storage gateway deposit
 - Each storage gateway will have a mapped collection
 
   - staging
@@ -134,6 +149,8 @@ Precurated guest collection - Should be restricted to any researcher
   - prod
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
+  - deposit
+    - Princeton Data Commons Deposit
 
 - Each Mapped post-curation collection will have a guest collection attached to the corresponding mapped collection.   This will give public read access to the post-curated data in Globus.
   - staging
@@ -210,11 +227,12 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Then access https://s3.console.aws.amazon.com/s3/buckets?region=us-east-1# for the s3 buckets
 1. Click create new bucket
 1. Name the bucket
-   For PDC describe the name should be one of the four choices below:
+   For PDC describe the name should be one of the five choices below:
    - pdc-describe-staging-precuration
    - pdc-describe-staging-postcuration
    - pdc-describe-prod-precuration
    - pdc-describe-prod-postcuration
+   - pdc-describe-deposit
 1. Under `Copy settings from existing bucket` choose `pdc-describe-staging-precuration` (assumes it has been set up)
 1. Under `Object Ownership` choose enable ACLs
 1. click `Create Bucket`
@@ -228,7 +246,11 @@ To make a new S3 bucket with a copy of the PDC Globus data:
    1. choose `Apply to all objects in the bucket`
    1. check `I acknowledge...`
    1. check `Permanently delete noncurrent versions of objects`
-   1. Fill in 30 in `Days after objects become noncurrent`
+   1. check `Delete expired object delete markers or incomplete multipart uploads`
+   1. Fill in 30 (14 for deposit) in `Days after objects become noncurrent`
+   1. check `Delete expired object delete markers`
+   1. check `Delete incomplete multipart uploads`
+   1. Fill in 14 in `Number of days`
    1. Click on `Create Rule`
 1. (Optionally) Copy the data using the aws cli: `aws s3 sync s3://prds-dataspace s3://pdc-globus-prod`
 
@@ -336,7 +358,7 @@ To register a Globus Endpoint do the following:
 
 1.  ssh onto the EC2 instance `ssh pulsys@<public IP>`
 1.  run `sudo globus-connect-server endpoint show`
-1.  email `cses@princeton.edu` with subject `Register Globus Endpoint`
+1.  email ` pglobus@princeton.edu` with subject `Register Globus Endpoint`
 
     ```
     Hello,
