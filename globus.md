@@ -256,6 +256,41 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 
    **Note:** that the copy will take about five hours.
 
+### Enabling SHA-256 checksums automatically on upload
+1. Download https://github.com/pulibrary/pdc_describe/blob/main/s3-checksum.yaml to your local machine OR if you have PDC Describe cloned to your machine use it there.
+1. Visit [princeton.edu/aws](princeton.edu/aws) to login to AWS
+1. then visit the [AWS Stacks](https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks?filteringText=&filteringStatus=active&viewNested=true)
+1. Click on `Create Stack` and choose `with new resources` from the drop down
+1. Choose `Upload a template file` and select the file from step 1
+1. Click `Next`
+1. Specify a name like `prod-precuration-sha-256-checksum` which includes the name of the bucket this stack will apply to
+1. Specify the bucket  for example: `pdc-describe-prod-precuration`
+1. Click `Next`
+1. Leave defaults in place on the next page and click `Next`
+1. Acknowledge that this gives the stack access to the data ![Screenshot 2023-06-23 at 11 55 19 AM](https://github.com/pulibrary/rdss-handbook/assets/1599081/2055df80-30c4-4097-893d-7c9f9a4f1e4a)
+1. Click Submit
+1. Wait until you see `CREATE_COMPLETE` in the events tab
+1. Click on the Resources tab
+1. Click on the link next to ChecksumLambdaRole (which will open a new window)
+1. Click on "Add Permission" and select "Create inline policy"
+1. Choose S3 from the Service section
+1. Click `All S3 actions (s3:*)` in the Actions section
+1. Choose s3 bucket in the resources and put in your bucket name
+1. Click `Review Policy` at the bottom
+1. Fill in `Allow-S3-Access` in the Name
+1. Click on `Create Policy`
+1. Close the window that was opened
+1. In the Stack Window on your new Stack Click on the Resources tab and make note of the Physical ID of the `ChecksumLambdaFunction` (You will need it below) For example `sha-256-checksum-precuratio-ChecksumLambdaFunction-IsK4yDcshh1C`
+1. Go to your bucket (specified above)
+1. Click on properties (https://s3.console.aws.amazon.com/s3/buckets/pdc-describe-staging-precuration?region=us-east-1&tab=properties)
+1. Scroll down to Event Notifications and click `Create event notification`
+1. Fill in event name with `Create SHA256 on Upload`
+1. Choose `All object create events` under `Event Types`
+1. Under `Destination choose` `Lambda function`
+1. fill in the lambda function Physical ID you just created ex `sha-256-checksum-precuratio-ChecksumLambdaFunction-IsK4yDcshh1C` and sleect the arn
+1. Test the lambda by uploading a file to the bucket
+
+
 ### Creating the AWS EC2 instance from AMI
 
 1. In princeton-ansible check the group_vars/globus/common.yml to make sure the image_id matches the ami you either created or are using
