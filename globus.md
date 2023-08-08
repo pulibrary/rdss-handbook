@@ -54,7 +54,7 @@ A new URL once it is determined via the steps above can be added to Honey Badger
 1. fill in the url with `<GCS Manager URL>/api/info`
 1. Choose `Page includes string` from match type
 1. Fill in Match with `"code":"success"`
-1. Click Save Changes 
+1. Click Save Changes
 
 ## Princeton Data Commons (PDC) Globus Setup
 
@@ -530,6 +530,8 @@ To register a Globus Endpoint do the following:
 
 ### Create a guest Collection for public access to the mapped collection
 
+Guest collections are public and readonly, we use them for the general public to be able to download the data.
+
 ** this is a manual step **
 Choose one of the following for the name:
 
@@ -541,7 +543,9 @@ Choose one of the following for the name:
 1.  click on the collections tab
 1.  click on "Add a guest Collection"
     - You may need to authorize (click rdssglobus@princeton.edu and allow)
-1.  click bowse and select the s3 bucket top path
+1.  click browse and select the S3 bucket top path
+    1.  Select folder `pdc-describe-staging-postcuration` for stating
+    1.  Select folder `pdc-describe-prod-postcuration` for production
 1.  Fill in the name and description
 1.  Click create collection
 1.  Click "Add Permissions - Share With"
@@ -555,9 +559,9 @@ Choose one of the following for the name:
 1.  click on "Create New Group" on the left hand side
 1.  Type in "Princeton Curators" for the group name
 1.  For each Curator invote them into the group
-      
+
 ### Add the Curator Group as a manager of all the collections
-      
+
   - Utilize one of the following for the `<name>`:
     - Princeton Data Commons Staging Precuration
     - Princeton Data Commons Staging Postcuration
@@ -653,7 +657,7 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
 
  3. Modify the volume of your instance. We will continue to use the VM in step two. Our goal is to resize it to have 100GB. We do that with the following (this can take a while so grab some :coffee: ):
     ```bash
-    aws ec2 modify-volume --volume-type gp2 --size 100 --volume-id vol-0c02aca34398ea8e5 
+    aws ec2 modify-volume --volume-type gp2 --size 100 --volume-id vol-0c02aca34398ea8e5
     ```
 
  1. Check to see if the results if your server has a larger disk size by running the following:
@@ -686,4 +690,4 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
    ```
 
   6. You can now delete your snapshot in step 1 if successful.
-   
+
