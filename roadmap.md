@@ -8,15 +8,15 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
-    MVP launch: pd1,2023-05-01,60d
-    Post-launch support: pd2,2023-07-01,92d
+    MVP software stabilizing: pd1,2023-05-01, 92d
+    MVP testing and launch support: pd2,2023-07-31,62d
     PDC post-MVP features: pd3,2023-10-01,31d
     section TigerData
-    TigerData training and MVP: td1,2023-07-01,92d
-    TigerData MVP: td2,2023-11-01,61d
+    TigerData training and MVP: td1,2023-08-08,54d
+    TigerData MVP software: td2,2023-11-01,61d
     section DSpace Support
-    2023 Thesis import: dsp1,2023-06-18,45d
-    Sunsetting DSpace recommendations: dsp2,2023-05-01,100d
+    2023 Thesis import: dsp1,2023-06-18,60d
+    Sunsetting DSpace recommendations: dsp2,2023-05-01,153d
     DataSpace maintenance: dsp3,2023-05-01,245d
     OAR maintenance: dsp4,2023-05-01,245d
     section Open Publishing
