@@ -28,6 +28,33 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/06/28 - 2023/07/11 🍒
+```mermaid
+gantt
+    title RDSS Sprint, 2023/06/28 - 2023/07/11
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    PPPL collections indexing: pdc1, 2023-06-28, 10d
+    Banner posting to DataSpace: pdc2, 2023-06-28, 10d
+    File upload enhancements for performance and navigation: pdc3, 2023-06-28, 10d
+    File preservation experimentation: pdc4, 2023-06-28, 10d
+    Migration specs enhancements: pdc5, 2023-06-28, 10d
+    PPPL specs review and acceptance: pdc6, 2023-06-28, 10d
+    Continued support for ROR in ingest form: pdc7, 2023-06-28, 10d
+    Theming enhancements to Describe: pdc8, 2023-06-28, 10d
+    README upload enhancements: pdc9, 2023-06-28, 10d
+    DataSpace collections preservation work: pdc10, 2023-06-28, 10d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-06-28, 10d
+    section DSpace
+    JSP bug fixes: ds1, 2023-06-28, 10d
+    Import Masters Theses for May 2023: ds1, 2023-06-28, 10d
+    section TigerData
+    Search committee work: td1, 2023-06-28, 10d
+```
+
 ### RDSS Sprint, 2023/06/14 - 2023/06/27 ☀️
 ```mermaid
 gantt
@@ -36,21 +63,19 @@ gantt
     dateformat YYYY-MM-DD
     excludes weekends
     section PDC
-    Banner posting to DataSpace: pdc1, 2023-06-14, 10d
-    File upload enhancements for performance and navigation: pdc2, 2023-06-14, 10d
-    File preservation experimentation: pdc2, 2023-06-14, 10d
-    Migration specs enhancements: pdc3, 2023-06-14, 10d
-    PPPL specs review and acceptance: pdc3, 2023-06-14, 10d
-    Ingest form enhancements for ROR support: pdc1, 2023-06-14, 10d
-    PDC preservation enhancements: pdc1, 2023-06-14, 10d
-    User accounts page enhancements: pdc1, 2023-06-14, 10d
-    DataSpace collections preservation work: pdc1, 2023-06-14, 10d
+    Banner posting to DataSpace: pdc1, 2023-06-20, 5d
+    File upload enhancements for performance and navigation: pdc2, 2023-06-20, 5d
+    File preservation experimentation: pdc3, 2023-06-20, 5d
+    Migration specs enhancements: pdc4, 2023-06-20, 5d
+    PDC preservation enhancements: pdc6, 2023-06-20, 5d
+    User accounts page enhancements: pdc7, 2023-06-20, 5d
+    DataSpace collections preservation work: pdc1, 2023-06-20, 5d
     section Senior Theses
-    Import Senior Theses for 2023: st1, 2023-06-20, 6d
+    Import Senior Theses for 2023: st1, 2023-06-20, 5d
     section All Hands
-    Poster, conference, and team meetings prep: ah1, 2023-06-14, 10d
+    All Hands participation: ah1, 2023-06-14, 4d
     section TigerData
-    Search committee work: td1, 2023-06-14, 10d
+    Search committee work: td1, 2023-06-20, 5d
 ```
 
 ### RDSS Sprint, 2023/05/31 - 2023/06/13 🛴
