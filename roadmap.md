@@ -28,6 +28,153 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/08/09 - 2023/08/22 🦑
+```mermaid
+gantt
+    title RDSS Sprint, 2023/08/09 - 2023/08/22
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    DOI and ARK management for production: pdc1, 2023-08-09, 10d
+    Monitoring for Describe: pdc2, 2023-08-09, 10d
+    Migration support for PPPL : pdc3, 2023-08-09, 10d
+    UI bug fixes: pdc4, 2023-08-09, 10d
+    File upload bug fixes: pdc5, 2023-08-09, 10d
+    Describe network bug fixes: pdc6, 2023-08-09, 10d
+    DataSpace collections preservation enhancements: pdc7, 2023-08-09, 10d
+    section TigerData
+    Search committee work: td1, 2023-08-09, 10d
+    Rails deployment enhancement and documentation: td2, 2023-08-16, 5d
+    MediaFlux Rails code cleanup: td3, 2023-08-16, 5d
+    MediaFlux client documentation: td4, 2023-08-16, 5d
+```
+
+### RDSS Sprint, 2023/07/26 - 2023/08/08 🌊
+```mermaid
+gantt
+    title RDSS Sprint, 2023/07/26 - 2023/08/08
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    DOI and ARK management and form enhancements for production: pdc1, 2023-07-26, 10d
+    Preservation enhancements: pdc2, 2023-07-26, 10d
+    Globus access, documentation, training: pdc3, 2023-07-26, 10d
+    Large file upload improvements: pdc4, 2023-07-26, 10d
+    Indexing from Describe to Discovery: pdc5, 2023-07-26, 10d
+    Migration automation work: pdc6, 2023-07-26, 10d
+    Introducting notification types and dashboard: pdc7, 2023-07-26, 10d
+    User dashboard security enhancements: pdc8, 2023-07-26, 10d
+    DataCite publication troubleshooting: pdc9, 2023-07-26, 10d
+    PPPL reporting feed fixes: pdc10, 2023-08-06, 2d
+    Monitoring for Describe: pdc11, 2023-08-02, 4d
+    section DSpace Maintenance
+    ThesisCentral QA outage: ds1, 2023-08-06, 1d
+    DataSpace outage: ds2, 2023-08-08, 1d
+    Masters theses work: ds3, 2023-07-26, 8d
+    Symplectic errors: ds4, 2023-07-26, 4d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-07-26, 10d
+    section TigerData
+    Search committee work: td1, 2023-07-26, 10d
+```
+
+### RDSS Sprint, 2023/07/12 - 2023/07/25 🍧
+```mermaid
+gantt
+    title RDSS Sprint, 2023/07/12 - 2023/07/25
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    PPPL collections indexing: pdc1, 2023-07-12, 5d
+    JSON metadata endpoint enhancements: pdc1, 2023-07-12, 10d
+    Discovery Solr troubleshooting: pdc1, 2023-07-19, 3d
+    Change history enhancements: pdc1, 2023-07-12, 10d
+    Preservation enhancements: pdc1, 2023-07-12, 10d
+    File display performance enhancements: pdc1, 2023-07-12, 10d
+    Ingestion form enhancements for README, creator, licenses: pdc1, 2023-07-12, 10d
+    Migration automation work: pdc1, 2023-07-17, 7d
+    Help text form and page enhancements in UI: pdc1, 2023-07-12, 10d
+    Indexing from Describe to Discovery: pdc1, 2023-07-12, 10d
+    Email notification improvements: pdc1, 2023-07-12, 10d
+    section TigerData
+    Search committee work: td1, 2023-07-12, 10d
+```
+
+### RDSS Sprint, 2023/06/28 - 2023/07/11 🍒
+```mermaid
+gantt
+    title RDSS Sprint, 2023/06/28 - 2023/07/11
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    PPPL collections indexing: pdc1, 2023-06-28, 10d
+    Banner posting to DataSpace: pdc2, 2023-06-28, 10d
+    File upload enhancements for performance and navigation: pdc3, 2023-06-28, 10d
+    File preservation experimentation: pdc4, 2023-06-28, 10d
+    Migration specs enhancements: pdc5, 2023-06-28, 10d
+    PPPL specs review and acceptance: pdc6, 2023-06-28, 10d
+    Continued support for ROR in ingest form: pdc7, 2023-06-28, 10d
+    Theming enhancements to Describe: pdc8, 2023-06-28, 10d
+    README upload enhancements: pdc9, 2023-06-28, 10d
+    DataSpace collections preservation work: pdc10, 2023-06-28, 10d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-06-28, 10d
+    section DSpace
+    JSP bug fixes: ds1, 2023-06-28, 10d
+    Import Masters Theses for May 2023: ds1, 2023-06-28, 10d
+    section TigerData
+    Search committee work: td1, 2023-06-28, 10d
+```
+
+### RDSS Sprint, 2023/06/14 - 2023/06/27 ☀️
+```mermaid
+gantt
+    title RDSS Sprint, 2023/06/14 - 2023/06/27
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Banner posting to DataSpace: pdc1, 2023-06-20, 5d
+    File upload enhancements for performance and navigation: pdc2, 2023-06-20, 5d
+    File preservation experimentation: pdc3, 2023-06-20, 5d
+    Migration specs enhancements: pdc4, 2023-06-20, 5d
+    PDC preservation enhancements: pdc6, 2023-06-20, 5d
+    User accounts page enhancements: pdc7, 2023-06-20, 5d
+    DataSpace collections preservation work: pdc1, 2023-06-20, 5d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-06-20, 5d
+    section All Hands
+    All Hands participation: ah1, 2023-06-14, 4d
+    section TigerData
+    Search committee work: td1, 2023-06-20, 5d
+```
+
+### RDSS Sprint, 2023/05/31 - 2023/06/13 🛴
+```mermaid
+gantt
+    title RDSS Sprint, 2023/05/31 - 2023/06/13
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Ingest form enhancements for README and ROR support: pdc1, 2023-05-31, 10d
+    File upload improvements: pdc2, 2023-05-31, 10d
+    Migration specs enhancements: pdc3, 2023-05-31, 10d
+    Globus authentication management: pdc4, 2023-05-31, 10d
+    Admin menu enhancements: pdc5, 2023-05-31, 10d
+    section DataSpace Maintenance
+    Filename download fixes: dsp1, 2023-06-01, 5d
+    Rotate LastPass secrets: dsp2, 2023-06-08, 2d
+    section All Hands
+    Poster, conference, and team meetings prep: ah1, 2023-05-31, 10d
+    section TigerData
+    Search committee work: td1, 2023-05-31, 10d
+```
+
 ### RDSS Sprint, 2023/05/17 - 2023/05/30 🏕️
 ```mermaid
 gantt
@@ -44,7 +191,7 @@ gantt
     Bitstream download fixes: dsp1, 2023-05-22, 5d
     Sunsetting group work: dsp1, 2023-05-17, 10d
     section All Hands
-    Poster and team meetings prep: ah1, 2023-05-17, 10d
+    Poster, conference and team meetings prep: ah1, 2023-05-17, 10d
     section TigerData
     Search committee work: td1, 2023-05-17, 10d
 ```
