@@ -28,6 +28,58 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/08/09 - 2023/08/22 🦑
+```mermaid
+gantt
+    title RDSS Sprint, 2023/08/09 - 2023/08/22
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    DOI and ARK management for production: pdc1, 2023-08-09, 10d
+    Monitoring for Describe: pdc2, 2023-08-09, 10d
+    Migration support for PPPL : pdc3, 2023-08-09, 10d
+    UI bug fixes: pdc4, 2023-08-09, 10d
+    File upload bug fixes: pdc5, 2023-08-09, 10d
+    Describe network bug fixes: pdc6, 2023-08-09, 10d
+    DataSpace collections preservation enhancements: pdc7, 2023-08-09, 10d
+    section TigerData
+    Search committee work: td1, 2023-08-09, 10d
+    Rails deployment enhancement and documentation: td2, 2023-08-16, 5d
+    MediaFlux Rails code cleanup: td3, 2023-08-16, 5d
+    MediaFlux client documentation: td4, 2023-08-16, 5d
+```
+
+### RDSS Sprint, 2023/07/26 - 2023/08/08 🌊
+```mermaid
+gantt
+    title RDSS Sprint, 2023/07/26 - 2023/08/08
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    DOI and ARK management and form enhancements for production: pdc1, 2023-07-26, 10d
+    Preservation enhancements: pdc2, 2023-07-26, 10d
+    Globus access, documentation, training: pdc3, 2023-07-26, 10d
+    Large file upload improvements: pdc4, 2023-07-26, 10d
+    Indexing from Describe to Discovery: pdc5, 2023-07-26, 10d
+    Migration automation work: pdc6, 2023-07-26, 10d
+    Introducting notification types and dashboard: pdc7, 2023-07-26, 10d
+    User dashboard security enhancements: pdc8, 2023-07-26, 10d
+    DataCite publication troubleshooting: pdc9, 2023-07-26, 10d
+    PPPL reporting feed fixes: pdc10, 2023-08-06, 2d
+    Monitoring for Describe: pdc11, 2023-08-02, 4d
+    section DSpace Maintenance
+    ThesisCentral QA outage: ds1, 2023-08-06, 1d
+    DataSpace outage: ds2, 2023-08-08, 1d
+    Masters theses work: ds3, 2023-07-26, 8d
+    Symplectic errors: ds4, 2023-07-26, 4d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-07-26, 10d
+    section TigerData
+    Search committee work: td1, 2023-07-26, 10d
+```
+
 ### RDSS Sprint, 2023/07/12 - 2023/07/25 🍧
 ```mermaid
 gantt
@@ -47,8 +99,6 @@ gantt
     Help text form and page enhancements in UI: pdc1, 2023-07-12, 10d
     Indexing from Describe to Discovery: pdc1, 2023-07-12, 10d
     Email notification improvements: pdc1, 2023-07-12, 10d
-    section Senior Theses
-    Import Senior Theses for 2023: st1, 2023-07-12, 10d
     section TigerData
     Search committee work: td1, 2023-07-12, 10d
 ```
