@@ -28,6 +28,31 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/07/12 - 2023/07/25 🍧
+```mermaid
+gantt
+    title RDSS Sprint, 2023/07/12 - 2023/07/25
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    PPPL collections indexing: pdc1, 2023-07-12, 5d
+    JSON metadata endpoint enhancements: pdc1, 2023-07-12, 10d
+    Discovery Solr troubleshooting: pdc1, 2023-07-19, 3d
+    Change history enhancements: pdc1, 2023-07-12, 10d
+    Preservation enhancements: pdc1, 2023-07-12, 10d
+    File display performance enhancements: pdc1, 2023-07-12, 10d
+    Ingestion form enhancements for README, creator, licenses: pdc1, 2023-07-12, 10d
+    Migration automation work: pdc1, 2023-07-17, 7d
+    Help text form and page enhancements in UI: pdc1, 2023-07-12, 10d
+    Indexing from Describe to Discovery: pdc1, 2023-07-12, 10d
+    Email notification improvements: pdc1, 2023-07-12, 10d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-07-12, 10d
+    section TigerData
+    Search committee work: td1, 2023-07-12, 10d
+```
+
 ### RDSS Sprint, 2023/06/28 - 2023/07/11 🍒
 ```mermaid
 gantt
