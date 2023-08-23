@@ -28,6 +28,31 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/06/14 - 2023/06/27 ☀️
+```mermaid
+gantt
+    title RDSS Sprint, 2023/06/14 - 2023/06/27
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Banner posting to DataSpace: pdc1, 2023-06-14, 10d
+    File upload enhancements for performance and navigation: pdc2, 2023-06-14, 10d
+    File preservation experimentation: pdc2, 2023-06-14, 10d
+    Migration specs enhancements: pdc3, 2023-06-14, 10d
+    PPPL specs review and acceptance: pdc3, 2023-06-14, 10d
+    Ingest form enhancements for ROR support: pdc1, 2023-06-14, 10d
+    PDC preservation enhancements: pdc1, 2023-06-14, 10d
+    User accounts page enhancements: pdc1, 2023-06-14, 10d
+    DataSpace collections preservation work: pdc1, 2023-06-14, 10d
+    section Senior Theses
+    Import Senior Theses for 2023: st1, 2023-06-20, 6d
+    section All Hands
+    Poster, conference, and team meetings prep: ah1, 2023-06-14, 10d
+    section TigerData
+    Search committee work: td1, 2023-06-14, 10d
+```
+
 ### RDSS Sprint, 2023/05/31 - 2023/06/13 🛴
 ```mermaid
 gantt
@@ -44,6 +69,8 @@ gantt
     section DataSpace Maintenance
     Filename download fixes: dsp1, 2023-06-01, 5d
     Rotate LastPass secrets: dsp2, 2023-06-08, 2d
+    section All Hands
+    Poster, conference, and team meetings prep: ah1, 2023-05-31, 10d
     section TigerData
     Search committee work: td1, 2023-05-31, 10d
 ```
@@ -64,7 +91,7 @@ gantt
     Bitstream download fixes: dsp1, 2023-05-22, 5d
     Sunsetting group work: dsp1, 2023-05-17, 10d
     section All Hands
-    Poster and team meetings prep: ah1, 2023-05-17, 10d
+    Poster, conference and team meetings prep: ah1, 2023-05-17, 10d
     section TigerData
     Search committee work: td1, 2023-05-17, 10d
 ```
