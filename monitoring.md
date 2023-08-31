@@ -1,4 +1,10 @@
 # Monitoring in RDSS
+
+## Where to start
+Look here first: [RDSS Status Page](https://app.honeybadger.io/status_pages/vGQS69)
+
+However, this only checks the front page of our production systems. There can be other things going wrong even if that page is all green.
+
 ## Goals of monitoring:
 1. We should know before our users do when there is a problem with systems we manage.
 2. During emergency production outages, we should have information to help us resolve the issue quickly.
@@ -7,9 +13,7 @@
 ## The Monitoring Systems
 1. [Honeybadger](https://app.honeybadger.io) - for capturing exceptions in a running application. This makes it easier for us to fix bugs, because it gives us a stack trace and lots of context about how the exception occurred. We sometimes use honeybadger uptime monitoring too, but it is very simple (just a binary Up or Down) and only works for systems that are available on the open Internet. New staff need to be added to Honeybadger manually. It is also advisable that each team member subscribe to uptime notifications via email or SMS.
 2. [DataDog](https://app.datadoghq.com) - for Application Performance Monitoring (APM). This service can be expensive, so we only turn it on as needed, and [we follow practices to keep costs down](https://github.com/pulibrary/pul-it-handbook/blob/main/services/datadog.md#tips-for-controlling-costs). However, it can be invaluable for diagnosing performance issues.
-3. [Sensu](https://lib-monitor.princeton.edu/) - We want to use Sensu for most system monitoring, e.g., disk space, application responsiveness, TLS cert expiration, generally whether the application is running as expected. We are in the process of migrating some monitoring tasks from Honeybadger and DataDog to Sensu.
-
-**Note**: To log into Sensu, use your Princeton SSO credentials, and then check your 2-factor device. It requires 2-factor auth but the login process doesn't indicate this well.
+3. Icinga - coming soon!
 
 ## Monitoring by Application Group
 ### Princeton Data Commons (PDC*)
