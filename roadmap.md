@@ -28,6 +28,34 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/08/23 - 2023/09/05 1️⃣
+```mermaid
+gantt
+    title RDSS Sprint, 2023/08/23 - 2023/09/05
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Support for PPPL data migration: pdc1, 2023-08-23, 10d
+    Public URL and VPN adjustments: pdc2, 2023-08-28, 5d
+    Node upgrade: pdc3, 2023-08-29, 2d
+    Honeybadger and Datadog enhancements: pdc4, 2023-08-23, 10d
+    Collection arks redirect to PDC: pdc5, 2023-08-29, 3d
+    UI bug fixes: pdc6, 2023-08-28, 2d
+    DataSpace collections preservation enhancements and documentation: pdc7, 2023-08-23, 4d
+    section DSpace Support
+    Emergency service degradation response: 2023-08-28, 1d
+    Dissertation XSLT improvements: 2023-08-28, 2d
+    section Cicognara
+    Static site enhancements: 2023-08-24, 5d
+    Data index troubleshooting: 2023-08-24, 1d
+    section TigerData
+    Search committee work: td1, 2023-08-23, 10d
+    Docker deployment enhancements and documentation: td2, 2023-08-23, 10d
+    Aterm commands documentation: td3, 2023-08-23, 10d
+    Rails application code cleanup and refactor: td4, 2023-08-23, 10d   
+```
+
 ### RDSS Sprint, 2023/08/09 - 2023/08/22 🦑
 ```mermaid
 gantt
