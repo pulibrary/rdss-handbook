@@ -7,7 +7,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: Deployed in staging and production
   - Public URL: https://annotations.princeton.edu
   - Staging URL: https://annotations-staging.princeton.edu
-  - Code Base: [Ansible playbook in princeton_ansible](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/annotations_production.yml)
+  - Code Base: [Ansible playbook in princeton_ansible](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/annotations.yml)
   - Product Owner: TBD
   - Slack channel(s): #annotations-development (user-centered and technical)
   - Analytics: none
@@ -73,7 +73,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: Staged for production
   - Public URL: N/A
   - Code Base: https://github.com/pulibrary/nomisma
-  - Product Owner: Alan Stahl
+  - Product Owner: TBD
   - Slack channel(s): #catalog (user-centered), #devs (technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
@@ -103,7 +103,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://pdc-describe-prod.princeton.edu (must be connected to VPN)
   - Staging URL: https://pdc-describe-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/pdc_describe
-  - Product Owner: Hannah Hadley
+  - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
@@ -113,7 +113,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://datacommons.princeton.edu/discovery
   - Staging URL: https://pdc-discovery-staging.princeton.edu
   - Code Base: https://github.com/pulibrary/pdc_discovery
-  - Product Owner: Hannah Hadley
+  - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
@@ -138,9 +138,9 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - TigerData
   - A collaboratively developed frontend for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology (OIT).
-  - Status: Coming soon
-  - Code Base: Coming soon
+  - Status: In development
+  - Code Base: https://github.com/pulibrary/tiger-data-app
   - Product Owner: Matt Chandler
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None, planned for future
