@@ -28,6 +28,36 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/09/06 - 2023/09/19 📓
+```mermaid
+gantt
+    title RDSS Sprint, 2023/09/06 - 2023/09/19
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Ongoing ARK management for production: pdc1, 2023-09-06, 10d
+    File migration snapshot enhancements: pdc2, 2023-09-06, 10d
+    Monitoring with DataDog for Discovery: pdc3, 2023-09-06, 5d
+    Search link results bug fix in Discovery: pdc4, 2023-09-06, 5d
+    PPPL collection addition, name change, and migration update: pdc5, 2023-09-12, 5d
+    Node upgrade (Discovery): pdc6, 2023-09-06, 3d
+    Develop PPPL training materials: pdc7, 2023-09-11, 5d
+    Ingestion form enhancements: pdc8, 2023-09-13, 5d
+    Embargo support in Describe: pdc8, 2023-09-11, 8d
+    Enhance AWS errors: pdc8, 2023-09-13, 5d
+    Addressing illegal characters in legacy files: pdc8, 2023-09-11, 9d
+    section DSpace Support
+    OAWaiver emergency maintenance: dsp1, 2023-09-11, 5d
+    Dissertation catalog integration: dsp2, 2023-09-06, 3d
+    Annual thesis report generation and DataSpace API training: dsp3, 2023-09-06, 5d
+    section TigerData
+    Search and hiring work: td1, 2023-09-06, 10d
+    Define and implement initial project schema: td2, 2023-09-06, 10d  
+    Project create and edit page: td3, 2023-09-11, 5d  
+    Login and session token experimentation: td4, 2023-09-11, 5d  
+```
+
 ### RDSS Sprint, 2023/08/23 - 2023/09/05 1️⃣
 ```mermaid
 gantt
@@ -38,7 +68,7 @@ gantt
     section PDC
     Support for PPPL data migration: pdc1, 2023-08-23, 10d
     Public URL and VPN adjustments: pdc2, 2023-08-28, 5d
-    Node upgrade: pdc3, 2023-08-29, 2d
+    Node upgrade (Describe): pdc3, 2023-08-29, 2d
     Honeybadger and Datadog enhancements: pdc4, 2023-08-23, 10d
     Collection arks redirect to PDC: pdc5, 2023-08-29, 3d
     UI bug fixes: pdc6, 2023-08-28, 2d
