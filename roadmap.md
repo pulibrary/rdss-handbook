@@ -28,6 +28,26 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/09/20 - 2023/10/03 🫠
+```mermaid
+gantt
+    title RDSS Sprint, 2023/09/20 - 2023/10/03
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section PDC
+    Embargo support: pdc1, 2023-09-20, 10d
+    Additional provenance support: pdc1, 2023-09-20, 10d
+    Solr issues for search: pdc1, 2023-09-26, 5d
+    section DSpace Support
+    OAWaiver Rails cleanup: dsp1, 2023-09-20, 10d
+    Senior Thesis Usage stats: dsp1, 2023-09-20, 10d
+    section TigerData
+    Search and hiring work: td1, 2023-09-20, 10d  
+    Dashboard cleanup: td1, 2023-09-23, 8d  
+    Project form: td1, 2023-09-20, 10d 
+```
+
 ### RDSS Sprint, 2023/09/06 - 2023/09/19 📓
 ```mermaid
 gantt
