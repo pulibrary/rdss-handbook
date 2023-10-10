@@ -1,27 +1,30 @@
 # Roadmap
 
-Below is the current roadmap and timeline for RDSS, summer 2022 through January 2023. It is subject to change as needed, however it is written in markdown, so all history is recorded.
+Below is the current roadmap and timeline for RDSS. It is subject to change as needed, however it is written in markdown, so all history is recorded.
 
 ```mermaid
 gantt
-    title RDSS 2023
+    title RDSS Roadmap
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
-    MVP software stabilizing: pd1,2023-05-01, 92d
-    MVP testing and launch support: pd2,2023-07-31,62d
-    PDC post-MVP features: pd3,2023-10-01,31d
+    MVP testing and launch support: pd1,2023-06-18,105d
+    Data migration support: pd2,2023-06-18,197d
     section TigerData
-    TigerData training and MVP: td1,2023-08-08,54d
-    TigerData MVP software: td2,2023-11-01,61d
+    TigerData MVP software: td1,2023-08-08,85d
+    TigerData MVP software: td2,2023-11-15,147d
+    section ORCiD
+    ORCiD service: pd3,2023-10-01,31d
+    section Search and Race
+    Cross-IT research and development: sar1,2023-11-01,14d
     section DSpace Support
     2023 Thesis import: dsp1,2023-06-18,60d
-    Sunsetting DSpace recommendations: dsp2,2023-05-01,153d
-    DataSpace maintenance: dsp3,2023-05-01,245d
-    OAR maintenance: dsp4,2023-05-01,245d
+    Sunsetting DSpace recommendations: dsp2,2023-06-18,123d
+    DataSpace maintenance: dsp3,2023-06-18,298d
+    OAR maintenance: dsp4,2023-06-18,298d
     section Open Publishing
-    OJS maintenance: op1,2023-05-01,245d
-    OMP maintenance: op2,2023-05-01,245d
+    OJS maintenance: op1,2023-06-18,298d
+    OMP maintenance: op2,2023-06-18,298d
 ```
 
 ## Past Sprints
