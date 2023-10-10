@@ -8,7 +8,8 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
-    MVP testing and launch support: pd2,2023-07-31,62d
+    MVP testing and launch support: pd1,2023-06-18,105d
+    Data migration support: pd2,2023-06-18,197d
     section TigerData
     TigerData MVP software: td1,2023-08-08,85d
     TigerData MVP software: td2,2023-11-15,147d
