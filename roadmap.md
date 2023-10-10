@@ -4,7 +4,7 @@ Below is the current roadmap and timeline for RDSS. It is subject to change as n
 
 ```mermaid
 gantt
-    title RDSS 2023
+    title RDSS Roadmap
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
