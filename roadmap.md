@@ -1,6 +1,6 @@
 # Roadmap
 
-Below is the current roadmap and timeline for RDSS, summer 2022 through January 2023. It is subject to change as needed, however it is written in markdown, so all history is recorded.
+Below is the current roadmap and timeline for RDSS. It is subject to change as needed, however it is written in markdown, so all history is recorded.
 
 ```mermaid
 gantt
