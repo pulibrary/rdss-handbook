@@ -8,18 +8,18 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://annotations.princeton.edu
   - Staging URL: https://annotations-staging.princeton.edu
   - Code Base: [Ansible playbook in princeton_ansible](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/annotations.yml)
-  - Product Owner: TBD
+  - Product Owner: N/A
   - Slack channel(s): #annotations-development (user-centered and technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Cicognara
-  - A custom Rails application for managing metadata and discovery of the Digital Cicognara Library
+  - A Rails application for managing metadata and discovery of the Digital Cicognara Library
   - Status: In production
   - Public URL: https://cicognara.org
   - Staging URL: https://cicognara-staging.princeton.edu
   - Code Base: https://github.com/pulibrary/cicognara-rails
   - Product Owner: Holly Hatheway
-  - Slack channel(s): #digital_library (user-centered), #cicognara (technical)
+  - Slack channel(s): #digital_library (user-centered), #devs (technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - DataSpace
@@ -27,8 +27,8 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: In production
   - Public URL: https://dataspace.princeton.edu
   - Code Base: [Please see the documentation for the git repository details](dataspace/git.md)
-  - Product Owner: DSpace Migration Working Group
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Product Owner: N/A
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - DataSpace Embargo Lifter
@@ -37,7 +37,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: None
   - Code Base: https://github.com/pulibrary/dataspace_embargo_lifter
   - Product Owner: Lynn Durgin
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Electronic Theses and Dissertations Process
@@ -47,7 +47,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URLs: [Theses Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp019c67wm88m); [Doctoral Dissertations Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp01td96k251d)
   - Code Base: https://github.com/pulibrary/etd_transformer
   - Product Owner: Lynn Durgin
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Access Repository (OAR)
@@ -56,11 +56,11 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://oar.princeton.edu
   - Code Base: [Please see the documentation for the git repository details](oar/git.md)
   - Product Owner: Hannah Hadley
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - OAWaiver
-  - A lightweight Rails application for managing waivers for access to faculty publications in the OAR
+  - A Rails application for managing waivers for access to faculty publications in the OAR
   - Status: In production
   - Public URL: https://oawaiver.princeton.edu
   - Code Base: https://github.com/pulibrary/oawaiver
@@ -73,7 +73,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Status: Staged for production
   - Public URL: N/A
   - Code Base: https://github.com/pulibrary/nomisma
-  - Product Owner: TBD
+  - Product Owner: N/A
   - Slack channel(s): #catalog (user-centered), #devs (technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
@@ -97,9 +97,19 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
-- PDC_Describe
-  - Description application for Princeton Data Commons content and more
+- ORCID@Princeton
+  - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
   - Status: In development
+  - Public URL: N/A
+  - Staging URL: https://orcid-staging.princeton.edu
+  - Code Base: https://github.com/pulibrary/orcid_princeton
+  - Product Owner: Neggin Keshavarzian
+  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Analytics: none
+  - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
+- PDC_Describe
+  - A Rails application for description and ingestion of Research Data content to Princeton Data Commons
+  - Status: In production
   - Public URL: https://pdc-describe-prod.princeton.edu (must be connected to VPN)
   - Staging URL: https://pdc-describe-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/pdc_describe
@@ -108,7 +118,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
 - PDC_Discovery
-  - A Princeton Data Commons front end for discovery of Research Data, harvested from DataSpace
+  - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from DataSpace and PDC_Describe
   - Status: In production
   - Public URL: https://datacommons.princeton.edu/discovery
   - Staging URL: https://pdc-discovery-staging.princeton.edu
@@ -133,11 +143,11 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Code Base: https://github.com/PrincetonUniversityLibrary/pul-vireo
   - Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo
   - Product Owner: Lynn Durgin
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - TigerData
-  - A collaboratively developed frontend for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology (OIT).
+  - A collaboratively developed front end for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology
   - Status: In development
   - Code Base: https://github.com/pulibrary/tiger-data-app
   - Product Owner: Matt Chandler
