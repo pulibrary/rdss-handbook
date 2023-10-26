@@ -183,6 +183,8 @@ In order to help maintain our Globus infrastructure you'll need an AWS account w
 ## Contacting Globus for support
   To contact globus for support either email them (SUPPORT@GLOBUS.ORG), or contact them via their [Help Page](https://app.globus.org/help)
 
+  When using the Help page click "Check Support Ticket Status". You'll need to create an account on their support system (zendesk). You can submit tickets and keep track of them via this option. You can also include attachments. Try to request that Francis is added to the thread when you submit a support ticket.
+
 ## Configuring Globus
 
 ### Prequisites
