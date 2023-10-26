@@ -180,6 +180,9 @@ Our new PDC branded globus instance will have its data in a bucket called `pdc-g
 
 In order to help maintain our Globus infrastructure you'll need an AWS account with the right permission. See the [onboarding](onboarding.md) documentation for how to set that up.
 
+## Contacting Globus for support
+  To contact globus for support either email them (SUPPORT@GLOBUS.ORG), or contact them via their [Help Page](https://app.globus.org/help)
+
 ## Configuring Globus
 
 ### Prequisites
