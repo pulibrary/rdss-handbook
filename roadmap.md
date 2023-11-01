@@ -31,6 +31,32 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/10/18 - 2023/10/31 🎃
+```mermaid
+gantt
+    title RDSS Sprint, 2023/10/18 - 2023/10/31
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section ORCID
+    Authentication to ORCID: op1, 2023-10-18, 10d
+    ORCID token restriction and management in app: op2, 2023-10-18, 10d
+    My Account page workflow: op3, 2023-10-18, 10d
+    ORCID-to-Princeton UX work: op4, 2023-10-18, 10d
+    Branding groundwork: op5, 2023-10-18, 10d
+    section TigerData
+    Collection queries performance testing: td1, 2023-10-18, 10d
+    section DSpace Support
+    Dissertation workflow troubleshooting: dsp1, 2023-10-19, 6d
+    Off-season thesis submission troubleshooting: dsp2, 2023-10-31, 1d
+    OAR IP restriction troubleshooting: dsp3, 2023-10-31, 1d
+    section PDC
+    Globus outage response: pdc1, 2023-10-26, 2d
+    Provenance note improvements: pdc2, 2023-10-24, 6d    
+    section Open Source
+    Samvera Connect preparation and participation: os1, 2023-10-18, 8d
+```
+
 ### RDSS Sprint, 2023/10/04 - 2023/10/17 🐳
 ```mermaid
 gantt
