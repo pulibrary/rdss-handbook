@@ -31,6 +31,29 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/11/01 - 2023/11/14 🦃
+```mermaid
+gantt
+    title RDSS Sprint, 2023/11/01 - 2023/11/14
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section Cross-Team
+    Search and Race - Report Biased Search Results: td1, 2023-11-06, 10d
+    section ORCID
+    Accessibility support and fixes: op1, 2023-11-01, 3d  
+    ORCID audit for production: op2, 2023-11-01, 3d     
+    Production launch prep: op3, 2023-11-01, 3d   
+    Production authentication to ORCID: op3, 2023-11-06, 3d 
+    section PDC
+    Citation support for ingest: pdc1, 2023-11-01, 3d
+    Footer bug troubleshooting: pdc2, 2023-11-01, 3d
+    Zero bytes file troubleshooting: pdc3, 2023-11-01, 3d
+    section Open Source
+    RubyConf preparation and participation: os1, 2023-11-13, 5d
+    Digital Library Federation (DLF) preparation and participation: os2, 2023-11-13, 5d
+```
+
 ### RDSS Sprint, 2023/10/18 - 2023/10/31 🎃
 ```mermaid
 gantt
