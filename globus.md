@@ -454,6 +454,7 @@ To register a Globus Endpoint do the following:
    ```
 
 ### Connect globus endpoint to S3 bucket
+Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incognito window. Login information is in lastpass.
 
 1.  login to globus
     `sudo globus-connect-server login localhost`
