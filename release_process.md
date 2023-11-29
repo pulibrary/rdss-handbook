@@ -18,48 +18,36 @@ We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment.
 1. `brew tap intuit/auto https://github.com/intuit/auto`
 1. `brew install auto`
 1. [Create a new Github Token](https://github.com/settings/tokens) with `write:packages` privs.
-1. Add the token to the approapriate startup file for your shell. Something like: `echo 'export GH_TOKEN="YourTokenHere"' >> ~/.bash_profile`
+- When creating a new token, select `Generate new token (classic)`
+- For the note section of the new token, add something like `RDSS Release Process` to help identify what this token is used for. 
+- For the privs section, select the following: Under "repo" `repo:status`, `repo_deployment`, `public_repo`. Selecting these will ensure that you will have the appropriate access to deploying RDSS applications.
+1. Add the token to the approapriate startup file (e.g. .bash_profile, .zshrc) for your shell. Something like: `echo 'export GH_TOKEN="YourTokenHere"' >> ~/.bash_profile`
 
 #### Release process
 
 - `git checkout main`
+- `git pull` for latest changes to `MAIN` branch
 - `git tag -l` will show what tags exist
+    - For information on the latest release to know what the new version of the tag should be, you may navigate to the Releases section in the repository of the application you want to deploy. The version will be displayed on the right side of the repository in Github. 
 - `git tag <versionOfTheTag>` create the tag
 - `git push --tags` push the new tag on Github
 - `auto release` will create a new release on Github
-- Review the generated release notes and edit as needed
+- Review the generated [release notes](https://github.com/pulibrary/pdc_describe/releases) and edit as needed
 
 ### Deployment
 
 #### Deployment pre-requiusites
 
-Deployments are done with `pulbot`: You'll need to be added to the `#robots` channel in PULibrary slack.
-Once you're added, try `pulbot deploy pdc_describe to staging`: You'll get an error message like:
+#### Deployment process
 
-> I'm sorry, @UserName (U0123456789), but you don't have access to do that.
+For the deployment process to be completed, once you have generated the release notes on Github, you are not able to deploy. 
 
-Copy the ID that looks like `U0123456789`, and make a PR to update the [list of allowed users](https://github.com/pulibrary/pulbot/blob/main/scripts/listener_middleware.coffee).
-A peer who already has privs should merge your PR, and redeploy pulbot itself with `pulbot deploy pulbot`.
-When the pulbot redeploy is complete you'll be able to complete your deploy to staging.
+From the `MAIN` branch, execute the following: `BRANCH=<versionOfTheTag> bundle exec cap staging deploy`
 
-### Deployment process
+Review these changes on the appropriate staging environment, and if you run into any bugs or unexpected results, please let someone on the RDSS team know as soon as possible. There may need to be a ticket created to address this bug. 
 
-Deployments are done using pulbot on Slack.
+If there are no issues with your latest deployment after reviewing `staging`, you may deploy those changes to `production`
 
-Staging can be used to demo the work on a feature branch:
+`BRANCH=<versionOfTheTag> bundle exec cap production deploy`
 
-```
-pulbot deploy repo-name/branch-name to staging
-```
-
-Or staging can be used after the branch is merged to main:
-
-```
-pulbot deploy repo-name to staging
-```
-
-After confirming that it looks good on staging, deploy to production:
-
-```
-pulbot deploy repo-name/v1.2.3 to production
-```
+After you have successfully deployed to both `staging` and `production`, and have reviewed the application in the browser to check for any bugs present, send deployment notes generated from the `Releases` page of the latest version in Github and paste them to the `#digital_open_data_and_research` [Slack channel](https://pulibrary.slack.com/archives/C01555TP6HE). 
