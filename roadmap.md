@@ -31,6 +31,31 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/11/15 - 2023/11/28 🥧
+```mermaid
+gantt
+    title RDSS Sprint, 2023/11/15 - 2023/11/28
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section Cross-Team
+    Search and Race - Report Biased Search Results: td1, 2023-11-15, 2d
+    section ORCID
+    Sandbox onboarding: op1, 2023-11-15, 10d  
+    Accessibility onboarding for Dubbot: op2, 2023-11-15, 2d
+    Deny token path implementation: op3, 2023-11-15, 5d
+    Security vulnerability fixes and additional onboarding documentation: op3, 2023-11-15, 10d
+    section PDC
+    Solr indexing troubleshooting: pdc1, 2023-11-17, 7d
+    File move error bug fixes: pdc2, 2023-11-28, 1d
+    section DataSpace Support
+    Thesis and dissertation embargo note enhancements: dss1, 2023-11-15, 10d
+    Dissertation resubmission troubleshooting: dss2, 2023-11-22, 2d
+    section TigerData
+    Onboarding for local development and MediaFlux fluency: td1, 2023-11-15, 10d
+    Help documentation and accessibility enhancements: td1, 2023-11-15, 5d
+```
+
 ### RDSS Sprint, 2023/11/01 - 2023/11/14 🦃
 ```mermaid
 gantt
