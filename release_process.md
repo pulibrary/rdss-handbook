@@ -40,7 +40,7 @@ We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment.
 
 #### Deployment process
 
-For the deployment process to be completed, once you have generated the release notes on Github, you are not able to deploy. 
+For the deployment process to be completed, once you have generated the release notes on Github, you are then able to deploy. 
 
 From the `MAIN` branch, execute the following: `BRANCH=<versionOfTheTag> bundle exec cap staging deploy`
 
