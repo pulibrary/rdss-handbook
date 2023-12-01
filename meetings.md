@@ -40,21 +40,17 @@ The team views the [RDSS Work Cycle ZenHub board](https://app.zenhub.com/workspa
 
 The "Check-in and Coffee Chat" is a check-in immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
 
-## Work Cycle Wrap-up and Retrospective Meetings
+## Work Cycle Wrap-up
 
-On the last day of each work cycle, the RDSS team meets for a meeting that is part wrap-up and part work cycle retrospective. Each part is intended to take up no more than half of the meeting.
+On the last day of each work cycle, the RDSS team meets for a wrap-up of the work cycle with the team and other constituents, featuring a [demo](software_demos.md) of features completed in the work cycle.
 
 1. The wrap-up portion is driven by an agenda that is prepopulated by attendees before the meeting, with topics of discussion, demos of work, etc.
 
-1. The retrospective portion of the meeting relies on the RDSS Team Retrium space for running the basic steps of the retrospective. The Retrium space is created at least a few days prior to the retrospective and shared with the team, so that they can prepopulate it with items for the retrospective if desired.
+2. The meeting always begins with a review and summary of the latest work cycle in the [roadmap](roadmap.md).
 
-1. The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.
+3. The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.
 
-1. After the agenda-driven portion of the meeting, the team reviews the [RDSS Work Cycle ZenHub board](https://app.zenhub.com/workspaces/rdss-workcycles-61a4f1a12a399b001730f65a/board) for the cycle that is wrapping up, to ensure that it is ready for work cycle planning next week. This activity is budgeted at around 10 minutes.
-
-1. After the board review, the team runs a short retrospective focused on the latest work cycle. This process uses the RDSS Retrium space. Time is allotted for team members to anonymously add ideas, then as a team group them by theme, then anonymously vote on topics, and finally use the rest of the time to discuss the topic(s) with the votes.
-
-1. In the last 5 minutes of the meeting, the team agrees upon a single action item to complete during the next work cycle, based on the retrospective. This action item becomes a GitHub issue on the relevant board. Action items that are not specific to an application go into the [RDSS Catchall](https://github.com/pulibrary/rdss-catchall) repository.
+4. [Demos](software_demos.md) of software features completed during the work cycle are shown by the team during the wrap-up meeting. 
 
 ## Schedule
 
