@@ -17,7 +17,7 @@ Uptime monitoring for our applications: https://app.honeybadger.io/status_pages/
 - [Retrospectives](retros.md)
 - [Roadmap](roadmap.md)
 - [Runner Role](runner.md)
-- [Work Cycles](work_cycles.md)
+- [Sprints](sprints.md)
 
 ### Infrastructure
 
