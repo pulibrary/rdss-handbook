@@ -4,8 +4,7 @@
 
 ### Selecting an issue
 
-Each week we either work from the [Work Cycle
-Board](https://app.zenhub.com/workspaces/rdss-workcycles-61a4f1a12a399b001730f65a/board?sprints%3Asettings=current_sprint)
+Each week we either work from the [Sprint Board](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board)
 The `Sprint Backlog` column of a given board has issues ordered roughly by priority.
 Always assign yourself to an issue before to starting to work on it, and move it
 to the `in progress` column.

@@ -1,32 +1,32 @@
-# Work Cycles
+# Sprints
 
-The RDSS team's work is structured in 2-week cycles. These cycles begin with a cycle planning meeting, and end with a cycle wrap-up. See [Meetings](meetings.md) for information on how these meetings run.  We also have a bi-weekly retrospective meeting, see [Retrospectives](retros.md) for information on these.
+The RDSS team's work is structured in 2-week sprints. These sprints begin with a sprint planning meeting, and end with a sprint wrap-up. See [Meetings](meetings.md) for information on how these meetings run.  We also have a bi-weekly retrospective meeting, see [Retrospectives](retros.md) for information on these.
 
 ## Norms
 
-- The team uses a ZenHub board called [RDSS Work Cycle](https://app.zenhub.com/workspaces/rdss-workcycles-61a4f1a12a399b001730f65a/board) to track our work.
-- Cycles are delineated by [ZenHub Sprints](https://help.zenhub.com/support/solutions/articles/43000611544-an-introduction-to-zenhub-sprints), which include the date range of the work cycle and an emoji icon to help quickly identify separate work cycles.[1]
-- Any issue in a given work cycle must have a GitHub estimate before it is worked on. This helps us estimate how much work we'll be able to accomplish in a given work cycle, which helps us give our stakeholders more predictability around when work will be delivered.
+- The team uses a ZenHub board called [RDSS Sprint](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board) to track our work.
+- Sprints are delineated by [ZenHub Sprints](https://help.zenhub.com/support/solutions/articles/43000611544-an-introduction-to-zenhub-sprints), which include the date range of the sprint and an emoji icon to help quickly identify separate sprints.[1]
+- Any issue in a given sprint must have a GitHub estimate before it is worked on. This helps us estimate how much work we'll be able to accomplish in a given sprint, which helps us give our stakeholders more predictability around when work will be delivered.
 
-## Work Cycle Meetings
+## Sprint Meetings
 
-### Work Cycle Planning
+### Sprint Planning
 
-1. Look at how many story points we accomplished in the last work cycle, and estimate how many story points we think we can accomplish in this one. We might adjust the number of story points in a sprint because someone on the team is on vacation, or because there are competing team priorities (e.g., a week with a conference or lots of meetings).
+1. Look at how many story points we accomplished in the last sprint, and estimate how many story points we think we can accomplish in this one. We might adjust the number of story points in a sprint because someone on the team is on vacation, or because there are competing team priorities (e.g., a week with a conference or lots of meetings).
 2. Add candidate tickets to the sprint.
 3. Ensure all candidate tickets are estimated.
 4. Decide as a team which tickets are highest priority. By the end of the meeting we should have a sprint board containing about two weeks worth of work, in about the right priority order.
 5. Pick an emoji for our four-weeks-out sprint.
 
-### During the Work Cycle
+### During the Sprint
 
-1. Any new tickets that must be added to the board during the work cycle (e.g., for production emergencies) gets a label of `unplanned work`. [Our goal is to keep unplanned work to a minimum.](https://www.pagerduty.com/blog/5-ways-unplanned-work-disrupting-business/)
-2. The mid-workcycle planning meeting is a chance to check our progress and reflect. Are we on track to finish what we thought we'd finish? Or do we need to adjust expectations?
+1. Any new tickets that must be added to the board during the sprint (e.g., for production emergencies) gets a label of `unplanned work`. [Our goal is to keep unplanned work to a minimum.](https://www.pagerduty.com/blog/5-ways-unplanned-work-disrupting-business/)
+2. The mid-sprint planning meeting is a chance to check our progress and reflect. Are we on track to finish what we thought we'd finish? Or do we need to adjust expectations?
 
-### Work Cycle Wrap-up
+### Sprint Wrap-up
 
 1. We close out any tickets that can be closed. If any tickets are still open, we decide whether to move them to the next sprint.
-2. We record how many story points we completed in this work cycle and how many of them were unplanned work.
+2. We record how many story points we completed in this sprint and how many of them were unplanned work.
 3. We close the sprint and get ready to start the next one.
 
 ## Labels
@@ -51,7 +51,7 @@ When we add a ticket to a sprint, but then have to remove it, we add the deferre
 
 ![](images/unplanned_work.png)
 
-Any ticket that was not on the board at the start of the work cycle that has to be added later counts as unplanned work. Tracking unplanned work is a DevOps best practice: The more unplanned work, the less time exists to create and deliver intentionally prioritized work. Bringing visibility to and measuring unplanned work helps to reduce risk and improve performance.
+Any ticket that was not on the board at the start of the sprint that has to be added later counts as unplanned work. Tracking unplanned work is a DevOps best practice: The more unplanned work, the less time exists to create and deliver intentionally prioritized work. Bringing visibility to and measuring unplanned work helps to reduce risk and improve performance.
 
 ![](images/subject-heading-changes.png)
 ![](images/dataspace_label.png)
