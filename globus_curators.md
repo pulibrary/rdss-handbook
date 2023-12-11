@@ -43,5 +43,4 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
     1. click on "Invite Other"
     1. use the Curators email to find them 
     1. Choose Member access
-1. Click Add Role
 
