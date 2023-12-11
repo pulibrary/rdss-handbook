@@ -617,35 +617,7 @@ For **[ca-update-2022](https://docs.globus.org/ca-update-2022/)** the following 
    1. Delete the client secret that should now be invalidated
 
 ### Creating AWS IAM Keys for Curators
-1. visit princeton.edu/aws and log in
-1. Click on the IAM Unser services
-1. Click on the Users on the left hand side
-1. Click Add User in the top right
-1. Fill in User Name with `pdc-<netid>`
-1. Click `Next`
-1. Choose `pdc-curator` as the group
-1. Click `Next`
-1. Fill in `RDOS` & `PDC` as tags
-1. Click `Next`
-1. find your new user `pdc-<netid>` and click on the name
-1. Click on `Security Credentail` tab
-1. Click `Create Access Key`
-1. Choose `Application running outside AWS`
-1. Click `Next`
-1. Show Private key and copy contents
-1. On a new browser tab, Add an SSH Key to LastPasss
-1. Fill in Private Key
-1. Grab Public key from AWS tab
-1. On LastPass tab fill in private key and name the entry `PDC Globus <curator name> Curator Key`
-1. On LastPass tab go to sharing center at the bottom
-1. Click the Red Plus to add a shared folder
-1. Name it PDC-Globus-<curator-name>
-1. Click on Create
-1. Click on Manage when hovering over the new Folder
-1. Add the curator as an Administrator
-1. Click Invite
-1. Click Save
-1. Contact the Curator to let them know about the key
+See [globus_curators.md](globus_curators.md)
 
 ### Increasing size of Drive
 
