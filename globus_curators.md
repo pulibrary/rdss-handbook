@@ -43,7 +43,6 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
     1. click on "Invite Other"
     1. use the Curators email to find them 
     1. Choose Member access
-   * It usually is one of these collections: Princeton Data Commons Postcuration, Princeton Data Commons Precuration, Princeton Data Commons Staging Postcuration, or Princeton Data Commons Staging Precuration.
 1. Click on Roles
 1. Click Assign New Role
 1. Find the user that you want to give access to
