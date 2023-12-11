@@ -36,7 +36,13 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Contact the Curator to let them know about the key
 
 ## Adding a new administrator to a collection in Globus
-1. Find the collection that the curator needs access to in Globus https://app.globus.org/collections?scope=administered-by-me
+1. Login as rdss-globus in an incognito window (see lastpass "rdss globus service account" for login credentials)
+1. Invite the curator to the "PRINCETON CURATORS" group
+    1. click on groups
+    1. click on "PRINCETON CURATORS"
+    1. click on "Invite Other"
+    1. use the Curators email to find them 
+    1. Choose Member access
    * It usually is one of these collections: Princeton Data Commons Postcuration, Princeton Data Commons Precuration, Princeton Data Commons Staging Postcuration, or Princeton Data Commons Staging Precuration.
 1. Click on Roles
 1. Click Assign New Role
