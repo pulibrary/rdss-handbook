@@ -5,7 +5,8 @@ The RDSS team's work is structured in 2-week sprints. These sprints begin with a
 ## Norms
 
 - The team uses a ZenHub board called [RDSS Sprint](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board) to track our work.
-- Sprints are delineated by [ZenHub Sprints](https://help.zenhub.com/support/solutions/articles/43000611544-an-introduction-to-zenhub-sprints), which include the date range of the sprint and an emoji icon to help quickly identify separate sprints.[1]
+- Sprints are delineated by [ZenHub Sprints](https://help.zenhub.com/support/solutions/articles/43000611544-an-introduction-to-zenhub-sprints), which include the date range of the work cycle and an emoji icon to help quickly identify separate sprints.[1]
+- GitHub Issues are used to track tasks and incidents which are prioritized for any given sprint. Please reference [the standards for creating and updating Issues](issues.md) for further information.
 - Any issue in a given sprint must have a GitHub estimate before it is worked on. This helps us estimate how much work we'll be able to accomplish in a given sprint, which helps us give our stakeholders more predictability around when work will be delivered.
 
 ## Sprint Meetings
