@@ -56,8 +56,10 @@ How to set up a GitHub account:
 1. Navigate to the URL of the ZenHub board you wish to review (example: [RDSS sprint board](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board)).
 1. In order for you to view ZenHub boards, GitHub will need to authorize ZenHub to access your GitHub-associated email address and your own GitHub repositories.
   Authorization request screen example:
+
   ![](images/zenhub.png)
-1. You will only need to do this the first time that you access a ZenHub board.  See the [ZenHub and GitHub Permission Structure documentation](https://help.zenhub.com/support/solutions/articles/43000037261-github-permissions-and-access-in-zenhub) for more information.
-1. You should now be able to view public ZenHub boards. Visit [ZenHub - Let’s Get Started](https://help.zenhub.com/support/solutions/43000361405) for more information on ZenHub’s features and workflows.  
-1. The [ZenHub for GitHub extension for Google Chrome](https://chromewebstore.google.com/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) provides a more tightly-integrated user experience between GitHub repositories and their associated ZenHub boards.  This extension is required for orchestrating [story point estimation](https://github.com/pulibrary/rdss-handbook/blob/main/issues.md#story-point-estimation).
+  
+1. You will only need to grant authorization the first time that you access a ZenHub board.  See the [ZenHub and GitHub Permission Structure documentation](https://help.zenhub.com/support/solutions/articles/43000037261-github-permissions-and-access-in-zenhub) for more information.
+2. You should now be able to view public ZenHub boards. Visit [ZenHub - Let’s Get Started](https://help.zenhub.com/support/solutions/43000361405) for more information on ZenHub’s features and workflows.  
+3. The [ZenHub for GitHub extension for Google Chrome](https://chromewebstore.google.com/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) provides a more tightly-integrated user experience between GitHub repositories and their associated ZenHub boards.  This extension is required for orchestrating [story point estimation](https://github.com/pulibrary/rdss-handbook/blob/main/issues.md#story-point-estimation).
 
