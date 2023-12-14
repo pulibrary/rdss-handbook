@@ -53,13 +53,13 @@ To view ZenHub boards, users must have a GitHub account. These are free and can 
 How to set up a GitHub account:
 
 1. Navigate to [https://github.com/join](https://github.com/join).  Input a username, email address, and password to create your GitHub account in the webform. You will receive an email from GitHub to the address you provided to verify your account.  See the [GitHub - Account Setup and Configuration documentation](https://git-scm.com/book/en/v2/GitHub-Account-Setup-and-Configuration) for more information.
-1. Navigate to the URL of the ZenHub board you wish to review (example: [RDSS sprint board](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board)).
-1. In order for you to view ZenHub boards, GitHub will need to authorize ZenHub to access your GitHub-associated email address and your own GitHub repositories.
+2. Navigate to the URL of the ZenHub board you wish to review (example: [RDSS sprint board](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/board)).
+3. In order for you to view ZenHub boards, GitHub will need to authorize ZenHub to access your GitHub-associated email address and your own GitHub repositories.
   Authorization request screen example:
 
   ![](images/zenhub.png)
-  
-1. You will only need to grant authorization the first time that you access a ZenHub board.  See the [ZenHub and GitHub Permission Structure documentation](https://help.zenhub.com/support/solutions/articles/43000037261-github-permissions-and-access-in-zenhub) for more information.
-2. You should now be able to view public ZenHub boards. Visit [ZenHub - Let’s Get Started](https://help.zenhub.com/support/solutions/43000361405) for more information on ZenHub’s features and workflows.  
-3. The [ZenHub for GitHub extension for Google Chrome](https://chromewebstore.google.com/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) provides a more tightly-integrated user experience between GitHub repositories and their associated ZenHub boards.  This extension is required for orchestrating [story point estimation](https://github.com/pulibrary/rdss-handbook/blob/main/issues.md#story-point-estimation).
+
+4. You will only need to grant authorization the first time that you access a ZenHub board.  See the [ZenHub and GitHub Permission Structure documentation](https://help.zenhub.com/support/solutions/articles/43000037261-github-permissions-and-access-in-zenhub) for more information.
+5. You should now be able to view public ZenHub boards. Visit [ZenHub - Let’s Get Started](https://help.zenhub.com/support/solutions/43000361405) for more information on ZenHub’s features and workflows.  
+6. The [ZenHub for GitHub extension for Google Chrome](https://chromewebstore.google.com/detail/zenhub-for-github/ogcgkffhplmphkaahpmffcafajaocjbd) provides a more tightly-integrated user experience between GitHub repositories and their associated ZenHub boards.  This extension is required for orchestrating [story point estimation](https://github.com/pulibrary/rdss-handbook/blob/main/issues.md#story-point-estimation).
 
