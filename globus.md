@@ -185,6 +185,8 @@ In order to help maintain our Globus infrastructure you'll need an AWS account w
 
   When using the Help page click "Check Support Ticket Status". You'll need to create an account on their support system (zendesk). You can submit tickets and keep track of them via this option. You can also include attachments. Try to request that Francis is added to the thread when you submit a support ticket.
 
+  It is helpful to include the output of `globus-connect-server self-diagnostic` in the ticket to Globus.
+
 ## Configuring Globus
 
 ### Prequisites
