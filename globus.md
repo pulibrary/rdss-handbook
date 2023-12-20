@@ -187,6 +187,8 @@ In order to help maintain our Globus infrastructure you'll need an AWS account w
 
   It is helpful to include the output of `globus-connect-server self-diagnostic` in the ticket to Globus.
 
+  See also [globus_troubleshooting.md]
+
 ## Configuring Globus
 
 ### Prequisites
