@@ -38,8 +38,16 @@ gantt
     axisFormat  %Y-%m-%dd
     dateformat YYYY-MM-DD
     excludes weekends
-    section Cross-Team
-    Search and Race - Report Biased Search Results: td1, 2023-11-15, 2d
+    section TigerData 
+    MediaFlux and aterm training: td1, 2023-12-27, 10d
+    Refactor MediaFlux client code: td1, 2023-12-27, 10d
+    Project request form submission and validation: td2, 2023-12-27, 10d
+    Dashboard enhancements: td3, 2023-12-27, 10d
+    Training environment provisioning: td3, 2023-12-27, 10d
+    section PDC
+    Globus troubleshooting: pdc1, 2024-01-03, 4d
+    section DSpace Support
+    OAWaiver certificate keys management: dsp1, 2024-01-03, 3d
 ```
 
 ### RDSS Sprint, 2023/12/13 - 2023/12/26 🛝
@@ -51,7 +59,7 @@ gantt
     excludes weekends
     section TigerData
     MediaFlux and aterm training: td1, 2023-12-13, 10d
-    Project details form submission and validation: td2, 2023-12-13, 10d
+    Project request form submission and validation: td2, 2023-12-13, 10d
     Training environment provisioning: td3, 2023-12-13, 5d
     Accessibility enhancements: td4, 2023-12-13, 3d
     Preliminary roles implementation: td5, 2023-12-13, 10d
@@ -74,7 +82,7 @@ gantt
     excludes weekends
     section TigerData
     MediaFlux and aterm training: td1, 2023-11-29, 10d
-    Project details form and display implementation: td2, 2023-11-29, 10d
+    Project details display implementation: td2, 2023-11-29, 10d
     MediaFlux prefix and metadata enhancements: td4, 2023-11-29, 10d
     section PDC
     Solr indexing troubleshooting: pdc1, 2023-11-29, 10d
