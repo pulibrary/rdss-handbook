@@ -31,6 +31,53 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2023/12/27 - 2024/01/09 🛷
+```mermaid
+gantt
+    title RDSS Sprint, 2023/12/27 - 2024/01/09
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section Cross-Team
+    Search and Race - Report Biased Search Results: td1, 2023-11-15, 2d
+```
+
+### RDSS Sprint, 2023/12/13 - 2023/12/26 🛝
+```mermaid
+gantt
+    title RDSS Sprint, 2023/12/13 - 2023/12/26
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section Cross-Team
+    Search and Race - Report Biased Search Results: td1, 2023-11-15, 2d
+```
+
+### RDSS Sprint, 2023/11/29 - 2023/12/12 🛍️
+```mermaid
+gantt
+    title RDSS Sprint, 2023/11/29 - 2023/12/12
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section TigerData
+    MediaFlux and aterm training: td1, 2023-11-29, 10d
+    Project details page implementation: td2, 2023-11-29, 10d
+    MediaFlux prefix and metadata enhancements: td4, 2023-11-29, 10d
+    section PDC
+    Solr indexing troubleshooting: pdc1, 2023-11-29, 10d
+    Large file movement testing and troubleshooting: pdc2, 2023-11-29, 10d
+    Metadata validation enhancements: pdc3, 2023-12-01, 3d
+    Preservation enhancements: pdc4, 2023-11-29, 10d
+    section ORCID
+    Sandbox onboarding: op1, 2023-11-29, 10d  
+    section DSpace Support
+    Decommission OIT Elements servers: dsp1, 2023-11-29, 3d
+    Dissertation loading: dsp4, 2023-11-29, 3d
+    SAML troubleshooting for OAR: dsp2, 2023-12-10, 2d
+    Thesis indexing and embargo date troubleshooting: dsp3, 2023-12-05, 3d
+```
+
 ### RDSS Sprint, 2023/11/15 - 2023/11/28 🥧
 ```mermaid
 gantt
