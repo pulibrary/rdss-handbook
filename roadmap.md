@@ -14,7 +14,7 @@ gantt
     section ORCiD
     ORCiD service: pd3,2024-10-01,31d
     section DSpace Support
-    2023 Thesis import: dsp1,2024-06-18,60d
+    2024 Thesis import: dsp1,2024-06-18,60d
     DataSpace maintenance: dsp3,2024-01-03,303d
     OAR maintenance: dsp4,2024-01-03,303d
 ```
