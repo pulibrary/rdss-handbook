@@ -31,6 +31,29 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2024/01/10 - 2024/01/23 🧊
+```mermaid
+gantt
+    title RDSS Sprint, 2024/01/10 - 2024/01/23
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section TigerData 
+    Refactor MediaFlux client code: td1, 2024-01-10, 10d
+    Project request form submission and validation: td2, 2024-01-10, 10d
+    Project show page and dashboard enhancements: td3, 2024-01-10, 10d
+    Metadata field enhancements: td4, 2024-01-10, 10d
+    User registration configuration and loading: td5, 2024-01-10, 10d
+    section PDC
+    Solr cluster reindexing testing: pdc1, 2024-01-15, 5d
+    Recent dataset display enhancement: pdc2, 2024-01-10, 4d
+    section DSpace Support
+    OAWaiver storage troubleshooting: dsp1, 2024-01-10, 3d
+    OAR task pool troubleshooting: dsp2, 2024-01-22, 2d
+    DataSpace submission troubleshooting: dsp3, 2024-01-19, 2d
+    DataSpace feedback form enhancement: dsp4, 2024-01-18, 3d
+```
+
 ### RDSS Sprint, 2023/12/27 - 2024/01/09 🛷
 ```mermaid
 gantt
@@ -40,10 +63,10 @@ gantt
     excludes weekends
     section TigerData 
     MediaFlux and aterm training: td1, 2023-12-27, 10d
-    Refactor MediaFlux client code: td1, 2023-12-27, 10d
-    Project request form submission and validation: td2, 2023-12-27, 10d
-    Dashboard enhancements: td3, 2023-12-27, 10d
-    Training environment provisioning: td3, 2023-12-27, 10d
+    Refactor MediaFlux client code: td2, 2023-12-27, 10d
+    Project request form submission and validation: td3, 2023-12-27, 10d
+    Dashboard enhancements: td4, 2023-12-27, 10d
+    Training environment provisioning: td5, 2023-12-27, 10d
     section PDC
     Globus troubleshooting: pdc1, 2024-01-03, 4d
     section DSpace Support
