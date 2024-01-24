@@ -1,6 +1,6 @@
 # Ensembling
 
-RDSS explicitly recommends pair programming/ensembling, especially for significant tickets. 
+RDSS explicitly recommends pair programming/ensembling, especially for significant tickets. When you set up an ensemble, please post the ticket that you will be working on and the zoom link in the team channel, so that others can join if they want to.  
 
 ## Best Practices
 
