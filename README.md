@@ -8,6 +8,7 @@ Uptime monitoring for our applications: https://app.honeybadger.io/status_pages/
 
 - [About RDSS](about.md)
 - [Applications](applications.md)
+- [Ensembles](ensembles.md)
 - [Incidents and Outages](outages.md)
 - [Meetings](meetings.md)
 - [Monitoring](monitoring.md)
