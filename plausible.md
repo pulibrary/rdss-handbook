@@ -39,3 +39,14 @@ PUL has a premium subscription to Plausible through our Library IT Operations te
 - Once the cardholder accepts the ownership transfer, admins and viewers on that site should be able to go to the site in Plausible and see the dashboard, example below:
 
 ![](images/plausible_dashboard.png)
+
+## Custom properties
+We use custom properties to track download events in [PDC_Discovery](https://github.com/pulibrary/pdc_discovery).
+
+To *define* custom properties you need to go to the Settings page for the site:
+
+![](images/plausible_custom_properties_define.png)
+
+To *view the values* collected for the custom property you go to the Custom Properties in the home page and select the "Properties" option
+
+![](images/plausible_custom_properties_view.png)
