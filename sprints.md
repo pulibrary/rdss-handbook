@@ -14,10 +14,13 @@ The RDSS team's work is structured in 2-week sprints. These sprints begin with a
 ### Sprint Planning
 
 1. Look at how many story points we accomplished in the last sprint, and estimate how many story points we think we can accomplish in this one. We might adjust the number of story points in a sprint because someone on the team is on vacation, or because there are competing team priorities (e.g., a week with a conference or lots of meetings).
-2. Add candidate tickets to the sprint.
-3. Ensure all candidate tickets are estimated.
-4. Decide as a team which tickets are highest priority. By the end of the meeting we should have a sprint board containing about two weeks worth of work, in about the right priority order.
-5. Pick an emoji for our four-weeks-out sprint.
+2. Check for any tickets with the [`post-incident` label](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) in RDSS repositories.  Make sure that these tickets are all reasonably accounted for in a sprint, either the one being planned or another near-term sprint as appropriate.
+3. Revisit the notes from any post-incident meetings that occured since the last sprint to ensure that all intended tickets were created.  Create, label, and triage any additional `post-incident` tickets.
+4. Add candidate tickets to the sprint.
+5. Ensure all candidate tickets are estimated.
+6. Decide as a team which tickets are highest priority. By the end of the meeting we should have a sprint board containing about two weeks worth of work, in about the right priority order.
+7. Pick an emoji for this sprint.
+8. Pick a [runner](runner.md) for this sprint.
 
 ### During the Sprint
 
