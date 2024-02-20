@@ -25,6 +25,30 @@ gantt
 
 This section documents past RDSS sprints. This documentation began in late July 2022, as a result of All-Hands RDSS team discussion.
 
+### RDSS Sprint, 2024/02/07 - 2024/02/20 🐨
+```mermaid
+gantt
+    title RDSS Sprint, 2024/02/07 - 2024/02/20
+    axisFormat  %Y-%m-%dd
+    dateformat YYYY-MM-DD
+    excludes weekends
+    section TigerData 
+    Frontend look and feel enhancements: td1, 2024-02-07, 8d
+    Postgres 15 updates: td2, 2024-02-07, 5d
+    User roles refinements and specs creation: td3, 2024-02-07, 10d
+    Display contents preview: td4, 2024-02-07, 10d
+    Project ID management: td5, 2024-02-12, 5d
+    Testing projects on td-meta1: td5, 2024-02-19, 2d
+    section PDC
+    PPPL subcommunity updates: pdc1, 2024-02-12, 2d
+    Plausible API updates: pdc2, 2024-02-08, 2d
+    section Senior Theses
+    Refresh data in ThesisCentral staging: st1, 2024-02-07, 10d
+    Refresh data in ThesisCentral production: st2, 2024-02-07, 5d
+    section DSpace Support
+    DataSpace banner messages: dsp1, 2024-02-07, 3d
+```
+
 ### RDSS Sprint, 2024/01/10 - 2024/01/23 🧊
 ```mermaid
 gantt
