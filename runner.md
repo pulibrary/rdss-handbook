@@ -7,7 +7,12 @@ RDSS employs the time of a Runner in each sprint, to ensure that errors encounte
 There is one runner per sprint.  The new runner is selected during the [Sprint Planning meeting](meetings.md), which occurs once every two weeks at the beginning of a new sprint.
 
 The runner's duties are as follows:
-* Each workday, check [Honeybadger](https://app.honeybadger.io/projects) and [DataDog](https://app.datadoghq.com/logs?saved-view-id=2137895) for errors in RDSS applications.
+
+Each workday check:
+
+* [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications: pdc_describe, Tiger Data, and pdc_discovery.
+* [Honeybadger](https://app.honeybadger.io/projects) for *uptime errors* in the following RDSS applications: cicognara, PDC Globus, Research data site. We should be getting emails when an application goes down, but it does not hurt to check as part of the runner dutties.
+* Check [DataDog](https://app.datadoghq.com/logs?saved-view-id=2137895) for errors in RDSS applications.
 * Create a ticket for each error encountered, if one does not already exist.
 * Bring error tickets to the RDSS team's attention at check-in for prioritization.
 * If a ticket is a work-stopping issue/considered high priority and is therefore assigned to the current sprint, it receives the "unplanned work" [label](sprints.md) in GitHub.
