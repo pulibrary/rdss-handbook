@@ -10,7 +10,13 @@ The runner's duties are as follows:
 
 Each workday check:
 
-* [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications: pdc_describe, Tiger Data, and pdc_discovery.
+* [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications:
+   * [cicognara uptime](https://app.honeybadger.io/projects/61456/sites)
+   * [globus uptime](https://app.honeybadger.io/projects/103564/sites)
+   * [ordic errors](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored) and [orcid uptime](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored)
+   * [pdc_describe errors](https://app.honeybadger.io/projects/99214/faults?q=-is%3Aresolved+-is%3Aignored&sort=last_seen_asc) and [pdc_describe uptime](https://app.honeybadger.io/projects/99214/sites)
+   * [pdc_discovery errors](https://app.honeybadger.io/projects/95072/faults?q=-is%3Aresolved+-is%3Aignored) and [pdc_discovery uptime](https://app.honeybadger.io/projects/95072/sites)
+   * [tigerdata errors](https://app.honeybadger.io/projects/113559/faults?q=-is%3Aresolved+-is%3Aignored) and [tigerdata uptime](https://app.honeybadger.io/projects/113559/sites)
 * [Honeybadger](https://app.honeybadger.io/projects) for *uptime errors* in the following RDSS applications: cicognara, PDC Globus, Research data site. We should be getting emails when an application goes down, but it does not hurt to check as part of the runner dutties.
 * Check [DataDog](https://app.datadoghq.com/logs?saved-view-id=2137895) for errors in RDSS applications.
 * Create a ticket for each error encountered, if one does not already exist.
