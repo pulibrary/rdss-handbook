@@ -65,7 +65,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://oawaiver.princeton.edu
   - Code Base: https://github.com/pulibrary/oawaiver
   - Product Owner: Hannah Hadley
-  - Slack channel(s): #dspace (user-centered), #dspace-dev (technical)
+  - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Nomisma
