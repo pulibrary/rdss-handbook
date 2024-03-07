@@ -128,7 +128,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - Symplectic Elements
-  - An instance of Symplectic Elements used to harvest and review open access articles to publish in the OAR; currently maintained by Library IT, hosted on OIT Windows server infrastructure; in the process of migrating to a hosted solution with the vendor Digital Science
+  - An instance of Symplectic Elements used to harvest and review open access articles to publish in the OAR. This requires Microsoft Server infrastructure, and is currently maintained and supported by the vendor [Digital Science](https://www.digital-science.com/).
   - Status: In production
   - Public URL: https://oaworkflow.princeton.edu
   - Code Base: N/A (externally managed by Digital Science)
