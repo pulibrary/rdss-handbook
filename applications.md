@@ -2,16 +2,6 @@
 
 Unless otherwise noted, all applications below are Open Source and run on Library IT-owned infrastructure.
 
-- Annotations server
-  - A proof-of-concept deployment of an annotations server with a web-based GUI for creating annotations, built on Mirador and [SimpleAnnotationServer](https://github.com/glenrobson/SimpleAnnotationServer)
-  - Status: Deployed in staging and production
-  - Public URL: https://annotations.princeton.edu
-  - Staging URL: https://annotations-staging.princeton.edu
-  - Code Base: [Ansible playbook in princeton_ansible](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/annotations.yml)
-  - Product Owner: N/A
-  - Slack channel(s): #annotations-development (user-centered and technical)
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Cicognara
   - A Rails application for managing metadata and discovery of the Digital Cicognara Library
   - Status: In production
@@ -19,7 +9,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Staging URL: https://cicognara-staging.princeton.edu
   - Code Base: https://github.com/pulibrary/cicognara-rails
   - Product Owner: Holly Hatheway
-  - Slack channel(s): #digital_library (user-centered), #devs (technical)
+  - Slack channel(s): #digital_library
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - DataSpace
@@ -42,10 +32,10 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Electronic Theses and Dissertations Process
   - Data transformation and loading processes managed by Library IT to support Special Collections annual review and publication of electronic theses, and quarterly-ish publication of dissertations in DataSpace
-  - Documentation: [Dissertation import](https://pulibrary.github.io/etd_transformer/process-dissertations.html) and [Senior Theses import](https://pulibrary.github.io/etd_transformer/process-theses.html)
+  - Documentation: [Dissertation import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-dissertations.md) and [Masters Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-masters-theses.md) and [Senior Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-theses.md)
   - Status: In production
   - Public URLs: [Theses Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp019c67wm88m); [Doctoral Dissertations Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp01td96k251d)
-  - Code Base: https://github.com/pulibrary/etd_transformer
+  - Code Base: https://github.com/PrincetonUniversityLibrary/etd_transformer
   - Product Owner: Lynn Durgin
   - Slack channel(s): #dspace
   - Analytics: none
@@ -68,22 +58,13 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
-- Nomisma
-  - A set of Ruby scripts to generate RDF files from PUL's Numismatic data in the Library catalog frontend, for [Nomisma](http://nomisma.org/)
-  - Status: Staged for production
-  - Public URL: N/A
-  - Code Base: https://github.com/pulibrary/nomisma
-  - Product Owner: N/A
-  - Slack channel(s): #catalog (user-centered), #devs (technical)
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Publishing
   - An instance of Open Journal System (OJS) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access peer-reviewed journals
   - Status: In production
   - Public URL: https://openpublishing.princeton.edu
   - Code Bases: https://github.com/pulibrary/openpublishing; https://github.com/pulibrary/ojs_styles
   - Product Owner: Hannah Hadley
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
   - [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
   - [Backup and restore instructions](ojs.md)
   - Analytics: none
@@ -94,37 +75,38 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://openbooks.princeton.edu
   - Code Base: https://github.com/pulibrary/openbooks
   - Product Owner: Hannah Hadley
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - ORCID@Princeton
   - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
-  - Status: In development
-  - Public URL: N/A
-  - Staging URL: https://orcid-staging.princeton.edu
+  - Status: In pre-production
+  - Public URL: https://orcid.princeton.edu
+  - Staging URL: https://orcid-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/orcid_princeton
   - Product Owner: Neggin Keshavarzian
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
 - PDC_Describe
   - A Rails application for description and ingestion of Research Data content to Princeton Data Commons
   - Status: In production
-  - Public URL: https://pdc-describe-prod.princeton.edu (must be connected to VPN)
+  - Public URL: https://datacommons.princeton.edu/describe
   - Staging URL: https://pdc-describe-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/pdc_describe
   - Product Owner: Matt Chandler
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
 - PDC_Discovery
-  - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from DataSpace and PDC_Describe
+  - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
   - Public URL: https://datacommons.princeton.edu/discovery
   - Staging URL: https://pdc-discovery-staging.princeton.edu
   - Code Base: https://github.com/pulibrary/pdc_discovery
   - Product Owner: Matt Chandler
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
+  - [Public monitoring page](https://d932489f-8a8c-4058-964b-df268f589f5a.site.hbuptime.com/)
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - Symplectic Elements
@@ -133,7 +115,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Public URL: https://oaworkflow.princeton.edu
   - Code Base: N/A (externally managed by Digital Science)
   - Product Owner: Hannah Hadley
-  - Slack channel(s): #digital_open_data_and_research (user-centered and technical)
+  - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned (externally hosted)
 - ThesisCentral
@@ -149,6 +131,8 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
 - TigerData
   - A collaboratively developed front end for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology
   - Status: In development
+  - Public URL: https://tigerdata-prod.princeton.edu
+  - Staging URL: https://tigerdata-staging.princeton.edu
   - Code Base: https://github.com/pulibrary/tiger-data-app
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
