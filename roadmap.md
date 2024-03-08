@@ -8,17 +8,20 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
-    Support for public launch: pd1,2024-04-03,90d
+    Support for public launch: pd1,2024-03-11,112d
+    Data migration support and troubleshooting: pd2,2024-02-01,195d
     section TigerData
-    TigerData MVP software development: td1,2024-01-03,303d
+    TigerData MVP software development: td1,2024-01-03,333d
     section ORCID
-    ORCID service public launch: pd3,2024-10-01,31d
+    ORCID service public launch: pd3,2024-10-01,60d
     section Open Publishing
-    Manifold migration and launch (supporting vendor, forecasted): op1,2024-03-01,61d
+    Manifold migration and launch (supporting vendor): op1,2024-03-01,80d
     section DSpace
-    2024 Thesis import: dsp1,2024-06-18,60d
-    DSpace sunsetting efforts: dsp2,2024-01-03,303d
-    DataSpace and OAR maintenance: dsp3,2024-01-03,303d
+    ThesisCentral preparation and support: dsp1,2024-03-01,153d
+    2024 Thesis import: dsp2,2024-06-18,60d
+    Rolling dissertations processing: dsp3,2024-01-03,333d
+    DSpace sunsetting efforts: dsp4,2024-01-03,333d
+    DataSpace and OAR maintenance: dsp5,2024-01-03,333d
 ```
 
 ## Past Sprints
