@@ -34,8 +34,22 @@ The RDSS team's work is structured in 2-week sprints. These sprints begin with a
 3. We close the sprint and get ready to start the next one.
 
 ## Labels
-
+We use the [rdss-github-labeler](https://github.com/pulibrary/rdss-github-labeler) to ensure that all our projects have (at least somewhat) consistent labels. 
 We use labels to help with prioritization and process improvement.
+
+Some important ones are:
+
+![](images/post-incident-label.png)
+
+When we have an outage or significant degradation of service, that's an "incident." In the aftermath of an incident, we want to identify ways we could prevent this problem in the future, and the tickets that emerge from that conversation should get a `post-incident` label. We should review and prioritize these regularly. 
+
+![](images/learning-friendly-label.png)
+
+We want to support our early career colleagues by giving them a steady stream of small, well defined tickets that they can work. If a ticket seems like a good candidate for our early career fellows or someone in their first two years of professional software development, give it this label to make it easy for early career folks to find tickets they can work.
+
+![](images/technical-debt-label.png)
+
+We want to stay on top of our [technical debt](https://en.wikipedia.org/wiki/Technical_debt), so we can pay it down regularly. Technical debt might mean going back to re-work places where we took a shortcut, or it might mean upgrading systems that have had deferred maintenance.  
 
 ![](images/accessibility_label.png)
 
@@ -48,10 +62,6 @@ When work is blocked on a ticket in a way that it out of our hands, we assign a 
 ![](images/bug_label.png)
 
 A bug is a defect in code that has already been delivered to a customer. A bug label is appropriate when the software is described as working in a certain way, but in reality it does not work in that way. We track bugs because it gives us a sense of how often we are delivering software that does not work as advertised. Generally speaking, bugs should be prioritized above new feature development, because the longer we wait to fix a bug the more expensive it will be to fix, and letting bugs exist for a long time erodes our stakeholders' trust in our work.
-
-![](images/deferred.png)
-
-When we add a ticket to a sprint, but then have to remove it, we add the deferred label. This should let us make it visible when we are trying to get to a task but are unable to prioritize it, perhaps because of unplanned work or incomplete knowledge about how to implement it.
 
 ![](images/unplanned_work.png)
 
