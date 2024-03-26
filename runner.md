@@ -25,3 +25,5 @@ Each workday check:
 * In the ticket, include a checkbox to mark the issue resolved in Honeybadger as part of the acceptance criteria if appropriate ([example here](https://github.com/pulibrary/pdc_describe/issues/1513)).
 
 * Check the failed jobs queue for PDC Describe in production. See [details](https://github.com/pulibrary/pdc_describe/blob/main/docs/sidekiq_jobs.md)
+
+* Review and merge [dependabot PRs in our repositories](https://github.com/pulls?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Fannotations_app+repo%3Apulibrary%2Fcicognara-static+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3Apulibrary%2Fdspace-cli+repo%3Apulibrary%2Fdspace-development+repo%3Apulibrary%2Fdspace-java+repo%3Apulibrary%2Fdspace-jruby+repo%3Apulibrary%2Fetd_transformer+repo%3Apulibrary%2Foawaiver+repo%3Apulibrary%2Fopenbooks+repo%3Apulibrary%2Fopenpublishing+repo%3Apulibrary%2Fouranos+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2FSimpleAnnotationServer+repo%3Apulibrary%2Ftiger-data-app+repo%3Apulibrary%2Ftiger-data-experiments+sort%3Acreated-asc+) 
