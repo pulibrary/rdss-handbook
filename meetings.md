@@ -38,25 +38,59 @@ The team views the [RDSS Sprint ZenHub board](https://app.zenhub.com/workspaces/
 
 ### Other norms
 
-The "Check-in and Coffee Chat" is a check-in immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team.
+The "Check-in and Coffee Chat" is a check-in immediately followed by a 30-minute informal learn-out, where team members briefly share things they learned that week in their work with the team. 
 
-## Sprint Wrap-up
+## Sprint Wrap-Up Meetings
 
-On the last day of each sprint, the RDSS team meets for a wrap-up of the sprint with the team and other constituents, featuring a [demo](software_demos.md) of features completed in the sprint.
+Every two weeks, on the last day of the sprint being closed out (referred to from here on as the closeout sprint), a sprint wrap-up meeting will be held.  This meeting will be attended by the RDSS team and sprint participants from other teams such as IT Operations, Assessment and User Experience, and other software development teams.  Each meeting will have the following format:
 
-1. The wrap-up portion is driven by an agenda that is prepopulated by attendees before the meeting, with topics of discussion, demos of work, etc.
+1. Populate the agenda with the currently-worked epic(s) and any highlighted completed issues from the closeout sprint to review.  Review these issues as a group.  
 
-2. The meeting always begins with a review and summary of the latest sprint in the [roadmap](roadmap.md).
+1. Review in-progress issues and review/QA issues in the closeout sprint.  Move them to the new sprint as needed.
 
-3. The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.
+1. Review remaining issues in the closeout sprint in the backlog.
 
-4. [Demos](software_demos.md) of software features completed during the sprint are shown by the team during the wrap-up meeting. 
+1. Determine which issues should move to the next sprint and which issues should be rescheduled or unscheduled, and move tickets accordingly. 
+
+1. Discuss in brief the following:
+
+    1. Any unplanned work (using the [unplanned-work](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=unplanned-work) label).
+
+    1. Any concerns for anticipated risks to the upcoming sprint (known major upgrades or planned outages, departmental deadlines outside of IT, etc).
+
+1. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX) labeled issues and schedule for future sprints (not the upcoming sprint).
+
+1. Review [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility) labeled and schedule for future sprints (not the upcoming sprint).
+
+1. Review [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints (not the upcoming sprint).
+
+1. Review security vulnerabilities ([example](https://github.com/pulibrary/pdc_describe/security/dependabot)) on active projects and schedule for future sprints (not the upcoming sprint).
+
+1. Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
+
+1. Select a [runner](runner.md) for the upcoming sprint.
+
+1. Select a new emoji for the upcoming sprint.
+
+## RDSS Departmental Monthly Meetings
+
+Once a month, RDSS holds a meeting that includes a [demo](software_demos.md) of software developed in the closeout sprint and an open agenda portion where anyone in attendance should add items to discuss with the group during the meeting.  The meeting is be made up of all members of the RDSS team and colleagues from constituent groups such as IT Leadership, IT Operations, the Princeton Research Data Service, Research Data and Open Scholarship, Assessment and User Experience, the Princeton Plasma Physics Library, Discovery and Access Services, Digital Library Services, and any others.  The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.  Each meeting has the following format: 
+
+1. Overview of agenda by RDSS leadership
+
+1. Software demo reflecting work accomplished in closeout sprint
+
+1. Questions and discussion of demo.
+
+1. Review and discussion of all other public agenda items
+
+1. Review of the overall [roadmap](roadmap.md) for RDSS
 
 ## Schedule
 
-Sprints last for 2 weeks, starting on a Wednesday and ending on a Tuesday. The RDSS standing meetings schedule looks like this:
+Sprints last for 2 weeks, starting on a Wednesday and ending on a Tuesday. The RDSS sprint meetings schedule looks like this:
 
 | Week | Wednesday                           | Thursday       | Friday                            | Monday         | Tuesday                                                  |
 | :--: | :---------------------------------- | :------------- | :-------------------------------- | :------------- | :------------------------------------------------------- |
 |  1   | Sprint Planning (sprint begins) | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in | Daily Check-in                                           |
-|  2   | Mid-Sprint Planning Check-in        | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in | Daily Check-in<br />Sprint Wrap-up and Retrospective |
+|  2   | Ticket Refinement        | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in | Daily Check-in<br />Sprint Wrap-up and Retrospective |
