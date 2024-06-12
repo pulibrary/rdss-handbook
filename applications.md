@@ -2,16 +2,6 @@
 
 Unless otherwise noted, all applications below are Open Source and run on Library IT-owned infrastructure.
 
-- Cicognara
-  - A Rails application for managing metadata and discovery of the Digital Cicognara Library
-  - Status: In production
-  - Public URL: https://cicognara.org
-  - Staging URL: https://cicognara-staging.princeton.edu
-  - Code Base: https://github.com/pulibrary/cicognara-rails
-  - Product Owner: Holly Hatheway
-  - Slack channel(s): #digital_library
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None planned
 - DataSpace
   - A DSpace 5.x instance for institutional data including research data content, select Library-owned PDFs, and electronic theses and dissertations
   - Status: In production
@@ -59,25 +49,14 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Publishing
-  - An instance of Open Journal System (OJS) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access peer-reviewed journals
-  - Status: In production
-  - Public URL: https://openpublishing.princeton.edu
-  - Code Bases: https://github.com/pulibrary/openpublishing; https://github.com/pulibrary/ojs_styles
-  - Product Owner: Hannah Hadley
-  - Slack channel(s): #digital_open_data_and_research
-  - [Public monitoring page](https://0f636d4c-7961-4c35-aece-0e58925491bd.site.hbuptime.com/)
-  - [Backup and restore instructions](ojs.md)
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
-- Open Books
-  - An instance of Open Monograph Press (OMP) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access books
-  - Status: In production
-  - Public URL: https://openbooks.princeton.edu
-  - Code Base: https://github.com/pulibrary/openbooks
+  - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor [SoftServ](https://softserv.scientist.com/).
+  - Status: In development
+  - Public URL: https://openpublishing.princeton.edu (to be updated)
+  - Code Base: https://github.com/scientist-softserv/princeton-manifold 
   - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - [Dubbot](https://princeton.dubbot.com) status: To be added
 - ORCID@Princeton
   - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
   - Status: In pre-production
@@ -87,7 +66,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Product Owner: Neggin Keshavarzian
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
+  - [Dubbot](https://princeton.dubbot.com) status: To be added
 - PDC_Describe
   - A Rails application for description and ingestion of Research Data content to Princeton Data Commons
   - Status: In production
@@ -97,7 +76,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None, planning to add post-launch
+  - [Dubbot](https://princeton.dubbot.com) status: To be added
 - PDC_Discovery
   - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
@@ -137,4 +116,4 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None, planned for future
+  - [Dubbot](https://princeton.dubbot.com) status: To be added
