@@ -6,7 +6,7 @@ For a quick intro to Globus take a look at [Globus for newbies](https://docs.goo
 
 ## Historic Globus Setup
 
-There are currently two EC2 Servers serving up the exact samne globus structure. Need to find out why that is...
+There are currently two EC2 Servers serving up the exact same globus structure. Need to find out why that is...
 Current Globus collections for dataspace
 
 #### Endpoint
@@ -36,7 +36,7 @@ There are currently six collections:
 **Note:** There seem to be collections for PDC, DSS, Dataspace and the POSIX collection. We should figure out what these collections are all for...
 
 ## Monitoring
-Our globus endpoints are being monitored by [Honey Badger](https://app.honeybadger.io/projects/103564/sites)
+Our globus endpoints are being monitored by [Honey Badger](https://app.honeybadger.io/projects/103564/sites) and [Monit](https://github.com/pulibrary/princeton_ansible/roles/monit)
 Additional sites can be configured for monitoring by adding the sites `GCS Manager URL` to honey badger.
 
 ### Determining the `GCS Manager URL`
