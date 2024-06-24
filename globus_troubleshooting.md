@@ -1,5 +1,25 @@
 # Globus Troubleshooting
 
+## Restarting Globus
+
+Find the box ip address by [logging into aws](https://www.princeton.edu/aws) and then locate the box inquestion under [running EC2 insatnces](https://us-east-1.console.aws.amazon.com/ec2/home?region=us-east-1#Instances:instanceState=running).
+
+### Connecting to the box
+  1. Open the VPN
+  1. ssh pulsys@<ip address>
+
+### Individual processes
+  Individual processes can be restarted to reset the gridftp processes.
+  ```
+  sudo systemctl restart apache2
+  sudo systemctl restart globus-gridftp-server
+  ```
+### Rebooting the box
+  If the system is particlularly unstablle a system reboot might be needed
+  ```
+  sudo /sbin/reboot
+  ```
+
 ## self-diagnostic
 When troubleshooting Globus it's useful to SSH to the machine were Globus is running
 ([instructions](https://github.com/pulibrary/rdss-handbook/blob/main/globus.md#monitoring))
@@ -83,3 +103,44 @@ large spike in network traffic to the Globus machine. You can see these spikes i
 * Click on Monitoring at the bottom of the screen
   * Click on Network in and Network out to see the network traffic to this machine
 
+## Colecting data for globus support
+Globus support has asked for the following data to be collected when contacting them.  Capture the output of the commands in a text file and attach them to the email along with the tar of the log files.
+
+### Before rebooting or restarting the processes
+```
+curl -vk --resolve f0ad1.36fe.data.globus.org:443:127.0.0.1 https://f0ad1.36fe.data.globus.org/api/info
+curl -vk --resolve f0ad1.36fe.data.globus.org:443:44.197.15.236 https://f0ad1.36fe.data.globus.org/api/info
+sudo --user=www-data curl --unix-socket /run/gcs_manager.sock http://f0ad1.36fe.data.globus.org/api/info
+ls -Zlah /run/gcs_manager.sock
+systemctl -l --no-pager status gcs_manager.socket
+systemctl -l --no-pager status gcs_manager.service
+systemctl -l --no-pager status apache2.service
+systemctl -l --no-pager status gcs_manager_assistant.service
+systemctl -l --no-pager status globus-gridftp-server.service
+sudo netstat -tpn | grep -i grid
+sudo free -m
+sudo dmesg -T
+sar -A -f /var/log/sysstat/sa$(date '+%d')
+sar -A -f /var/log/sysstat/sa$(date -d "yesterday" '+%d')
+sar -A -f /var/log/sysstat/sa15
+```
+
+### After restarting the system
+```
+journalctl --no-pager --since="1 day ago" --unit gcs_manager.socket
+journalctl --no-pager --since="1 day ago" --unit gcs_manager.service
+journalctl --no-pager --since="1 day ago" --unit apache2.service
+journalctl --no-pager --since="1 day ago" --unit gcs_manager_assistant.service
+journalctl --no-pager --since="1 day ago" --unit globus-gridftp-server.service
+```
+
+### Gather up log files
+```
+sudo cp /var/log/apache2/error.log error.log.$(date '+%Y-%m-%d')
+sudo cp /var/log/apache2/access.log access.log.$(date '+%Y-%m-%d')
+sudo cp /var/log/apache2/other_vhosts_access.log other_vhosts_access.log.$(date '+%Y-%m-%d')
+sudo cp /var/log/globus-connect-server/gcs-manager/gcs.log gcs.log.$(date '+%Y-%m-%d')
+sudo cp /var/log/gridftp.log gridftp.log.$(date '+%Y-%m-%d')
+sudo chown pulsys *.$(date '+%Y-%m-%d')
+tar -cvf $(date '+%Y-%m-%d')-logs.tar *.log.$(date '+%Y-%m-%d')
+```
