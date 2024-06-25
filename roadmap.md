@@ -11,8 +11,7 @@ gantt
     TigerData MVP software development: td1,2024-01-03,333d
     section PDC
     User support and Globus troubleshooting: pd1,2024-03-11,82d
-    Globus failover development: pd2,2024-07-01,50d
-    Data migration support and troubleshooting: pd3,2024-09-01,90d
+    Data migration support and troubleshooting: pd2,2024-09-01,90d
     section ORCID
     ORCID service prep and public launch: or1,2024-07-01,70d
     section Open Publishing
