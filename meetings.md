@@ -46,6 +46,8 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1. Populate the agenda with the currently-worked epic(s) and any highlighted completed issues from the closeout sprint to review.  Review these issues as a group.  
 
+1. Review the [Sprint Report](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/reports/burndown) (ensure the correct sprint is selected from the dropdown on the page) for story points and issues/pull requests estimated vs. completed.
+
 1. Review in-progress issues and review/QA issues in the closeout sprint.  Move them to the new sprint as needed.
 
 1. Review remaining issues in the closeout sprint in the backlog.
@@ -80,7 +82,7 @@ Once a month, RDSS holds a meeting that includes a [demo](software_demos.md) of 
 
 1. Software demo reflecting work accomplished in closeout sprint
 
-1. Questions and discussion of demo.
+1. Questions and discussion of demo
 
 1. Review and discussion of all other public agenda items
 
