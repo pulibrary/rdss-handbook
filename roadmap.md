@@ -10,10 +10,10 @@ gantt
     section TigerData
     TigerData MVP software development: td1,2024-01-03,333d
     section PDC
-    User support and Globus troubleshooting: pd1,2024-03-11,82d
-    Data migration support and troubleshooting: pd2,2024-09-01,90d
+    User support and Globus troubleshooting: pd1,2024-03-11,265d
+    Data migration support and troubleshooting: pd2,2024-09-01,91d
     section ORCID
-    ORCID service prep and public launch: or1,2024-07-01,70d
+    ORCID service prep and public launch: or1,2024-07-01,92d
     section Open Publishing
     Manifold migration and launch (supporting vendor): op1,2024-05-20,104d
     section DSpace
@@ -22,4 +22,6 @@ gantt
     Rolling dissertations processing: dsp3,2024-01-03,333d
     DSpace sunsetting efforts: dsp4,2024-01-03,333d
     DataSpace and OAR maintenance: dsp5,2024-01-03,333d
+    section Maintenance
+    Security fixes and software library updates, etc: man1,2024-01-03,333d
 ```
