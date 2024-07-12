@@ -76,6 +76,22 @@ If the API key is working for that site, you should see a JSON response somethin
 
 Consult the [Plausible documentation](https://plausible.io/docs) for more information on API functionality.
 
+## Local development
+
+Local and hybrid development with Plausible can be done by using Plausible's `script.local.js` integration in the application instead of the standard `script.js`, as follows:
+
+In the `<head>` section of the application, embed this snippet:
+
+```javascript
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.local.js"></script>
+```
+
+To stop collecting data in local development, update the snippet as follows:
+
+```javascript
+<script defer data-domain="yourdomain.com" src="https://plausible.io/js/script.js"></script>
+```
+
 ## Custom properties
 We use custom properties to track certain activities such as download events in [PDC_Discovery](https://github.com/pulibrary/pdc_discovery).
 
