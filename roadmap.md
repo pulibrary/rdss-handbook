@@ -8,10 +8,10 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section TigerData
-    TigerData MVP software development: td1,2024-01-03,343d
+    TigerData MVP software development: td1,2024-01-03,363d
     section PDC
-    User support and Globus troubleshooting: pd1,2024-03-11,275d
-    Data migration support and public launch tickets: pd2,2024-09-01,101d
+    User support and Globus troubleshooting: pd1,2024-03-11,295d
+    Data migration support and public launch tickets: pd2,2024-10-01,91d
     section ORCID
     ORCID service prep and public launch: or1,2024-07-01,92d
     section Open Publishing
@@ -19,9 +19,9 @@ gantt
     section DSpace
     ThesisCentral preparation and support: dsp1,2024-03-01,110d
     2024 Thesis import: dsp2,2024-06-18,60d
-    Rolling dissertations processing: dsp3,2024-01-03,343d
-    DSpace sunsetting efforts: dsp4,2024-01-03,343d
-    DataSpace and OAR maintenance: dsp5,2024-01-03,343d
+    Rolling dissertations processing: dsp3,2024-01-03,363d
+    DSpace sunsetting efforts: dsp4,2024-01-03,363d
+    DataSpace and OAR maintenance: dsp5,2024-01-03,363d
     section Maintenance
-    Security fixes and software library updates, etc: man1,2024-01-03,343d
+    Security fixes and software library updates, etc: man1,2024-01-03,363d
 ```
