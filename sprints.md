@@ -67,7 +67,7 @@ A bug is a defect in code that has already been delivered to a customer. A bug l
 
 Any ticket that was not on the board at the start of the sprint that has to be added later counts as unplanned work. Tracking unplanned work is a DevOps best practice: The more unplanned work, the less time exists to create and deliver intentionally prioritized work. Bringing visibility to and measuring unplanned work helps to reduce risk and improve performance.
 
-![](images/public-lauch-label.png)
+![](images/public-launch-label.png)
 
 Any ticket with this label must be completed before the public launch of an application.  This label is used when the software has reached an agreed-upon MVP status with the product owner, but also has a set of requirements to be met before the application can be considered ready for publicity and heavier traffic and use.
 
