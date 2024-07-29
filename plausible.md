@@ -74,6 +74,14 @@ If the API key is working for that site, you should see a JSON response somethin
 }
 ```
 
+If the API key is not correct, you should see a JSON response something like the following:
+
+```json 
+{
+   "error":"Invalid API key or site ID. Please make sure you're using a valid API key with access to the site you've requested."
+}
+```
+
 Consult the [Plausible documentation](https://plausible.io/docs) for more information on API functionality.
 
 ## Local development
