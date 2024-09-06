@@ -64,7 +64,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Staging URL: https://orcid-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/orcid_princeton
   - Product Owner: Neggin Keshavarzian
-  - Slack channel(s): #digital_open_data_and_research
+  - Slack channel(s): #digital_open_data_and_research and #orcid
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: To be added
 - PDC_Describe
