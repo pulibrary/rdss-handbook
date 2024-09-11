@@ -41,7 +41,7 @@ globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration
 ```
 
 ## Get a count of files from a Globus endpoint
-There is no built-in command to get a count of files but you can get to this by piping the output to `wc -` as shown below:
+There is no built-in command to get a count of files but you can get to this by piping the output to `wc -l` as shown below:
 
 ```
 globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 -r | wc -l
