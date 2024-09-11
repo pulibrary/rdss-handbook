@@ -66,7 +66,7 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 13. Select a new emoji for the upcoming sprint.
 
-## RDSS Departmental Monthly Meetings
+## RDSS Team Monthly Share Out Meetings
 
 Once a month, RDSS holds a meeting that includes a [demo](software_demos.md) of software developed in the closeout sprint and an open agenda portion where anyone in attendance should add items to discuss with the group during the meeting.  The meeting is be made up of all members of the RDSS team and colleagues from constituent groups such as IT Leadership, IT Operations, the Princeton Research Data Service, Research Data and Open Scholarship, Assessment and User Experience, the Princeton Plasma Physics Library, Discovery and Access Services, Digital Library Services, and any others.  The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.  Each meeting has the following format: 
 
