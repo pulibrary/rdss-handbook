@@ -48,3 +48,23 @@ globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration
 ```
 
 
+## A complete example
+Below is a sample script to get the counts for files for a given DOI in the Princeton Research Data Repository endpoint in Globus. Files for each DOI is stored on a separate folder.
+
+Notice that Globus list folders by themselves and then the files for the folders so the counts with `globus ls -r` have more files than expected. The script gets a separate count for `files` vs `files and folders`.
+
+```
+DOI="60j3-yp02"
+
+# Princeton Research Data Repository
+GLOBUS_ENDPOINT="dc43f461-0ca7-4203-848c-33a9fc00a464"
+
+echo $DOI
+globus ls -r $GLOBUS_ENDPOINT:/$DOI > $DOI.txt
+
+FILES=`cat $DOI.txt | grep -v '/$' | wc -l`
+FILES_FOLDERS=`cat $DOI.txt | wc -l`
+
+echo $FILES
+echo $FILES_FOLDERS
+```
