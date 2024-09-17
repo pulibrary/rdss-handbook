@@ -58,13 +58,18 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 9. Review [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints (not the upcoming sprint).
 
-10. Review security vulnerabilities ([example](https://github.com/pulibrary/pdc_describe/security/dependabot)) on active projects and schedule for future sprints (not the upcoming sprint).
+10. Review security vulnerabilities on active projects and schedule for future sprints (not the upcoming sprint).
+    1. [pdc_describe](https://github.com/pulibrary/pdc_describe/security/dependabot)
+    1. [pdc_discovery](https://github.com/pulibrary/pdc_discovery/security/dependabot)
+    1. [tigerdata-app](https://github.com/pulibrary/tigerdata-app/security/dependabot)
+    1. [orcid_princeton](https://github.com/pulibrary/orcid_princeton/security/dependabot)
+    1. [oawaiver](https://github.com/pulibrary/oawaiver/security/dependabot)
 
-11. Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
+12. Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
 
-12. Select a [runner](runner.md) for the upcoming sprint.
+13. Select a [runner](runner.md) for the upcoming sprint.
 
-13. Select a new emoji for the upcoming sprint.
+14. Select a new emoji for the upcoming sprint.
 
 ## RDSS Team Monthly Share Out Meetings
 
