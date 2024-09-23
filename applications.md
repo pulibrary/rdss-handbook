@@ -50,8 +50,8 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Publishing
   - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor [SoftServ](https://softserv.scientist.com/).
-  - Status: In development
-  - Public URL: https://openpublishing.princeton.edu (to be updated)
+  - Status: In pre-production
+  - Public URL: https://openpublishing.princeton.edu
   - Code Base: https://github.com/scientist-softserv/princeton-manifold 
   - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research
@@ -59,7 +59,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Dubbot](https://princeton.dubbot.com) status: To be added
 - ORCID@Princeton
   - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
-  - Status: In pre-production
+  - Status: In production
   - Public URL: https://orcid.princeton.edu
   - Staging URL: https://orcid-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/orcid_princeton
@@ -98,11 +98,11 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned (externally hosted)
 - ThesisCentral
-  - An instance of [Vireo](https://github.com/TexasDigitalLibrary/Vireo) for managing the annual upload of student theses for inclusion in DataSpace; currently maintained by Library IT, hosted on OIT Amazon infrastructure
-  - Status: In production
+  - A DSpace 7 instance for managing the annual submission and review workflows of student theses, developed and hosted by the vendor 4Science
+  - Status: In development
   - Public URL: https://thesis-central.princeton.edu
-  - Code Base: https://github.com/PrincetonUniversityLibrary/pul-vireo
-  - Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo
+  - Code Base: N/A
+  - Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo and https://github.com/PrincetonUniversityLibrary/pul-vireo
   - Product Owner: Lynn Durgin
   - Slack channel(s): #dspace
   - Analytics: none
