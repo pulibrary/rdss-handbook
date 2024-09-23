@@ -201,11 +201,11 @@ In order to help maintain our Globus infrastructure you'll need an AWS account w
 
 This section documents steps that were taken to setup items that will be utilized in the following sections like the service account and the Amazon Machine Instance (AMI). They do not need to be run to set up each Globus Endpoint
 
-#### Creating the Princeton Service Now account (Not needed each time)
+#### Creating a Princeton service account
 
-If a Princeton Service Now account needs to be created, you can refer to these steps:
+In the event that a Princeton service account needs to be created, please refer to these steps:
 
-[Setting up Princeton Service Now account](https://github.com/pulibrary/pul-it-handbook/blob/main/services/service_now_account.md)
+[Setting up Princeton service account](https://github.com/pulibrary/pul-it-handbook/blob/main/services/service_account.md)
 
 #### Creating the ami (Not needed each time)
 
