@@ -24,5 +24,6 @@ gantt
     DSpace sunsetting efforts: dsp4,2024-03-03,363d
     DataSpace and OAR maintenance: dsp5,2024-03-03,363d
     section Maintenance
-    Security fixes and software library updates, etc: man1,2024-03-03,363d
+    Easy deploy cross-team cycle: man1, 2024-11-04, 14d
+    Security fixes and software library updates, etc: man2,2024-03-03,363d
 ```
