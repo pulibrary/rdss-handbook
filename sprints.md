@@ -71,6 +71,10 @@ Any ticket that was not on the board at the start of the sprint that has to be a
 
 Any ticket with this label must be completed before the public launch of an application.  This label is used when the software has reached an agreed-upon MVP status with the product owner, but also has a set of requirements to be met before the application can be considered ready for publicity and heavier traffic and use.
 
+![](images/under-po-review-label.png)
+
+This label indicates that an issue is being reviewed by the Product Owner for whether it is workable, still desired, and/or needs to be significantly reworded to be an actionable ticket.
+
 ![](images/subject-heading-changes.png)
 ![](images/dataspace_label.png)
 ![](images/symplectic_elements.png)
