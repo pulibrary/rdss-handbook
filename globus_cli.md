@@ -34,17 +34,20 @@ After that you can list files from the endpoint:
 globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
 ```
 
-and you can do it recursively via the `-r` command:
+and you can do it recursively via the `-r` and  `--recursive-depth-limit` parameters:
 
 ```
-globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 -r
+globus ls -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
 ```
+
+**NOTE:** Be aware that, by default, the `-r` parameter will only go three levels down, you must use the `--recursive-depth-limit` if you want to go deeper.
+
 
 ## Get a count of files from a Globus endpoint
 There is no built-in command to get a count of files but you can get to this by piping the output to `wc -l` as shown below:
 
 ```
-globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 -r | wc -l
+globus ls -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 | wc -l
 ```
 
 
@@ -60,7 +63,7 @@ DOI="60j3-yp02"
 GLOBUS_ENDPOINT="dc43f461-0ca7-4203-848c-33a9fc00a464"
 
 echo $DOI
-globus ls -r $GLOBUS_ENDPOINT:/$DOI > $DOI.txt
+globus ls -r --recursive-depth-limit=100 $GLOBUS_ENDPOINT:/$DOI > $DOI.txt
 
 FILES=`cat $DOI.txt | grep -v '/$' | wc -l`
 FILES_FOLDERS=`cat $DOI.txt | wc -l`
