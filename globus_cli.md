@@ -17,10 +17,12 @@ globus ls ENDPOINT-ID
 
 for example:
 ```
-globus ls 4cea621e-c588-41f4-888e-0f79d229ff84
+globus ls -a 4cea621e-c588-41f4-888e-0f79d229ff84
 ```
 
-The first time we run it you might get an error message that ask you to run the `session consent` command, for example:
+**NOTE:** Like Unix, by default the Globus CLI tool will NOT include files that start with a period (e.g. `.hello.txt`) when you run the `ls` command, but you can request them with the `-a` argument.
+
+The first time we run Globus `ls` you might get an error message that ask you to run the `session consent` command, for example:
 
 ```
 globus session consent 'urn:globus:auth:scope:transfer.api.globus.org:all[*https://auth.globus.org/scopes/4cea621e-c588-41f4-888e-0f79d229ff84/data_access]'
@@ -31,13 +33,13 @@ This will launch your browser and ask you to confirm that you want to allow this
 After that you can list files from the endpoint:
 
 ```
-globus ls 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
+globus ls -a 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
 ```
 
 and you can do it recursively via the `-r` and  `--recursive-depth-limit` parameters:
 
 ```
-globus ls -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
+globus ls -a -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390
 ```
 
 **NOTE:** Be aware that, by default, the `-r` parameter will only go three levels down, you must use the `--recursive-depth-limit` if you want to go deeper.
@@ -47,7 +49,7 @@ globus ls -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/p
 There is no built-in command to get a count of files but you can get to this by piping the output to `wc -l` as shown below:
 
 ```
-globus ls -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 | wc -l
+globus ls -a -r --recursive-depth-limit=100 4cea621e-c588-41f4-888e-0f79d229ff84:/pdc-describe-staging-precuration/10.34770/r75s-9j74/390 | wc -l
 ```
 
 
@@ -63,7 +65,7 @@ DOI="60j3-yp02"
 GLOBUS_ENDPOINT="dc43f461-0ca7-4203-848c-33a9fc00a464"
 
 echo $DOI
-globus ls -r --recursive-depth-limit=100 $GLOBUS_ENDPOINT:/$DOI > $DOI.txt
+globus ls -a -r --recursive-depth-limit=100 $GLOBUS_ENDPOINT:/$DOI > $DOI.txt
 
 FILES=`cat $DOI.txt | grep -v '/$' | wc -l`
 FILES_FOLDERS=`cat $DOI.txt | wc -l`
