@@ -57,7 +57,17 @@ If the PR has been open for a while, or you've just merged another PR, use the `
 
 ## Ruby Documentation (Using YARD)
 
-Code documentation is implemented for Ruby code bases using [YARD](https://yardoc.org/), a Gem which parses Ruby source code file comments and generates documentation in the HTML. For Class implementations, one may look to the following example for guidance:
+Code documentation is implemented for Ruby code bases using [YARD](https://yardoc.org/), a Gem which parses Ruby source code file comments and generates documentation in the HTML.
+
+### Installing the Gem
+
+```bash
+$ bundle add --group "development" yard
+```
+
+### Examples
+
+For documenting Class implementations, one may look to the following example for guidance:
 
 ```ruby
 # @author Loren Segal
@@ -92,4 +102,3 @@ Please generate the documentation with the following invocation:
 $ bundle exec yard doc
 $ open doc/index.html
 ```
-
