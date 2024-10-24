@@ -54,3 +54,42 @@ Checklist for every time you pair:
 We have set up our github repositories to use Dependabot, which generates PRs to upgrade dependencies based on security warnings. Based on our experience with these PRs it is important to test a deployment to a staging server before merging them even if the tests are all passing. Also, in some of our projects our tests do not fully cover our javascript code. In those cases when javascript dependencies are updated it can be helpful to do a bit of QA before merging.
 
 If the PR has been open for a while, or you've just merged another PR, use the `@dependabot rebase` comment to trigger a rebase before deploying. This can take a few minutes.
+
+## Ruby Documentation (Using YARD)
+
+Code documentation is implemented for Ruby code bases using [YARD](https://yardoc.org/), a Gem which parses Ruby source code file comments and generates documentation in the HTML. For Class implementations, one may look to the following example for guidance:
+
+```ruby
+# @author Loren Segal
+class MyWebServer
+  # @!attribute state
+  #   @return [Numeric] the number of POST requests received by the server
+  attr_accesser :name
+
+  # Handles a request
+  # @param request [Request] the request object
+  # @return [String] the resulting webpage
+  def get(request)
+    "GET request received"
+  end
+
+  # (see #get)
+  # @note This method may modify our application state!
+  # @param (see #get)
+  # @return (see #get)
+  def post(request)
+    @state += 1
+    "POST request received"
+  end
+end
+```
+
+### Generating YARD Documentation
+
+Please generate the documentation with the following invocation:
+
+```bash
+$ bundle exec yard doc
+$ open doc/index.html
+```
+
