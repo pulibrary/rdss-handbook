@@ -15,7 +15,7 @@ There is a single globus enpoint: `Princeton Data Repository Endpoint`
 
 #### Storage gateways
 
-There are currently four storage gateways:
+Storage gateways are created and configured in Globus (not in AWS). There are currently four storage gateways:
 
 - Princeton DSS Gateway - S3 Gateway `dss-server-data3` (defunct)
 - Princeton Dataspace Posix Gateway - POSIX Gateway (defunct)
@@ -459,7 +459,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     - paste the url in to your browser
       **NOTE:** Depending on the browser you paste the url into, you will be logged in as that person. If you put it into an incognito and login with rdssglobus you will be rdssglobus. If you use a browser that you are logged into then you will be logged into the connect server as yourself. If you receive messages like `None of your identities have been granted a role to access this resource` you may need to get administrator access for your account, or login as rdssglobus instead.
 
-1.  Put the bucket name and gateway in a variable. Choose one of the following:
+1.  Put the bucket name in a variable. Choose one of the following:
 
     - pdc-describe-staging-precuration
     - pdc-describe-staging-postcuration
@@ -471,7 +471,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     export bucket_name=<bucket name>
     ```
 
-1.  Put the gateway name in a variable. Choose one of the following
+1. Decide on a Gateway name and put it in a variable. For pdc*, choose one of the following:
 
     - pdc s3 storage gateway precuration
     - pdc s3 storage gateway postcuration
@@ -483,7 +483,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     export gateway_name=<gateway name>
     ```
 
-1.  Add the S3 bucket as
+1.  Create the S3 gateway and connect the bucket to it:
 
     ```
     sudo globus-connect-server storage-gateway create s3   "$gateway_name" --domain princeton.edu --s3-endpoint https://s3.amazonaws.com --s3-user-credential --bucket $bucket_name
