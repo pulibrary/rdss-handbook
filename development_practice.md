@@ -74,8 +74,7 @@ YARD using a system of tags invoked from within the comments of a source code fi
 For documenting `class` implementations, one may look to the following example for guidance:
 
 ```ruby
-# @class My Class Desc
-# @author Alice Smith
+# @class My Class Description
 class MyWebServer
   # @!attribute state
   #   @return [Numeric] the number of POST requests received by the server
