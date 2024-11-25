@@ -8,9 +8,7 @@ At each meeting, the team works from the [RDSS Sprint ZenHub board](https://app.
 
 1. As issues are reviewed, the team adds information to the descriptions as needed so they are actionable, and then agrees on a GitHub estimate for each one.
 
-2. Issues that the team will work on are moved into the "Sprint Backlog" column.  Ideally, all issues targeted for the sprint should have an estimate already.  However if they do not, they can be estimated during the planning meeting if appropriate, or targeted for estimation during the next Ticket Refinement meeting.
-
-3. Issues targeted for the upcoming sprint are placed into the "Sprint Backlog" under the upcoming sprint.
+1. Issues that the team will work on are moved into the "Sprint Backlog" column.  Ideally, all issues targeted for the sprint should have an estimate already.  However if they do not, they can be estimated during the planning meeting if appropriate, or targeted for estimation during the next Ticket Refinement meeting.
 
 ### Other norms
 
@@ -38,38 +36,32 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1. Populate the agenda with the currently-worked epic(s) and any highlighted completed issues from the closeout sprint to review.  Review these issues as a group.  
 
-2. Review the [Sprint Report](https://app.zenhub.com/workspaces/rdss-61a4f1a12a399b001730f65a/reports/burndown) (ensure the correct sprint is selected from the dropdown on the page) for story points and issues/pull requests estimated vs. completed.
+1. Review in-progress issues and review/QA issues in the closeout sprint.  Move them to the new sprint as needed.
 
-3. Review in-progress issues and review/QA issues in the closeout sprint.  Move them to the new sprint as needed.
+1. Review remaining issues in the closeout sprint in the backlog.
 
-4. Review remaining issues in the closeout sprint in the backlog.
+1. Determine which issues should move to the next sprint and which issues should be rescheduled or unscheduled, and move tickets accordingly. 
 
-5. Determine which issues should move to the next sprint and which issues should be rescheduled or unscheduled, and move tickets accordingly. 
-
-6. Discuss in brief the following:
+1. Discuss in brief the following:
 
     1. Any unplanned work (using the [unplanned-work](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=unplanned-work) label).
 
-    2. Any concerns for anticipated risks to the upcoming sprint (known major upgrades or planned outages, departmental deadlines outside of IT, etc).
+    1. Any concerns for anticipated risks to the upcoming sprint (known major upgrades or planned outages, departmental deadlines outside of IT, etc).
 
-7. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX) labeled issues and schedule for future sprints (not the upcoming sprint).
+1. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX), [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility), and [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints.
 
-8. Review [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility) labeled and schedule for future sprints (not the upcoming sprint).
-
-9. Review [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints (not the upcoming sprint).
-
-10. Review security vulnerabilities on active projects and schedule for future sprints (not the upcoming sprint).
+1.  Review security vulnerabilities on active projects and schedule for future sprints.
     1. [pdc_describe](https://github.com/pulibrary/pdc_describe/security/dependabot)
-    1. [pdc_discovery](https://github.com/pulibrary/pdc_discovery/security/dependabot)
-    1. [tigerdata-app](https://github.com/pulibrary/tigerdata-app/security/dependabot)
-    1. [orcid_princeton](https://github.com/pulibrary/orcid_princeton/security/dependabot)
-    1. [oawaiver](https://github.com/pulibrary/oawaiver/security/dependabot)
+    2. [pdc_discovery](https://github.com/pulibrary/pdc_discovery/security/dependabot)
+    3. [tigerdata-app](https://github.com/pulibrary/tigerdata-app/security/dependabot)
+    4. [orcid_princeton](https://github.com/pulibrary/orcid_princeton/security/dependabot)
+    5. [oawaiver](https://github.com/pulibrary/oawaiver/security/dependabot)
 
-12. Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
+1.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
 
-13. Select a [runner](runner.md) for the upcoming sprint.
+1.  Select a [runner](runner.md) for the upcoming sprint.
 
-14. Select a new emoji for the upcoming sprint.
+1.  Select a new emoji for the upcoming sprint.
 
 ## RDSS Team Monthly Share Out Meetings
 
