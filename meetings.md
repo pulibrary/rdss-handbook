@@ -61,7 +61,7 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1.  Select a [runner](runner.md) for the upcoming sprint.
 
-1.  Select a new emoji for the upcoming sprint.
+1.  The runner selects a new emoji for the upcoming sprint.
 
 ## RDSS Team Monthly Share Out Meetings
 
