@@ -32,7 +32,7 @@ We use [Intuit Auto](https://intuit.github.io/auto/) to automate the deployment.
 - `git tag <versionOfTheTag>` create the tag
 - `git push --tags` push the new tag on Github
 - `auto release` will create a new release on Github
-- Review the generated [release notes](https://github.com/pulibrary/pdc_describe/releases) and edit as needed
+- Review the generated release notes and edit them as needed
 
 ### Deployment
 
