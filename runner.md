@@ -1,6 +1,10 @@
 # Runner Role
 
-RDSS employs the time of a Runner in each sprint, to ensure that errors encountered in any of our applications are ticketed and appropriately prioritized, so that bugs and other issues are routinely addressed.
+RDSS employs the time of a Runner in each sprint, to ensure that errors encountered in any of our applications are ticketed and appropriately prioritized, so that bugs and other issues are routinely addressed.  The runner checks Honeybadger and DataDog regularly for errors.
+
+## Note about Patch Monday and Patch Tuesday
+
+Every Monday and Tuesday from 5:30 - 8:30AM EST is a planned maintenance window with patches and other maintenance work done by the PUL IT Operations team.  Patch Monday applies to staging servers.  Patch Tuesday applies to production and QA servers.  Alerts caused by planned maintenance work may appear in our tools during these windows.  Questions about work being done in this window can best be directed to the #infrastructure channel on Slack.  
 
 ## Norms and Duties
 
