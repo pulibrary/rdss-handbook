@@ -7,23 +7,25 @@ gantt
     title RDSS Roadmap
     axisFormat  %Y-%m
     dateformat YYYY-MM
-    section TigerData
-    TigerData MVP software development: td1,2024-06-01,273d
     section PDC
-    User support and Globus troubleshooting: pd1,2024-06-11,204d
-    Data migration support: pd2, 2024-08-01,120d
-    Public launch tickets: pd3,2024-07-15,31d
+    DataSpace migration maintenance tasks: pd1,2025-01-01,31d
+    Data migration support: pd2,2024-09-01,122d
+    User support and Globus troubleshooting: pd3,2024-09-01,61d
     section ORCID
-    ORCID service prep and public launch: or1,2024-07-01,92d
+    Peoplesoft integration development: or1,2025-02-01,45d
+    section TigerData
+    TigerData MVP software development: td1,2024-09-01,122d
+    UI review and views audit: td2,2025-01-01, 31d
+    Automation pipeline development: td3,2025-01-01,60d 
+    CAS authentication implementation: td4,2024-12-01,77d
     section Open Publishing
-    Manifold migration and launch (supporting vendor): op1,2024-06-01,138d
-    section DSpace
-    ThesisCentral preparation and support: dsp1,2024-06-01,110d
-    2024 Thesis import: dsp2,2024-06-18,60d
-    Rolling dissertations processing: dsp3,2024-06-01,273d
-    DSpace sunsetting efforts: dsp4,2024-06-01,273d
-    DataSpace and OAR maintenance: dsp5,2024-06-01,273d
+    Manifold migration and launch (supporting vendor): op1,2024-09-01,40d
+    section DSpace Sunsetting
+    ThesisCentral replacement implementation: dsps1,2024-09-01,181d
+    Supporting new ThesisCentral service launch: dsps2,2025-03-01,32d
+    Library Document migration to Figgy: dsps3,2025-02-15,30d
     section Maintenance
-    Easy deploy cross-team cycle: man1, 2024-11-04, 14d
-    Security fixes and software library updates, etc: man2,2024-06-01,273d
+    Security fixes and software library updates, etc: dsp1,2024-09-01,213d
+    Rolling dissertations processing: dsp2,2024-09-01,213d
+    DataSpace and OAR ongoing support: dsp3,2024-09-01,213d
 ```
