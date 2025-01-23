@@ -27,5 +27,4 @@ Uptime monitoring for our applications: https://app.honeybadger.io/status_pages/
 ### Tools
 
 - [Globus](globus.md)
-- [Open Journal System](ojs.md)
 - [Plausible](plausible.md)
