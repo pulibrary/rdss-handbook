@@ -50,4 +50,27 @@ If there are no issues with your latest deployment after reviewing `staging`, yo
 
 `BRANCH=<versionOfTheTag> bundle exec cap production deploy`
 
+##### Deploy production a single machine at a time
+We would reccomend deploying to each production server separately if this change is also accompanied by a server upgrade.
+
+1. On your local machine run capistrano to remove one server from the loadbalancer.  **Note the limit must macth the name of the machine in the 
+   config/deploy/production.rb file for the system you are deploying**
+   ```
+   cap --hosts=orcid-prod1.princeton.edu production application:remove_from_nginx
+   ```
+
+1. Run the upgrades to the server via prancible limiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the above command**
+   ```
+   ansible-playbook --limit orcid-prod1.princeton.edu -e runtime_env=production playbooks/orcid.yml
+   ```
+1. Deploy the software updates via capistrano imiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the first command**
+   ```
+   BRANCH=<versionOfTheTag> bundle exec cap --hosts=orcid-prod1.princeton.edu production deploy
+   ```
+
+1. Put the machine back on the load balancer **Note: orcid-prod1.princeton.edu should change to match the first command**
+   ```
+   cap --hosts=orcid-prod1.princeton.edu production application:serve_from_nginx
+   ```
+
 After you have successfully deployed to both `staging` and `production`, and have reviewed the application in the browser to check for any bugs present, send deployment notes generated from the `Releases` page of the latest version in Github and paste them to the `#digital_open_data_and_research` [Slack channel](https://pulibrary.slack.com/archives/C01555TP6HE). 
