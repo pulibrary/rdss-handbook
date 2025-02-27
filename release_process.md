@@ -53,22 +53,22 @@ If there are no issues with your latest deployment after reviewing `staging`, yo
 ##### Deploy production a single machine at a time
 We would reccomend deploying to each production server separately if this change is also accompanied by a server upgrade.
 
-1. On your local machine run capistrano to remove one server from the loadbalancer.  **Note the limit must macth the name of the machine in the 
+1. On your local machine in the application directory run capistrano to remove one server from the loadbalancer.  **Note the limit must macth the name of the machine in the 
    config/deploy/production.rb file for the system you are deploying**
    ```
    cap --hosts=orcid-prod1.princeton.edu production application:remove_from_nginx
    ```
 
-1. Run the upgrades to the server via prancible limiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the above command**
+1. Run the upgrades to the server via prancible in the princeton_ansible directory limiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the above command**
    ```
    ansible-playbook --limit orcid-prod1.princeton.edu -e runtime_env=production playbooks/orcid.yml
    ```
-1. Deploy the software updates via capistrano imiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the first command**
+1. Deploy the software updates via capistrano in the application directory limiting to the same machine **Note: orcid-prod1.princeton.edu should change to match the first command**
    ```
    BRANCH=<versionOfTheTag> bundle exec cap --hosts=orcid-prod1.princeton.edu production deploy
    ```
 
-1. Put the machine back on the load balancer **Note: orcid-prod1.princeton.edu should change to match the first command**
+1. In the application directory run capistrano to put the machine back on the load balancer **Note: orcid-prod1.princeton.edu should change to match the first command**
    ```
    cap --hosts=orcid-prod1.princeton.edu production application:serve_from_nginx
    ```
