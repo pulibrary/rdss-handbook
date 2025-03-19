@@ -9,26 +9,25 @@ gantt
     dateformat YYYY-MM
     section PDC
     DataSpace migration maintenance tasks: pd1,2025-01-01,31d
-    Data migration support: pd2,2024-12-01,62d
-    Infrastructure refactor and embargoes: pd3, 2025-03-01, 31d
-    Handling millions of files: pd5, 2025-05-01, 31d
+    Data migration support: pd2,2025-01-01,32d
+    Infrastructure refactor, embargoes, virus scanning: pd3, 2025-03-01, 46d
+    Handling millions of files: pd5, 2025-06-25, 31d
     section ORCID
     Peoplesoft integration development: or1,2025-02-01,30d
-    Hanami spike: 2025-04-01, 15d
+    Hanami spike: 2025-06-09, 15d
     section TigerData
-    TigerData MVP software development: td1,2024-12-01,31d
-    Early adopter production preparation: td1,2024-12-01,63d
-    Automation pipeline development: td3,2025-01-01,120d 
-    Registration and scaling preparation: td5, 2025-04-15, 30d
-    CAS authentication implementation: td4,2024-12-01,57d
+    Early adopter production preparation: td1,2025-01-01,33d
+    Automation pipeline development: td3,2025-01-01,206d 
+    Registration and scaling preparation: td5, 2025-04-15,55d
+    CAS authentication implementation: td4,2025-01-01,31d
     section DSpace Sunsetting
-    ThesisCentral replacement implementation: dsps1,2024-12-01,182d
-    Supporting new ThesisCentral service launch: dsps2,2025-03-01,32d
-    Library Document migration to Figgy: dsps3,2025-02-15,30d
+    ThesisCentral replacement implementation: dsps1,2025-01-01,101d
+    Supporting new ThesisCentral service launch: dsps2,2025-03-01,61d
+    Library Document migration to Figgy: dsps3,2025-02-15,46d
     section Open Publishing
-    Open Publishing ongoing support: dsp3,2024-12-01,182d
+    Open Publishing ongoing support: dsp3,2025-01-01,206d
     section Maintenance
-    Security fixes and software library updates, etc: dsp1,2024-12-01,182d
-    Rolling dissertations processing: dsp2,2024-12-01,182d
-    DataSpace and OAR ongoing support: dsp3,2024-12-01,182d
+    Security fixes and software library updates, etc: dsp1,2025-01-01,206d
+    Rolling dissertations processing: dsp2,2025-01-01,206d
+    DataSpace and OAR ongoing support: dsp3,2025-01-01,206d
 ```
