@@ -268,8 +268,8 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Specify a name like `prod-precuration-sha-256-checksum` which includes the name of the bucket this stack will apply to
 1. Specify the bucket  for example: `pdc-describe-prod-precuration`
 1. Click `Next`
-1. Leave defaults in place on the next page and click `Next`
 1. Acknowledge that this gives the stack access to the data ![Screenshot 2023-06-23 at 11 55 19 AM](https://github.com/pulibrary/rdss-handbook/assets/1599081/2055df80-30c4-4097-893d-7c9f9a4f1e4a)
+1. Leave defaults in place on the next page and click `Next`
 1. Click Submit
 1. Wait until you see `CREATE_COMPLETE` in the events tab
 1. Click on the Resources tab
@@ -298,8 +298,9 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. In princeton-ansible check the group_vars/globus/common.yml to make sure the image_id matches the ami you either created or are using
 1. Run the playbook with either staging (default) or production (`-e runtime_env=production`). For example the command below will create a staging EC2 instance named pdc-globus-staging
 
+    TODO - Update the docs here to match with the new playbook once we have it running again
    ```
-   ansible-playbook playbooks/aws_ec2.yml -e ec2_name=<name>
+   ansible-playbook playbooks/globus.yml -e ec2_name=<name>
    ```
 
    <name> should be one of the following:
