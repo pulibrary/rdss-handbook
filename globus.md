@@ -65,8 +65,9 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
 ```mermaid
   graph LR;
       S31[("Precuration S3 (private) [pdc-describe-*-precuration]")]-->SG1
-         S32[("Postcuration S3 (private)  [pdc-describe-*-postcuration]")]-->SG2
+      S32[("Postcuration S3 (private)  [pdc-describe-*-postcuration]")]-->SG2
       S33[("Deposit S3 (private)  [pdc-describe-deposit]")]-->SG3
+      S34[("Embargo S3 (private)  [pdc-describe-*-embargo]")]-->SG4
       subgraph project ["Princeton Data Commons * Project for Staging or Production"]
       subgraph project_space [" "]
       style project fill:#fff,stroke:#000,stroke-width:4px,color:#000,stroke-dasharray: 5 5
@@ -93,11 +94,18 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
             end
          end
          end
-      end
+         subgraph EC2c ["Embargo EC2  [pdc-globus-*-embargo]]"]
+           subgraph ec2c_sp [" "]
+             subgraph "Embargo Globus Endpoint [pdc embargo]]"
+               SG4[["Embargo Storage Gateway [pdc s3 storage gateway Embargo]"]]-->EE(["Pre Curation Collection (private) [Princeton Data Commons * Embargo]"])
+             end
+           end
+         end
+     end
    end
 
    classDef ecclass fill:#00f,stroke:#00f,stroke-width:0px,color:#fff;
-   class EC2,EC2a,EC2b,ec2_sp,ec2a_sp,ec2b_sp ecclass;
+   class EC2,EC2a,EC2b,EC2c,ec2_sp,ec2a_sp,ec2b_sp,ec2c_sp ecclass;
 
 ```
 
