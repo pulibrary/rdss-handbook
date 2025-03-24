@@ -298,17 +298,23 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. In princeton-ansible check the group_vars/globus/common.yml to make sure the image_id matches the ami you either created or are using
 1. Run the playbook with either staging (default) or production (`-e runtime_env=production`). For example the command below will create a staging EC2 instance named pdc-globus-staging
 
-    TODO - Update the docs here to match with the new playbook once we have it running again
    ```
-   ansible-playbook playbooks/globus.yml -e ec2_name=<name>
+   ansible-playbook playbooks/globus.yml -e globus_instance_name=<name> -e globus_environment=<environment> -u pulsys
    ```
 
    <name> should be one of the following:
 
    - pdc-globus-staging-precuration
    - pdc-globus-staging-postcuration
+   - pdc-globus-staging-embargo
    - pdc-globus-prod-precuration
    - pdc-globus-prod-postcuration
+   - pdc-globus-prod-embargo
+  
+   <environment> should be one of the following:
+
+   - pdc-globus-staging
+   - pdc-globus-production
 
 1. To access the aws console first go to [AWS login](https://princeton.edu/aws)
 1. See your new instance in [AWS](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running) Note the IP address you will need it to configure Globus in following steps
