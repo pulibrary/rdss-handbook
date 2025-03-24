@@ -330,6 +330,7 @@ To register a Globus Endpoint do the following:
       The name should be one of the following:
       - PDC Precuration
       - PDC Postcuration
+      - PDC Embargo
    1. click Register Globus Connect Server
 1. Generate a client secret. Be ready to save the value off, you will only see it once.
    1. Click Generate a New Client Secret within the new section on the website created by the step above
