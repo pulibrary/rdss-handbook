@@ -448,6 +448,8 @@ To register a Globus Endpoint do the following:
    sudo globus-connect-server endpoint role create administrator hc8719@princeton.edu
    sudo globus-connect-server endpoint role create administrator jrg5@princeton.edu
    sudo globus-connect-server endpoint role create administrator kl37@princeton.edu
+   sudo globus-connect-server endpoint role create administrator rl3667@princeton.edu
+   sudo globus-connect-server endpoint role create administrator jh6441@princeton.edu
    ```
 
 ### Troubleshooting staging VM that reboots with new IP
