@@ -561,8 +561,10 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     sudo globus-connect-server collection role create $collection_id administrator rl3667@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator jh6441@princeton.edu
     ```
-1.  In princeton_ansible directory on your local machine, see the aws key information needed
-    `ansible-vault view group_vars/globus/vault.yml`
+1.  In princeton_ansible directory in a `pipenv shell` on your local machine, see the aws key information needed
+    ```
+    ansible-vault view group_vars/globus/vault.yml
+    ```
 
 1.  visit the collection on https://app.globus.org/collections?scope=administered-by-me
     1. Click on the credentials tab and click continue to setup the credentials for accessing s3 (utilize the IAM key from above)
