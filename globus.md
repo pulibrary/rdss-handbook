@@ -481,8 +481,10 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
     - pdc-describe-staging-precuration
     - pdc-describe-staging-postcuration
+    - pdc-describe-staging-embargo
     - pdc-describe-prod-precuration
     - pdc-describe-prod-postcuration
+    - pdc-describe-prod-embargo
     - pdc-describe-deposit
 
     ```
