@@ -527,11 +527,15 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
       - Princeton Data Commons Postcuration
       - Princeton Data Commons Embargo
       - Princeton Data Commons Deposit
-        `export collection_name=<name>`
+      ```
+      export collection_name=<name>
+      ```
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
       - https://pdc-describe.princeton.edu/about
-        `export info_link=<info link>`
+      ```
+      export info_link=<info link>
+      ```
     - Utilize one of the following for the `<description>`
     - if this is a staging system add `--user-message "Staging data! Please do not store production data here"`
 
