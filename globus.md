@@ -495,9 +495,8 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
     - pdc s3 storage gateway precuration
     - pdc s3 storage gateway postcuration
-    - pdc s3 storage gateway precuration
-    - pdc s3 storage gateway postcuration
     - pdc s3 storage gateway deposit
+    - pdc s3 storage gateway embargo
 
     ```
     export gateway_name=<gateway name>
@@ -523,8 +522,10 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     - Utilize one of the following for the `<name>`:
       - Princeton Data Commons Staging Precuration
       - Princeton Data Commons Staging Postcuration
+      - Princeton Data Commons Staging Embargo
       - Princeton Data Commons Precuration
       - Princeton Data Commons Postcuration
+      - Princeton Data Commons Embargo
       - Princeton Data Commons Deposit
         `export collection_name=<name>`
     - Utilize one of the following for the `<info link>`
