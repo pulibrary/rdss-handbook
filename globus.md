@@ -154,9 +154,11 @@ Postcuration guest collection - Should be public
   - staging
     - Princeton Data Commons Staging Precuration
     - Princeton Data Commons Staging Postcuration
+    - Princeton Data Commons Staging Embargo
   - prod
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
+    - Princeton Data Commons Embargo
   - deposit
     - Princeton Data Commons Deposit
 
@@ -606,8 +608,10 @@ Choose one of the following for the name:
   - Utilize one of the following for the `<name>`:
     - Princeton Data Commons Staging Precuration
     - Princeton Data Commons Staging Postcuration
+    - Princeton Data Commons Staging Embargo
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
+    - Princeton Data Commons Embargo
  1. visit https://app.globus.org (and login as rdssglobus)
  1. Find the collection you need to update in Collections
  1. Click on the Roles Tab
