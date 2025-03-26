@@ -65,8 +65,9 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
 ```mermaid
   graph LR;
       S31[("Precuration S3 (private) [pdc-describe-*-precuration]")]-->SG1
-         S32[("Postcuration S3 (private)  [pdc-describe-*-postcuration]")]-->SG2
+      S32[("Postcuration S3 (private)  [pdc-describe-*-postcuration]")]-->SG2
       S33[("Deposit S3 (private)  [pdc-describe-deposit]")]-->SG3
+      S34[("Embargo S3 (private)  [pdc-describe-*-embargo]")]-->SG4
       subgraph project ["Princeton Data Commons * Project for Staging or Production"]
       subgraph project_space [" "]
       style project fill:#fff,stroke:#000,stroke-width:4px,color:#000,stroke-dasharray: 5 5
@@ -93,11 +94,18 @@ We are creating a separate Endpoint and EC2 instance to make sure that Upload do
             end
          end
          end
-      end
+         subgraph EC2c ["Embargo EC2  [pdc-globus-*-embargo]]"]
+           subgraph ec2c_sp [" "]
+             subgraph "Embargo Globus Endpoint [pdc embargo]]"
+               SG4[["Embargo Storage Gateway [pdc s3 storage gateway Embargo]"]]-->EE(["Pre Curation Collection (private) [Princeton Data Commons * Embargo]"])
+             end
+           end
+         end
+     end
    end
 
    classDef ecclass fill:#00f,stroke:#00f,stroke-width:0px,color:#fff;
-   class EC2,EC2a,EC2b,ec2_sp,ec2a_sp,ec2b_sp ecclass;
+   class EC2,EC2a,EC2b,EC2c,ec2_sp,ec2a_sp,ec2b_sp,ec2c_sp ecclass;
 
 ```
 
@@ -146,9 +154,11 @@ Postcuration guest collection - Should be public
   - staging
     - Princeton Data Commons Staging Precuration
     - Princeton Data Commons Staging Postcuration
+    - Princeton Data Commons Staging Embargo
   - prod
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
+    - Princeton Data Commons Embargo
   - deposit
     - Princeton Data Commons Deposit
 
@@ -268,8 +278,8 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Specify a name like `prod-precuration-sha-256-checksum` which includes the name of the bucket this stack will apply to
 1. Specify the bucket  for example: `pdc-describe-prod-precuration`
 1. Click `Next`
-1. Leave defaults in place on the next page and click `Next`
 1. Acknowledge that this gives the stack access to the data ![Screenshot 2023-06-23 at 11 55 19 AM](https://github.com/pulibrary/rdss-handbook/assets/1599081/2055df80-30c4-4097-893d-7c9f9a4f1e4a)
+1. Leave defaults in place on the next page and click `Next`
 1. Click Submit
 1. Wait until you see `CREATE_COMPLETE` in the events tab
 1. Click on the Resources tab
@@ -299,15 +309,22 @@ To make a new S3 bucket with a copy of the PDC Globus data:
 1. Run the playbook with either staging (default) or production (`-e runtime_env=production`). For example the command below will create a staging EC2 instance named pdc-globus-staging
 
    ```
-   ansible-playbook playbooks/aws_ec2.yml -e ec2_name=<name>
+   ansible-playbook playbooks/globus.yml -e globus_instance_name=<name> -e globus_environment=<environment> -u pulsys
    ```
 
    <name> should be one of the following:
 
    - pdc-globus-staging-precuration
    - pdc-globus-staging-postcuration
+   - pdc-globus-staging-embargo
    - pdc-globus-prod-precuration
    - pdc-globus-prod-postcuration
+   - pdc-globus-prod-embargo
+  
+   <environment> should be one of the following:
+
+   - pdc-globus-staging
+   - pdc-globus-production
 
 1. To access the aws console first go to [AWS login](https://princeton.edu/aws)
 1. See your new instance in [AWS](https://us-east-1.console.aws.amazon.com/ec2/v2/home?region=us-east-1#Instances:instanceState=running) Note the IP address you will need it to configure Globus in following steps
@@ -323,6 +340,7 @@ To register a Globus Endpoint do the following:
       The name should be one of the following:
       - PDC Precuration
       - PDC Postcuration
+      - PDC Embargo
    1. click Register Globus Connect Server
 1. Generate a client secret. Be ready to save the value off, you will only see it once.
    1. Click Generate a New Client Secret within the new section on the website created by the step above
@@ -432,6 +450,8 @@ To register a Globus Endpoint do the following:
    sudo globus-connect-server endpoint role create administrator hc8719@princeton.edu
    sudo globus-connect-server endpoint role create administrator jrg5@princeton.edu
    sudo globus-connect-server endpoint role create administrator kl37@princeton.edu
+   sudo globus-connect-server endpoint role create administrator rl3667@princeton.edu
+   sudo globus-connect-server endpoint role create administrator jh6441@princeton.edu
    ```
 
 ### Troubleshooting staging VM that reboots with new IP
@@ -463,8 +483,10 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
     - pdc-describe-staging-precuration
     - pdc-describe-staging-postcuration
+    - pdc-describe-staging-embargo
     - pdc-describe-prod-precuration
     - pdc-describe-prod-postcuration
+    - pdc-describe-prod-embargo
     - pdc-describe-deposit
 
     ```
@@ -475,9 +497,8 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
     - pdc s3 storage gateway precuration
     - pdc s3 storage gateway postcuration
-    - pdc s3 storage gateway precuration
-    - pdc s3 storage gateway postcuration
     - pdc s3 storage gateway deposit
+    - pdc s3 storage gateway embargo
 
     ```
     export gateway_name=<gateway name>
@@ -503,14 +524,20 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     - Utilize one of the following for the `<name>`:
       - Princeton Data Commons Staging Precuration
       - Princeton Data Commons Staging Postcuration
+      - Princeton Data Commons Staging Embargo
       - Princeton Data Commons Precuration
       - Princeton Data Commons Postcuration
+      - Princeton Data Commons Embargo
       - Princeton Data Commons Deposit
-        `export collection_name=<name>`
+      ```
+      export collection_name=<name>
+      ```
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
       - https://pdc-describe.princeton.edu/about
-        `export info_link=<info link>`
+      ```
+      export info_link=<info link>
+      ```
     - Utilize one of the following for the `<description>`
     - if this is a staging system add `--user-message "Staging data! Please do not store production data here"`
 
@@ -533,9 +560,13 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     sudo globus-connect-server collection role create $collection_id administrator hc8719@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator jrg5@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator kl37@princeton.edu
+    sudo globus-connect-server collection role create $collection_id administrator rl3667@princeton.edu
+    sudo globus-connect-server collection role create $collection_id administrator jh6441@princeton.edu
     ```
-1.  In princeton_ansible directory on your local machine, see the aws key information needed
-    `ansible-vault view group_vars/globus/vault.yml`
+1.  In princeton_ansible directory in a `pipenv shell` on your local machine, see the aws key information needed
+    ```
+    ansible-vault view group_vars/globus/vault.yml
+    ```
 
 1.  visit the collection on https://app.globus.org/collections?scope=administered-by-me
     1. Click on the credentials tab and click continue to setup the credentials for accessing s3 (utilize the IAM key from above)
@@ -577,8 +608,10 @@ Choose one of the following for the name:
   - Utilize one of the following for the `<name>`:
     - Princeton Data Commons Staging Precuration
     - Princeton Data Commons Staging Postcuration
+    - Princeton Data Commons Staging Embargo
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
+    - Princeton Data Commons Embargo
  1. visit https://app.globus.org (and login as rdssglobus)
  1. Find the collection you need to update in Collections
  1. Click on the Roles Tab
