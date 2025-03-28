@@ -353,14 +353,13 @@ To register a Globus Endpoint do the following:
    1. On the server set the endpoint name you utilized above and generated client id. This will allow a copy and paste of the commands in the next step to work without editing
       ```bash
       export endpoint_name=<name from above (include staging or production)>
-      export client_id=<client id from above step>
       ```
    1. On the server run
 
       ```bash
       mkdir app_config
       cd app_config
-      globus-connect-server endpoint setup "$endpoint_name"  --organization "Princeton University Library" --client-id $client_id --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu
+      globus-connect-server endpoint setup "$endpoint_name"  --organization "Princeton University Library" -d deployment-key.json --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu
       ```
 
       1. you will be prompted for the client secret
@@ -389,14 +388,12 @@ To register a Globus Endpoint do the following:
 1. On the server set the endpoint name you utilized above and generated client id. This will allow a copy and paste of the commands in the next step to work without editing
    ```bash
    cd app_config
-   export endpoint_name=<name from above (include staging or production)>
-   export client_id=<client id from above step>
    ```
 1. run the following command to configure your node: (note: use of `sudo`) You will be prompted for the client secret you saved in lastpass.
 
    ```bash
-   sudo globus-connect-server node setup \
-      --client-id $client_id
+   cd ~/app_configs
+   sudo globus-connect-server node setup -d development-key.json
    sudo systemctl restart apache2
    ```
 
