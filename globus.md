@@ -352,14 +352,15 @@ To register a Globus Endpoint do the following:
    1. `ssh pulsys@<public IP>`
    1. On the server set the endpoint name you utilized above and generated client id. This will allow a copy and paste of the commands in the next step to work without editing
       ```bash
-      export endpoint_name=<name from above (include staging or production)>
+      export endpoint_name="<name from above (include staging or production)>"
+      export project_id="<id from the UI above>"
       ```
    1. On the server run
 
       ```bash
       mkdir app_config
       cd app_config
-      globus-connect-server endpoint setup "$endpoint_name"  --organization "Princeton University Library" -d deployment-key.json --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu
+      globus-connect-server endpoint setup "$endpoint_name"  --organization "Princeton University Library" -d deployment-key.json --owner rdssglobus@princeton.edu --contact-email lsupport@princeton.edu --project-id "$project_id"
       ```
 
       1. you will be prompted for the client secret
@@ -385,15 +386,11 @@ To register a Globus Endpoint do the following:
 ### Configure Globus Node
 
 1. `ssh pulsys@<public IP>`
-1. On the server set the endpoint name you utilized above and generated client id. This will allow a copy and paste of the commands in the next step to work without editing
-   ```bash
-   cd app_config
-   ```
 1. run the following command to configure your node: (note: use of `sudo`) You will be prompted for the client secret you saved in lastpass.
 
    ```bash
    cd ~/app_configs
-   sudo globus-connect-server node setup -d development-key.json
+   sudo globus-connect-server node setup -d development-key.json 
    sudo systemctl restart apache2
    ```
 
@@ -487,7 +484,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     - pdc-describe-deposit
 
     ```
-    export bucket_name=<bucket name>
+    export bucket_name="<bucket name>"
     ```
 
 1. Decide on a Gateway name and put it in a variable. For pdc*, choose one of the following:
@@ -498,7 +495,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     - pdc s3 storage gateway embargo
 
     ```
-    export gateway_name=<gateway name>
+    export gateway_name="<gateway name>"
     ```
 
 1.  Create the S3 gateway and connect the bucket to it:
@@ -511,7 +508,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
     1. Assign the gateway id to a variable
        ```
-       export gateway_id=<output from above command>
+       export gateway_id="<output from above command>"
        ```
 
 ### Create a mapped Collection for access to the S3 bucket
@@ -527,13 +524,13 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
       - Princeton Data Commons Embargo
       - Princeton Data Commons Deposit
       ```
-      export collection_name=<name>
+      export collection_name="<name>"
       ```
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
       - https://pdc-describe.princeton.edu/about
       ```
-      export info_link=<info link>
+      export info_link="<info link>"
       ```
     - Utilize one of the following for the `<description>`
     - if this is a staging system add `--user-message "Staging data! Please do not store production data here"`
@@ -546,7 +543,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
 
 1.  Assign the collection id to a variable
     ```
-    export collection_id=<output from above command>
+    export collection_id="<output from above command>"
     ```
 1.  Add administrators via the command line
     ```
@@ -560,17 +557,14 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     sudo globus-connect-server collection role create $collection_id administrator rl3667@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator jh6441@princeton.edu
     ```
-1.  In princeton_ansible directory in a `pipenv shell` on your local machine, see the aws key information needed
-    ```
-    ansible-vault view group_vars/globus/vault.yml
-    ```
+1.  In last pass utilize the RDSS Globus AWS information
 
 1.  visit the collection on https://app.globus.org/collections?scope=administered-by-me
     1. Click on the credentials tab and click continue to setup the credentials for accessing s3 (utilize the IAM key from above)
 
 ### Create a guest Collection for public access to the mapped collection
 
-Guest collections are public and readonly, we use them for the general public to be able to download the data.
+Guest collections are public and readonly, we use them for the general public to be able to download the data.  Only do this for the post curation node.  No public node is desired for pre-curation and embargo
 
 ** this is a manual step **
 Choose one of the following for the name:
@@ -592,7 +586,7 @@ Choose one of the following for the name:
 1.  Choose "Public"
 1.  Click Add Permissions
 
-### Create a group for Curator Access
+### Create a group for Curator Access (only done once)
 
 1.  visit https://app.globus.org (and login as rdssglobus)
 1.  click on "Groups" on the left hand side
@@ -609,15 +603,18 @@ Choose one of the following for the name:
     - Princeton Data Commons Precuration
     - Princeton Data Commons Postcuration
     - Princeton Data Commons Embargo
- 1. visit https://app.globus.org (and login as rdssglobus)
- 1. Find the collection you need to update in Collections
- 1. Click on the Roles Tab
- 1. Click on "Assign new Role"
-   1. Choose Group
-   1. Enter "Princeton Curators"
-   1. Choose "Administrator"
-   1. Click "Add Role"
 
+ 1.  Assign the collection id and group to variables
+    ```
+    export collection_id="<UID of colection>"
+    export group_id="<UID of group>"    
+    ```
+    
+ 1. Add the group as a manager
+ ```
+    sudo globus-connect-server collection role create --principal-type group $collection_id administrator "$group_id"
+ ```
+ 
 ### Certificate Authority Updates
 
 1. We have a [Globus Certs Playbook](https://github.com/pulibrary/princeton_ansible/blob/main/playbooks/globus_certs.yml) set up to automatically update the certificates for Globus VMs. Run this Playbook.
