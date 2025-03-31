@@ -390,7 +390,7 @@ To register a Globus Endpoint do the following:
 
    ```bash
    cd ~/app_configs
-   sudo globus-connect-server node setup -d development-key.json 
+   sudo globus-connect-server node setup -d deployment-key.json 
    sudo systemctl restart apache2
    ```
 
