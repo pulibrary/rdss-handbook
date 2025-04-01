@@ -390,7 +390,7 @@ To register a Globus Endpoint do the following:
 
    ```bash
    cd ~/app_configs
-   sudo globus-connect-server node setup -d development-key.json 
+   sudo globus-connect-server node setup -d deployment-key.json 
    sudo systemctl restart apache2
    ```
 
@@ -528,7 +528,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
       ```
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
-      - https://pdc-describe.princeton.edu/about
+      - https://datacommons.princeton.edu/describe/about
       ```
       export info_link="<info link>"
       ```
@@ -605,10 +605,10 @@ Choose one of the following for the name:
     - Princeton Data Commons Embargo
 
  1.  Assign the collection id and group to variables
-    ```
-    export collection_id="<UID of colection>"
-    export group_id="<UID of group>"    
-    ```
+ ```
+ export collection_id="<UID of colection>"
+ export group_id="<UID of group>"    
+ ```
     
  1. Add the group as a manager
  ```
