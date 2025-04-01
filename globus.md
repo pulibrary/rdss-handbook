@@ -605,10 +605,10 @@ Choose one of the following for the name:
     - Princeton Data Commons Embargo
 
  1.  Assign the collection id and group to variables
-    ```
-    export collection_id="<UID of colection>"
-    export group_id="<UID of group>"    
-    ```
+ ```
+ export collection_id="<UID of colection>"
+ export group_id="<UID of group>"    
+ ```
     
  1. Add the group as a manager
  ```
