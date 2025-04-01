@@ -528,7 +528,7 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
       ```
     - Utilize one of the following for the `<info link>`
       - https://pdc-describe-staging.princeton.edu/about
-      - https://pdc-describe.princeton.edu/about
+      - https://datacommons.princeton.edu/describe/about
       ```
       export info_link="<info link>"
       ```
