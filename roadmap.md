@@ -22,8 +22,8 @@ gantt
     CAS authentication implementation: td4,2025-01-01,31d
     section DSpace Sunsetting
     ThesisCentral replacement implementation: dsps1,2025-01-01,101d
-    Supporting new ThesisCentral service launch: dsps2,2025-03-01,61d
-    Library Document migration to Figgy: dsps3,2025-02-15,46d
+    Supporting new ThesisCentral service launch: dsps2,2025-03-01,122d
+    Library Document migration to Figgy: dsps3,2025-02-15,60d
     section Open Publishing
     Open Publishing ongoing support: dsp3,2025-01-01,206d
     section Maintenance
