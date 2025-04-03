@@ -16,7 +16,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Fill in `RDOS` & `PDC` as tags
 1. Click `Create User`
 1. find your new user `pdc-<netid>` and click on the name
-1. Click on `Security Credentail` tab
+1. Click on `Security Credential` tab
 1. Click `Create Access Key`
 1. Choose `Application running outside AWS`
 1. Click `Next`
