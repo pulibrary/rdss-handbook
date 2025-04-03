@@ -16,7 +16,7 @@ Each workday check:
 
 * [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications:
    * [globus uptime](https://app.honeybadger.io/projects/103564/sites)
-   * [orcid errors](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored) and [orcid uptime](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored)
+   * [orcid errors](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored) and [orcid uptime](https://app.honeybadger.io/projects/114910/sites)
    * [openpublishing uptime](https://app.honeybadger.io/projects/93417/sites/0f636d4c-7961-4c35-aece-0e58925491bd)
    * [theses_dissertations uptime](https://app.honeybadger.io/projects/131146/sites/80a11491-c1c1-408e-8701-dbd4ead68e08)
    * [pdc_describe errors](https://app.honeybadger.io/projects/99214/faults?q=-is%3Aresolved+-is%3Aignored&sort=last_seen_asc) and [pdc_describe uptime](https://app.honeybadger.io/projects/99214/sites)
