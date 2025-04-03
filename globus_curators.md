@@ -36,7 +36,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Contact the Curator to let them know about the key
 
 ## Adding a new administrator to a collection in Globus
-1. Login as rdss-globus in an incognito window (see lastpass "rdss globus service account" for login credentials)
+1. Login as rdss-globus in an incognito window to [Globus](https://app.globus.org/) (see lastpass "rdss globus service account" for login credentials)
 1. Invite the curator to the "PRINCETON CURATORS" group
     1. click on groups
     1. click on "PRINCETON CURATORS"
