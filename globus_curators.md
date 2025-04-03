@@ -6,7 +6,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 
 ## Creating AWS IAM Keys for Curators
 1. Visit princeton.edu/aws and log in
-1. Click on the IAM Unser services
+1. Click on the IAM User services
 1. Click on the Users on the left hand side
 1. Click Add User in the top right
 1. Fill in User Name with `pdc-<netid>`
@@ -14,7 +14,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Choose `pdc-curator` as the group
 1. Click `Next`
 1. Fill in `RDOS` & `PDC` as tags
-1. Click `Next`
+1. Click `Create User`
 1. find your new user `pdc-<netid>` and click on the name
 1. Click on `Security Credentail` tab
 1. Click `Create Access Key`
