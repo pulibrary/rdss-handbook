@@ -9,7 +9,11 @@
 
  We therefore do not need to worry about backing up our short to medium term data in another location.
 
- For longer term preservation we are...
+ For longer term preservation we are allowing S3 to copy the data to another bucket in a spearate region.  For postcuration this backup does not mirror deletes.  For embargo this backup does mirror deletes.
+
+ To locate the replication [login to amazon S3](https://princeton.edu/aws) visit [S3](https://us-east-1.console.aws.amazon.com/s3/buckets?region=us-east-1&bucketType=general) choose your bucket and then click on the management tab and look in the Replication Rules section.
+
+ In addition we will be making a third copy...
 
  ## Versioning Amazon S3
 
