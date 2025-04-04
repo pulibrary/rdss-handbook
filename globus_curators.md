@@ -27,7 +27,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. On LastPass tab fill in private key and name the entry `PDC Globus <curator name> Curator Key`
 1. On LastPass tab go to sharing center at the bottom
 1. Click the Red Plus to add a shared folder
-1. Name it PDC-Globus-<curator-name>
+1. Name it PDC-Globus-[curator-name]
 1. Click on Create
 1. Click on Manage when hovering over the new Folder
 1. Add the curator as an Administrator
