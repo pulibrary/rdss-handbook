@@ -13,6 +13,8 @@
 
  To locate the replication [login to amazon S3](https://princeton.edu/aws) visit [S3](https://us-east-1.console.aws.amazon.com/s3/buckets?region=us-east-1&bucketType=general) choose your bucket and then click on the management tab and look in the Replication Rules section.
 
+ Instructions on creating a Preservation Bucket can be found [here](https://github.com/pulibrary/rdss-handbook/blob/main/globus-preservation.md) 
+
  In addition we will be making a third copy...
 
  ## Versioning Amazon S3
