@@ -1,3 +1,5 @@
+These instructions will help to create a preservation bucket in S3
+
 1. [Login to aws](https://princeton.edu/aws)
 1. Connect with the [AWS West S3](https://us-west-1.console.aws.amazon.com/s3/buckets?bucketType=general&region=us-west-1)
 1. Create the bucket 
@@ -28,7 +30,7 @@
    1. click on `Browse s3`
    1. choose the new bucket we just created
    1. choose `Create new Role`
-   1. ** Only for Embargos** click on `Delete Marker Replication`
+   1. **Only for Embargos** click on `Delete Marker Replication`
    1. Click on `Save`
    1. Click on Yes for duplication existing objects (Really this is a test)
    1. Uncheck `Generate completion report`
