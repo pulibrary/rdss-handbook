@@ -20,3 +20,23 @@
    1. Fill in 14 in `Number of days`
    1. Click on `Create Rule` 
 1. Configure the Preservation copy from the S3 to Presrvation bucket
+   1. In S3 search for the bucket that you are preserving
+   1. click `Management` tab
+   1. click `Create Replication Rule`
+   1. Fill in the bucket name with replication as the name
+   1. choose `Apply to all objects in the bucket`
+   1. click on `Browse s3`
+   1. choose the new bucket we just created
+   1. choose `Create new Role`
+   1. ** Only for Embargos** click on `Delete Marker Replication`
+   1. Click on `Save`
+   1. Click on Yes for duplication existing objects (Really this is a test)
+   1. Uncheck `Generate completion report`
+   1. choose `Create new Role`
+   1. click on `Save`
+   1. You can monitor the job by clicking refresh
+1. Check that the files match both the preservation and original bucket match
+1. Upload a new file and make sure it also shows up in the preservation bucket
+1. **for emabrgo only** Delete a file and make sure it is also deleted
+   1. You may have to refresh a couple time     
+1. **for non emabrgo only** Delete a file and make sure it DOES NOT delete in the preservation     
