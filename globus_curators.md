@@ -6,7 +6,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 
 ## Creating AWS IAM Keys for Curators
 1. Visit princeton.edu/aws and log in
-1. Click on the IAM Unser services
+1. Click on the IAM User services
 1. Click on the Users on the left hand side
 1. Click Add User in the top right
 1. Fill in User Name with `pdc-<netid>`
@@ -14,9 +14,9 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Choose `pdc-curator` as the group
 1. Click `Next`
 1. Fill in `RDOS` & `PDC` as tags
-1. Click `Next`
+1. Click `Create User`
 1. find your new user `pdc-<netid>` and click on the name
-1. Click on `Security Credentail` tab
+1. Click on `Security Credential` tab
 1. Click `Create Access Key`
 1. Choose `Application running outside AWS`
 1. Click `Next`
@@ -27,7 +27,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. On LastPass tab fill in private key and name the entry `PDC Globus <curator name> Curator Key`
 1. On LastPass tab go to sharing center at the bottom
 1. Click the Red Plus to add a shared folder
-1. Name it PDC-Globus-<curator-name>
+1. Name it PDC-Globus-[curator-name]
 1. Click on Create
 1. Click on Manage when hovering over the new Folder
 1. Add the curator as an Administrator
@@ -36,7 +36,7 @@ When a curator needs to deposit files to our Princeton Data Common Collections i
 1. Contact the Curator to let them know about the key
 
 ## Adding a new administrator to a collection in Globus
-1. Login as rdss-globus in an incognito window (see lastpass "rdss globus service account" for login credentials)
+1. Login as rdss-globus in an incognito window to [Globus](https://app.globus.org/) (see lastpass "rdss globus service account" for login credentials)
 1. Invite the curator to the "PRINCETON CURATORS" group
     1. click on groups
     1. click on "PRINCETON CURATORS"
