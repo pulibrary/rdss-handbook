@@ -3,7 +3,7 @@
 Unless otherwise noted, all applications below are Open Source and run on Library IT-owned infrastructure.
 
 - DataSpace
-  - A DSpace 5.x instance for institutional data including research data content, select Library-owned PDFs, and electronic theses and dissertations
+  - A DSpace 5.x instance for institutional data including select Library-owned PDFs and electronic theses and dissertations
   - Status: In production
   - Public URL: https://dataspace.princeton.edu
   - Code Base: [Please see the documentation for the git repository details](dataspace/git.md)
@@ -20,9 +20,9 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
-- Electronic Theses and Dissertations Process
-  - Data transformation and loading processes managed by Library IT to support Special Collections annual review and publication of electronic theses, and quarterly-ish publication of dissertations in DataSpace
-  - Documentation: [Dissertation import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-dissertations.md) and [Masters Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-masters-theses.md) and [Senior Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-theses.md)
+- Electronic Theses and Dissertations
+  - Data transformation and loading processes managed by Library IT to support Special Collections quarterly-ish publication of dissertations in DataSpace
+  - Documentation: [Dissertation import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-dissertations.md) and [Masters Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-masters-theses.md)
   - Status: In production
   - Public URLs: [Theses Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp019c67wm88m); [Doctoral Dissertations Collection in DataSpace](https://dataspace.princeton.edu/handle/88435/dsp01td96k251d)
   - Code Base: https://github.com/PrincetonUniversityLibrary/etd_transformer
@@ -50,13 +50,13 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Publishing
   - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor [SoftServ](https://softserv.scientist.com/).
-  - Status: In pre-production
+  - Status: In production
   - Public URL: https://openpublishing.princeton.edu
   - Code Base: https://github.com/scientist-softserv/princeton-manifold 
   - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: To be added
+  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - ORCID@Princeton
   - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
   - Status: In production
@@ -65,8 +65,8 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Code Base: https://github.com/pulibrary/orcid_princeton
   - Product Owner: Neggin Keshavarzian
   - Slack channel(s): #digital_open_data_and_research and #orcid
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: To be added
+  - Analytics: [Plausible.io](https://plausible.io/)
+  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - PDC_Describe
   - A Rails application for description and ingestion of Research Data content to Princeton Data Commons
   - Status: In production
@@ -76,7 +76,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: To be added
+  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - PDC_Discovery
   - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
@@ -97,16 +97,15 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned (externally hosted)
-- ThesisCentral
-  - A DSpace 7 instance for managing the annual submission and review workflows of student theses, developed and hosted by the vendor 4Science
-  - Status: In development
-  - Public URL: https://thesis-central.princeton.edu
+- Theses-Dissertations
+  - A DSpace instance for managing the annual submission, review, and publication of student theses, developed and hosted by the vendor 4Science
+  - Status: In production
+  - Public URL: https://theses-dissertations.princeton.edu
   - Code Base: N/A
-  - Deprecated Code Base: https://github.com/PrincetonUniversityLibrary/thesiscentral-vireo and https://github.com/PrincetonUniversityLibrary/pul-vireo
   - Product Owner: Lynn Durgin
   - Slack channel(s): #dspace
   - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None planned
+  - [Dubbot](https://princeton.dubbot.com) status: To be added
 - TigerData
   - A collaboratively developed front end for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology
   - Status: In development
