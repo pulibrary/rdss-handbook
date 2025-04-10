@@ -50,18 +50,13 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX), [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility), and [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints.
 
-1.  Review security vulnerabilities on active projects and schedule for future sprints.
-    1. [pdc_describe](https://github.com/pulibrary/pdc_describe/security/dependabot)
-    2. [pdc_discovery](https://github.com/pulibrary/pdc_discovery/security/dependabot)
-    3. [tigerdata-app](https://github.com/pulibrary/tigerdata-app/security/dependabot)
-    4. [orcid_princeton](https://github.com/pulibrary/orcid_princeton/security/dependabot)
-    5. [oawaiver](https://github.com/pulibrary/oawaiver/security/dependabot)
+1.  Review [security vulnerabilities](https://github.com/pulls?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Forcid_princeton+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3APrincetonUniversityLibrary%2Fetd_transformer+repo%3APrincetonUniversityLibrary%2Ftigerdata-config+repo%3Apulibrary%2Foawaiver+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2Ftiger-data-app+sort%3Acreated-asc+) on active projects and schedule for future sprints.
 
-1.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
+2.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
 
-1.  Select a [runner](runner.md) for the upcoming sprint.
+3.  Select a [runner](runner.md) for the upcoming sprint.
 
-1.  The runner selects a new emoji for the upcoming sprint.
+4.  The runner selects a new emoji for the upcoming sprint.
 
 ## RDSS Team Monthly Share Out Meetings
 
