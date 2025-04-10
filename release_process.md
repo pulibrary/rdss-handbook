@@ -4,12 +4,7 @@
 - Most PRs (beyond documentation changes) should be deployed to `production` after merge to get features out to users.
 - Most redeployments will also be new versioned releases, but a release is not strictly necessary for every redeployment.
 
-### Release schedule
-
-- Software releases are made in advance of Feature Refinement meetings with Product Owners.  This is managed through an automated reminder on the RDSS team Slack channel the morning prior.  Whoever acknowledges the reminder first is taking point on putting out the release by doing so.  Any additional features/bug fixes/code work that happens after the release is not guaranteed as a subject of review during the next day's meeting. 
-- As much as possible, software releases of completed features and bug fixes are completed the day before expected demos, such as during the RDOS Repository Roundup meeting or larger public demos.  The team self manages in terms of reminding each other and taking point on performing these releases/being aware of the state of the software in the leadup to the demo.
-
-### Release
+### Release Process
 
 #### Release pre-requisites
 
@@ -73,4 +68,29 @@ We would reccomend deploying to each production server separately if this change
    cap --hosts=orcid-prod1.princeton.edu production application:serve_from_nginx
    ```
 
-After you have successfully deployed to both `staging` and `production`, and have reviewed the application in the browser to check for any bugs present, send deployment notes generated from the `Releases` page of the latest version in Github and paste them to the `#digital_open_data_and_research` [Slack channel](https://pulibrary.slack.com/archives/C01555TP6HE). 
+After you have successfully deployed to both `staging` and `production`, and have reviewed the application in the browser to check for any bugs present, send deployment notes generated from the `Releases` page of the latest version in Github and paste them to the appropriate Slack channel (see "Production Releases" section below, or our [applications portfolio](applications.md)).
+
+### Production releases
+
+Every Tuesday, the following text block is added to the stand-up agenda:
+
+```
+ * Production Release and Deployment Tuesday
+    * Add your name next to the application you are volunteering to release & deploy!
+    * pdc_describe (#digital_open_data_and_research)
+    * pdc_discovery (#digital_open_data_and_research)
+    * orcid_princeton (#orcid)
+    * tigerdata-app (#tigerdata)
+    * tigerdata-config (update on private developers Slack channel)
+    * oawaiver (#openresearcher)
+```
+
+A developer volunteers to release and deploy an application to production by putting their name next to that application in the list. The list is filled out in its entirety during stand-up.
+
+Once the application is deployed to production, the developer who orchestrated the release/deployment posts the release notes and an announcement of the deployment to the appropriate Slack channel (noted next to the name of the application above).
+
+#### Additional norms: 
+
+* The release and deployment is orchestrated by the volunteer at some point during the workday on that same day (Tuesday) in advance of our Wednesday morning meetings with the Product Owner.
+* If the production release/deployment exposes a bug in the deployment workflow, the developer should open a ticket for this and bring it to the team’s attention.
+* This schedule is for regular production deployments including features and proactively-addressed security concerns; production deployments required to address emergencies should be done as needed outside of this schedule.
