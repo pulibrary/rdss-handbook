@@ -70,18 +70,20 @@ We would reccomend deploying to each production server separately if this change
 
 After you have successfully deployed to both `staging` and `production`, and have reviewed the application in the browser to check for any bugs present, send deployment notes generated from the `Releases` page of the latest version in Github and paste them to the appropriate Slack channel (see "Production Releases" section below, or our [applications portfolio](applications.md)).
 
-
 ### Production releases
 
 Every Tuesday, the following text block is added to the stand-up agenda:
 
-> * Production Release and Deployment Tuesday
+```
+ * Production Release and Deployment Tuesday
     * Add your name next to the application you are volunteering to release & deploy!
     * pdc_describe (#digital_open_data_and_research)
     * pdc_discovery (#digital_open_data_and_research)
     * orcid_princeton (#orcid)
     * tigerdata-app (#tigerdata)
+    * tigerdata-config (update on private developers Slack channel)
     * oawaiver (#openresearcher)
+```
 
 A developer volunteers to release and deploy an application to production by putting their name next to that application in the list. The list is filled out in its entirety during stand-up.
 
