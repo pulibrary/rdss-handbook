@@ -23,7 +23,7 @@ gantt
     section DSpace Sunsetting
     ThesisCentral replacement implementation: dsps1,2025-01-01,70d
     Supporting new ThesisCentral service launch: dsps2,2025-03-01,122d
-    Library Document migration to Figgy: dsps3,2025-02-15,75d
+    Library Document migration to Figgy: dsps3,2025-02-15,85d
     section Open Publishing
     Open Publishing ongoing support: dsp3,2025-01-01,206d
     section Maintenance
