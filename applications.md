@@ -49,10 +49,10 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
 - Open Publishing
-  - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor [SoftServ](https://softserv.scientist.com/).
+  - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor Notch8.
   - Status: In production
   - Public URL: https://openpublishing.princeton.edu
-  - Code Base: https://github.com/scientist-softserv/princeton-manifold 
+  - Code Base: https://github.com/pulibrary/openpublishing_fixtures and https://github.com/notch8/princeton-manifold
   - Product Owner: Hannah Hadley
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
@@ -64,7 +64,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Staging URL: https://orcid-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/orcid_princeton
   - Product Owner: Neggin Keshavarzian
-  - Slack channel(s): #digital_open_data_and_research and #orcid
+  - Slack channel(s): #orcid
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - PDC_Describe
@@ -81,38 +81,29 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
   - Public URL: https://datacommons.princeton.edu/discovery
-  - Staging URL: https://pdc-discovery-staging.princeton.edu
+  - Staging URL: https://pdc-discovery-staging.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/pdc_discovery
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research
   - [Public monitoring page](https://d932489f-8a8c-4058-964b-df268f589f5a.site.hbuptime.com/)
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
-- Symplectic Elements
-  - An instance of Symplectic Elements used to harvest and review open access articles to publish in the OAR. This requires Microsoft Server infrastructure, and is currently maintained and supported by the vendor [Digital Science](https://www.digital-science.com/).
-  - Status: In production
-  - Public URL: https://oaworkflow.princeton.edu
-  - Code Base: N/A (externally managed by Digital Science)
-  - Product Owner: Hannah Hadley
-  - Slack channel(s): #digital_open_data_and_research
-  - Analytics: none
-  - [Dubbot](https://princeton.dubbot.com) status: None planned (externally hosted)
 - Theses-Dissertations
   - A DSpace instance for managing the annual submission, review, and publication of student theses, developed and hosted by the vendor 4Science
   - Status: In production
   - Public URL: https://theses-dissertations.princeton.edu
   - Code Base: N/A
   - Product Owner: Lynn Durgin
-  - Slack channel(s): #dspace
+  - Slack channel(s): None
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: To be added
 - TigerData
-  - A collaboratively developed front end for data storage services for researchers at Princeton, developed in partnership with Research Computing and the Office of Information Technology
+  - A web portal for data storage services for researchers at Princeton, developed in collaboration with Research Computing and the Office of Information Technology
   - Status: In development
-  - Public URL: https://tigerdata-prod.princeton.edu
-  - Staging URL: https://tigerdata-staging.princeton.edu
-  - Code Base: https://github.com/pulibrary/tiger-data-app
+  - Public URL: https://tigerdata-app.princeton.edu
+  - Staging URL: https://tigerdata-staging.lib.princeton.edu (must be connected to VPN)
+  - Code Base: https://github.com/pulibrary/tigerdata-app
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
-  - Analytics: none
+  - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: To be added

@@ -8,26 +8,23 @@ gantt
     axisFormat  %Y-%m
     dateformat YYYY-MM
     section PDC
-    DataSpace migration maintenance tasks: pd1,2025-01-01,31d
-    Data migration support: pd2,2025-01-01,32d
     Infrastructure refactor, embargoes, virus scan research: pd3, 2025-03-01, 46d
-    Virus scanning, handling many files: pd5, 2025-06-25, 31d
+    Virus scanning, handling many files: pd5, 2025-08-12, 31d
     section ORCID
     Peoplesoft integration development: or1,2025-02-01,30d
     Hanami spike: 2025-06-09, 15d
     section TigerData
-    Early adopter production preparation: td1,2025-01-01,33d
-    CAS authentication implementation: td2,2025-01-01,31d
-    Automation pipeline development: td3,2025-01-01,206d 
+    Automation pipeline development: td3,2025-02-01,223d 
     Metadata schema implementation, new project wizard, UI enhancements: td4, 2025-04-15,55d
+    Metadata schema implementation, additional new project wizard work: td5, 2025-06-25,50d
     section DSpace Sunsetting
-    ThesisCentral replacement implementation: dsps1,2025-01-01,70d
+    ThesisCentral replacement implementation: dsps1,2025-02-01,50d
     Supporting new ThesisCentral service launch: dsps2,2025-03-01,122d
     Library Document migration to Figgy: dsps3,2025-02-15,106d
     section Open Publishing
-    Open Publishing ongoing support: dsp3,2025-01-01,206d
+    Open Publishing ongoing support: dsp3,2025-02-01,223d
     section Maintenance
-    Security fixes and software library updates, etc: dsp1,2025-01-01,206d
-    Rolling dissertations processing: dsp2,2025-01-01,206d
-    DataSpace and OAR ongoing support: dsp3,2025-01-01,206d
+    Security fixes and software library updates, etc: dsp1,2025-02-01,223d
+    Rolling dissertations processing: dsp2,2025-02-01,223d
+    DataSpace and OAR ongoing support: dsp3,2025-02-01,223d
 ```
