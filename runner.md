@@ -23,7 +23,6 @@ Each workday check:
    * [pdc_discovery errors](https://app.honeybadger.io/projects/95072/faults?q=-is%3Aresolved+-is%3Aignored) and [pdc_discovery uptime](https://app.honeybadger.io/projects/95072/sites)
    * [tigerdata errors](https://app.honeybadger.io/projects/113559/faults?q=-is%3Aresolved+-is%3Aignored) and [tigerdata uptime](https://app.honeybadger.io/projects/113559/sites)
 * [Honeybadger](https://app.honeybadger.io/projects) for *uptime errors* in PDC Globus. We should be getting emails when an application goes down, but it does not hurt to check as part of the runner dutties.
-* Check [DataDog](https://app.datadoghq.com/logs?saved-view-id=2137895) for errors in RDSS applications.
 * Create a ticket for each error encountered, if one does not already exist.
 * Bring error tickets to the RDSS team's attention at check-in for prioritization.
 * If a ticket is a work-stopping issue/considered high priority and is therefore assigned to the current sprint, it receives the "unplanned work" [label](sprints.md) in GitHub.
