@@ -58,11 +58,11 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
 - ORCID@Princeton
-  - A Rails application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
+  - A Hanami application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
   - Status: In production
   - Public URL: https://orcid.princeton.edu
   - Staging URL: https://orcid-staging.princeton.edu (must be connected to VPN)
-  - Code Base: https://github.com/pulibrary/orcid_princeton
+  - Code Base: https://github.com/pulibrary/orcid_princeton_hanami
   - Product Owner: Neggin Keshavarzian
   - Slack channel(s): #orcid
   - Analytics: [Plausible.io](https://plausible.io/)
