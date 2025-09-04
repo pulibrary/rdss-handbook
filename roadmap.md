@@ -9,23 +9,23 @@ gantt
     dateformat YYYY-MM
     section PDC
     Infrastructure refactor, embargoes, virus scan research: pd3, 2025-03-01, 46d
-    Virus scanning, handling many files: pd5, 2025-08-16, 31d
+    Virus scanning, handling many files: pd5, 2025-10-16, 31d
     section ORCID
     Peoplesoft integration development: or1,2025-02-01,30d
     Hanami spike: 2025-06-09, 58d
     section TigerData
-    Automation pipeline development: td3,2025-02-01,241d 
+    Automation pipeline development: td3,2025-02-01,200d 
     Metadata schema implementation, new project wizard, UI enhancements: td4, 2025-04-15,55d
-    Metadata schema implementation, additional new project wizard work: td5, 2025-06-16,62d
+    Metadata schema implementation, additional new project wizard work, Grouper integration: td5, 2025-06-16,122d
     section DSpace Sunsetting
     ThesisCentral replacement implementation: dsps1,2025-02-01,50d
-    Supporting new ThesisCentral service launch: dsps2,2025-03-01,184d
-    Library Document migration to Figgy: dsps3,2025-02-15,182d
+    Supporting new ThesisCentral service launch: dsps2,2025-03-01,214d
+    Library Document migration to Figgy: dsps3,2025-02-15,198d
     section Open Publishing
-    Open Publishing ongoing support: dsp3,2025-02-01,241d
+    Open Publishing ongoing support: dsp3,2025-02-01,290d
     section Maintenance and Projects
     ETDs for LSC: 2025-07-03,30d
-    Security fixes and software library updates, etc: dsp1,2025-02-01,241d
-    Rolling dissertations processing: dsp2,2025-02-01,241d
-    DataSpace and OAR ongoing support: dsp3,2025-02-01,241d
+    Security fixes and software library updates, etc: dsp1,2025-02-01,290d
+    Rolling dissertations processing: dsp2,2025-02-01,290d
+    DataSpace and OAR ongoing support: dsp3,2025-02-01,290d
 ```
