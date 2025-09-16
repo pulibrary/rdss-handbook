@@ -50,7 +50,7 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX), [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility), and [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints.
 
-1.  Review [security vulnerabilities](https://github.com/pulls?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Forcid_princeton+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3APrincetonUniversityLibrary%2Fetd_transformer+repo%3APrincetonUniversityLibrary%2Ftigerdata-config+repo%3Apulibrary%2Foawaiver+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2Ftiger-data-app+sort%3Acreated-asc+) on active projects and schedule for future sprints.
+1.  Review [security vulnerabilities](https://github.com/pulls?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3APrincetonUniversityLibrary%2Fetd_transformer+repo%3APrincetonUniversityLibrary%2Ftigerdata-config+repo%3Apulibrary%2Foawaiver+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2Forcid_princeton_hanami+repo%3Apulibrary%2Ftiger-data-app+sort%3Acreated-asc+) on active projects and schedule for future sprints.
 
 2.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
 
