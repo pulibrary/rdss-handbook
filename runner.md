@@ -14,7 +14,8 @@ The runner's duties are as follows:
 
 Each workday check:
 
-* [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications:
+* [Look at CheckMK alerts page](https://pulmonitor.princeton.edu/production/check_mk/index.py?start_url=%2Fproduction%2Fcheck_mk%2Fdashboard.py%3Ffilled_in%3Dfilter%26name%3Dproblems%26wato_folder%3Dlinux%252Frdss) for critical issues.
+*  [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications:
    * [globus uptime](https://app.honeybadger.io/projects/103564/sites)
    * [orcid errors](https://app.honeybadger.io/projects/114910/faults?q=-is%3Aresolved+-is%3Aignored) and [orcid uptime](https://app.honeybadger.io/projects/114910/sites)
    * [openpublishing uptime](https://app.honeybadger.io/projects/93417/sites/0f636d4c-7961-4c35-aece-0e58925491bd)
