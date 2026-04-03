@@ -91,6 +91,7 @@ Once the application is deployed to production, the developer who orchestrated t
 
 #### Additional norms: 
 
+* The release and deployment process should include a review and attempted resolution of all open Dependabot alerts for the application's repository, and reviewing/merging open PRs from Dependabot and/or Renovate.  If Dependabot alerts cannot be resolved into PRs, the developer should bring this to the team's attention. 
 * The release and deployment is orchestrated by the volunteer at some point during the workday on that same day (Tuesday) in advance of our Wednesday morning meetings with the Product Owner.
 * If the production release/deployment exposes a bug in the deployment workflow, the developer should open a ticket for this and bring it to the team’s attention.
 * This schedule is for regular production deployments including features and proactively-addressed security concerns; production deployments required to address emergencies should be done as needed outside of this schedule.
