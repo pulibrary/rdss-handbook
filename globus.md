@@ -441,7 +441,6 @@ To register a Globus Endpoint do the following:
    sudo globus-connect-server endpoint role create administrator cac9@princeton.edu
    sudo globus-connect-server endpoint role create administrator fkayiwa@princeton.edu
    sudo globus-connect-server endpoint role create administrator bs3097@princeton.edu
-   sudo globus-connect-server endpoint role create administrator hc8719@princeton.edu
    sudo globus-connect-server endpoint role create administrator jrg5@princeton.edu
    sudo globus-connect-server endpoint role create administrator kl37@princeton.edu
    sudo globus-connect-server endpoint role create administrator rl3667@princeton.edu
@@ -551,7 +550,6 @@ Utilize the `rdssglobus` AWS IAM user by logging in in as rdssglobus in an incog
     sudo globus-connect-server collection role create $collection_id administrator cac9@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator fkayiwa@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator bs3097@princeton.edu
-    sudo globus-connect-server collection role create $collection_id administrator hc8719@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator jrg5@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator kl37@princeton.edu
     sudo globus-connect-server collection role create $collection_id administrator rl3667@princeton.edu
