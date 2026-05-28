@@ -10,7 +10,7 @@ At each meeting, the team works from the [RDSS Sprint ZenHub board](https://app.
 
 1. Issues that the team will work on are moved into the "Sprint Backlog" column.  Ideally, all issues targeted for the sprint should have an estimate already.  However if they do not, they can be estimated during the planning meeting if appropriate, or targeted for estimation during the next Ticket Refinement meeting.
 
-### Other norms
+## Ticket Refinement
 
 A "Ticket Refinement" meeting is held every other week during the sprint planning timeslot.  Tickets without estimations are reviewed and pointed using a "pointing poker" estimation process.   
 
@@ -32,9 +32,11 @@ The "Check-in and Coffee Chat" is a check-in immediately followed by a 30-minute
 
 ## Sprint Wrap-Up Meetings
 
-Every two weeks, on the last day of the sprint being closed out (referred to from here on as the closeout sprint), a sprint wrap-up meeting will be held.  This meeting is attended by the RDSS team.  Each meeting will have the following format:
+Every two weeks, on the last day of the sprint being closed out (referred to from here on as the closeout sprint), a sprint wrap-up meeting will be held.  This meeting is attended by the RDSS team as well as cross-team colleagues and the product owner.  Each meeting will have the following format:
 
 1. Populate the agenda with the currently-worked epic(s) and any highlighted completed issues from the closeout sprint to review.  Review these issues as a group.  
+
+1. The product owner demos the functionality of the currently-worked epic(s) for the teams and, along with the Design team, provides feedback on whether the epic is complete and ready to ship to production.  If it is not determined to be ready to ship to production based on feedback, additional tickets are created for whatever work is required to finish the feature if they do not already exist.
 
 1. Review in-progress issues and review/QA issues in the closeout sprint.  Move them to the new sprint as needed.
 
@@ -50,27 +52,17 @@ Every two weeks, on the last day of the sprint being closed out (referred to fro
 
 1. Review [UX](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=UX), [accessibility](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=accessibility), and [post-incident](https://github.com/pulibrary/rdss-catchall/issues/108#workspaces/rdss-61a4f1a12a399b001730f65a/board?labels=post-incident) labeled and schedule for future sprints.
 
-1.  Review [security vulnerabilities](https://github.com/pulls?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3APrincetonUniversityLibrary%2Fetd_transformer+repo%3APrincetonUniversityLibrary%2Ftigerdata-config+repo%3Apulibrary%2Foawaiver+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2Forcid_princeton_hanami+repo%3Apulibrary%2Ftiger-data-app+sort%3Acreated-asc+) on active projects and schedule for future sprints.
+1.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
 
-2.  Review the RDSS [roadmap](roadmap.md) and talk about the products being developed and upcoming features to focus on.
+1.  Select a [runner](runner.md) for the upcoming sprint.
 
-3.  Select a [runner](runner.md) for the upcoming sprint.
+1.  The runner selects a new emoji for the upcoming sprint.
 
-4.  The runner selects a new emoji for the upcoming sprint.
+## Feature Design Plans (FDP) Meetings
 
-## RDSS Team Monthly Share Out Meetings
+The RDSS team meets weekly on Mondays after stand-up to review any [feature design plan (FDP) documents](https://drive.google.com/drive/folders/1a4Qa93_P9-2ollFeWAOeoTNSfuGZh2VH) that are in process.
 
-Once a month, RDSS holds a meeting that includes a [demo](software_demos.md) of software developed in the closeout sprint and an open agenda portion where anyone in attendance should add items to discuss with the group during the meeting.  The meeting is be made up of all members of the RDSS team and colleagues from constituent groups such as IT Leadership, IT Operations, the Princeton Research Data Service, Research Data and Open Scholarship, Assessment and User Experience, the Princeton Plasma Physics Library, Discovery and Access Services, Digital Library Services, and any others.  The meeting is open for anyone in the Library to attend, however it is the responsibility of RDSS to specifically invite people from outside of the team to attend when there are topics specific to their goals/responsibilities.  Each meeting has the following format: 
-
-1. Overview of agenda by RDSS leadership
-
-1. Software demo reflecting work accomplished in closeout sprint
-
-1. Questions and discussion of demo
-
-1. Review and discussion of all other public agenda items
-
-1. Review of the overall [roadmap](roadmap.md) for RDSS
+See more about FDPs [here](feature_design_plans.md).
 
 ## Schedule
 
@@ -78,5 +70,5 @@ Sprints last for 2 weeks, starting on a Wednesday and ending on a Tuesday. The R
 
 | Week | Wednesday                           | Thursday       | Friday                            | Monday         | Tuesday                                                  |
 | :--: | :---------------------------------- | :------------- | :-------------------------------- | :------------- | :------------------------------------------------------- |
-|  1   | [Feature Refinement](product_owners.md); Sprint Planning (sprint begins) | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in | Daily Check-in                                           |
-|  2   | [Feature Refinement](product_owners.md); Ticket Refinement        | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in | Daily Check-in; Sprint Wrap-up (sprint ends); [Sprint Retrospective](retros.md) |
+|  1   | [Feature Refinement](product_owners.md); Sprint Planning (sprint begins) | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in; FDP Meeting | Daily Check-in                                           |
+|  2   | [Feature Refinement](product_owners.md); Ticket Refinement        | Daily Check-in | Daily Check-in and Learnings Chat | Daily Check-in; FDP Meeting | Daily Check-in; Sprint Wrap-up (sprint ends); [Sprint Retrospective](retros.md) |
