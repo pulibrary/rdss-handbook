@@ -15,21 +15,22 @@ gantt
 
     section PDC
     Curator user support, advanced DOIs, Globus: pdc1, 2026-04-29, 48d
-    
+
     section DSpace Sunsetting
-    Senior Thesis support for 2026: dsp3, 2026-03-01, 114d
-    OAR replacement implementation (Princeton Scholars Repository): dsps5, 2026-01-01, 195d
+    Senior Thesis support for 2026: dsp3, 2026-03-01, 136d
+    OAR replacement implementation (Princeton Scholars Repository): dsps5, 2026-01-01, 209d
 
     section ORCID@Princeton
-    Entra ID for authentication: orc1,2026-06-17, 28d
+    Application maintenance and automation: orc1,2026-06-17, 14d
+    Entra ID for authentication: orc1,2026-07-01, 28d
 
     section Open Publishing
-    Open Publishing ongoing support: dsp3,2026-01-01, 195d
+    Open Publishing ongoing support: dsp3,2026-01-01, 209d
 
     section Maintenance and Projects
     Portfolio maintenance: 2026-01-01, 30d
     EOL dependencies: 2026-04-15,77d
-    Security fixes and software library updates, etc: dsp1,2026-01-01, 195d
-    Rolling dissertations processing: dsp2,2026-01-01, 195d
-    DataSpace and OAR ongoing support: dsp3,2026-01-01, 195d
+    Security fixes and software library updates, etc: dsp1,2026-01-01, 209d
+    Rolling dissertations processing: dsp2,2026-01-01, 209d
+    DataSpace and OAR ongoing support: dsp3,2026-01-01, 209d    
 ```
