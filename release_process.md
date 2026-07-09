@@ -82,7 +82,6 @@ Every Tuesday, the following text block is added to the stand-up agenda:
     * orcid_princeton (#orcid)
     * tigerdata-app (#tigerdata)
     * tigerdata-config (update on private developers Slack channel)
-    * oawaiver (#openresearcher)
 ```
 
 A developer volunteers to release and deploy an application to production by putting their name next to that application in the list. The list is filled out in its entirety during stand-up.
