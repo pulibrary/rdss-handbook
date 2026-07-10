@@ -3,7 +3,7 @@
 ## What is a client secret?
 A client secret is a confidential credential used in OAuth 2.0 and similar authentication/authorization flows to verify the identity of an application (the "client") when it communicates with an authorization server or API.
 
-For PUL we will be using Client Secrets in production for EntraID. Some of the documentation for EntraID says not to do this and instead to use certificates. We know that but our Operations team have suggested to use Client Secrets, at least for now. 
+For PUL we will be using Client Secrets in production for [EntraID](https://github.com/pulibrary/pul-it-handbook/blob/main/services/entra-id.md). Some of the documentation for EntraID says not to do this and instead to use certificates. We know that but our Operations team have suggested to use Client Secrets, at least for now. 
 
 We do have a way of rotating client secrets to mitigate the issue in the event the secret gets leaked. 
 
