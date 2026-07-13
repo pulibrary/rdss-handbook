@@ -20,11 +20,10 @@ Client secrets stops random people or malicious software from pretending to be y
 
 ## Where should the client secrets be stored?
 
-Secrets should be rotated periodically and stored in secure vaults.
+Secrets should be rotated periodically and stored in secure vaults. Secure vault process for RDSS Team TBD.
 
-TODO: Document what Carolyn has already set up
 
-## What happens if a client secret get leaked?
+## What happens if a client secret gets leaked?
 
 If a client secret leaks, anyone with it can potentially authenticate as your application until it's revoked or rotated.
 
@@ -33,23 +32,7 @@ If a client secret leaks, anyone with it can potentially authenticate as your ap
 * Create a new client secret and store it in lastpass and ansible vaults for ORCID
 * Run the playbook to update the app_vars on the servers that the key was leaked
 
-## How do we register one for EntraID?
+## How do we register a client secret for EntraID?
 
 Documentation here at step 5: https://github.com/pulibrary/pul-it-handbook/blob/main/services/entra-id.md
 
-## What are the procedures for if a team member leaves or joins
-
-### When someone joins
-1. Identity & account setup
-    * Create their Entra ID account 
-    * Assign to the correct security groups and Microsoft 365 groups based on role 
-    * Enable MFA from day one
-2. App & resource access
-    * Add them to relevant shared mailboxes
-3. Documentation
-    * Log the access granted (date, groups, apps) — useful for audits and for offboarding later
-### When someone leaves
-1. Immediate access revocation (same day, ideally same hour)
-    * Disable their Entra ID account
-    * Revoke active sessions/tokens (Entra ID → Users → [user] → Revoke sessions) — this is important because just disabling the account doesn't always kill existing active tokens immediately
-    * Remove from all security groups and Microsoft 365 groups
