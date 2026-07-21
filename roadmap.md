@@ -9,28 +9,30 @@ gantt
     dateformat YYYY-MM
 
     section TigerData
-    Storage management and requesting enhancements: 2026-02-01, 60d
-    File browser for project contents: 2026-04-01, 50d
-    Code cleanup and file browser refinements: 2026-05-21, 26d
+    Storage management and requesting enhancements: td1, 2026-02-01, 60d
+    File browser for project contents: td2, 2026-04-01, 50d
+    Code cleanup and file browser refinements: td3, 2026-05-21, 26d
+    Application maintenance and automation: td4,2026-07-29, 14d
+    Entra ID for authentication: td4,2026-08-12, 28d
 
     section PDC
     Curator user support, advanced DOIs, Globus: pdc1, 2026-04-29, 48d
 
     section DSpace Sunsetting
     Senior Thesis support for 2026: dsp3, 2026-03-01, 136d
-    OAR replacement implementation (Princeton Scholars Repository): dsps5, 2026-01-01, 209d
+    OAR replacement implementation (Princeton Scholars Repository): dsps5, 2026-01-01, 251d
 
     section ORCID@Princeton
     Application maintenance and automation: orc1,2026-06-17, 14d
     Entra ID for authentication: orc1,2026-07-01, 28d
 
     section Open Publishing
-    Open Publishing ongoing support: dsp3,2026-01-01, 209d
+    Open Publishing ongoing support: dsp3,2026-01-01, 251d
 
     section Maintenance and Projects
     Portfolio maintenance: 2026-01-01, 30d
-    EOL dependencies: 2026-04-15,77d
-    Security fixes and software library updates, etc: dsp1,2026-01-01, 209d
-    Rolling dissertations processing: dsp2,2026-01-01, 209d
-    DataSpace and OAR ongoing support: dsp3,2026-01-01, 209d    
+    EOL dependencies: 2026-04-15,105d
+    Security fixes and software library updates, etc: dsp1,2026-01-01, 251d
+    Rolling dissertations processing: dsp2,2026-01-01, 151d
+    DataSpace and OAR ongoing support: dsp3,2026-01-01, 251d     
 ```
