@@ -64,6 +64,8 @@ The RDSS team meets weekly on Mondays after stand-up to review any [feature desi
 
 See more about FDPs [here](feature_design_plans.md).
 
+At the last FDP meeting of each month, the team reviews the [RDSS calendar](https://docs.google.com/spreadsheets/d/1yrPuhA6IE32KvHfbAxa5RDsY-bK3PPzeIXDs8IjIS0I/edit?gid=0#gid=0) for accuracy/any modifications needed.
+
 ## Schedule
 
 Sprints last for 2 weeks, starting on a Wednesday and ending on a Tuesday. The RDSS sprint meetings schedule looks like this:

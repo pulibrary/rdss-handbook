@@ -11,6 +11,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
+  - Authentication method: Shibboleth
 - DataSpace Embargo Lifter
   - A command-line script that executes as a scheduled cronjob on the DataSpace production server, to audit all embargoed items in DataSpace and lift embargoes if they have expired.  Runs at 8am EST Monday - Friday and sends an email to select members of RDSS and Special Collections with a report on which items have had embargoes lifted.
   - Status: In production
@@ -20,6 +21,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
+  - Authentication method: N/A
 - Electronic Theses and Dissertations
   - Data transformation and loading processes managed by Library IT to support Special Collections quarterly-ish publication of dissertations in DataSpace
   - Documentation: [Dissertation import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-dissertations.md) and [Masters Theses import](https://github.com/PrincetonUniversityLibrary/etd_transformer/blob/main/docs/process-masters-theses.md)
@@ -30,6 +32,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: None planned
+  - Authentication method: N/A
 - Open Access Repository (OAR)
   - A DSpace 5.x instance for access and discovery of faculty publications
   - Status: In production
@@ -39,6 +42,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #dspace
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: Shibboleth
 - Open Publishing
   - An instance of [Manifold](https://github.com/ManifoldScholar/manifold) for the [Princeton Open Access Publishing Program](https://library.princeton.edu/services/open-access-publishing-program), to provide hosting for Open Access monographs and peer-reviewed journals; hosted and maintained by the vendor Notch8.
   - Status: In production
@@ -48,6 +52,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: CAS
 - ORCID@Princeton
   - A Hanami application that leverages ORCID services and ORCID iDs to support researchers in the Princeton community
   - Status: In production
@@ -58,6 +63,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #orcid
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: Entra ID
 - PDC_Describe
   - A Rails application for description and ingestion of Research Data content to Princeton Data Commons
   - Status: In production
@@ -68,6 +74,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #digital_open_data_and_research
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: CAS
 - PDC_Discovery
   - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
@@ -79,6 +86,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - [Public monitoring page](https://d932489f-8a8c-4058-964b-df268f589f5a.site.hbuptime.com/)
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: N/A
 - Theses-Dissertations
   - A DSpace instance for managing the annual submission, review, and publication of student theses, developed and hosted by the vendor 4Science
   - Status: In production
@@ -88,6 +96,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): None
   - Analytics: none
   - [Dubbot](https://princeton.dubbot.com) status: To be added
+  - Authentication method: Shibboleth
 - TigerData
   - A web portal for data storage services for researchers at Princeton, developed in collaboration with Research Computing and the Office of Information Technology
   - Status: In development
@@ -98,3 +107,4 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
   - Analytics: [Plausible.io](https://plausible.io/)
   - [Dubbot](https://princeton.dubbot.com) status: To be added
+  - Authentication method: CAS
