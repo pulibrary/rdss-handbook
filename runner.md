@@ -12,7 +12,7 @@ There is one runner per sprint.  The new runner is selected during the [Sprint P
 
 The runner's duties are as follows:
 
-Each workday check:
+### Each workday check:
 
 * [Look at CheckMK alerts page](https://pulmonitor.princeton.edu/production/check_mk/index.py?start_url=%2Fproduction%2Fcheck_mk%2Fdashboard.py%3Ffilled_in%3Dfilter%26name%3Dproblems%26wato_folder%3Dlinux%252Frdss) for critical issues.
 *  [Honeybadger](https://app.honeybadger.io/projects) for *errors* in the following RDSS applications:
@@ -32,3 +32,13 @@ Each workday check:
 * Check the failed jobs queue for PDC Describe in production. See [details](https://github.com/pulibrary/pdc_describe/blob/main/docs/sidekiq_jobs.md)
 
 * Review and merge [dependabot PRs in our repositories](https://github.com/pulls/search?q=is%3Aopen+is%3Apr+draft%3Afalse+repo%3Apulibrary%2Fpdc_describe+repo%3Apulibrary%2Fpdc_discovery+repo%3Apulibrary%2Forcid_princeton_hanami+repo%3Apulibrary%2Fdataspace_embargo_lifter+repo%3Apulibrary%2Fdataspace_preservation+repo%3Apulibrary%2Frdss-handbook+repo%3Apulibrary%2Ftigerdata-app+repo%3APrincetonUniversityLibrary%2Ftigerdata-config+repo%3APrincetonUniversityLibrary%2Fetd_transformer+sort%3Acreated-asc+). Make sure they pass CI and deploy them to staging before merging them.
+
+### Slack Channel Alerts
+
+There are two slack channels for RDSS that CheckMK notifies when a service problem occurs.  Alerts in the Incident channel are considered time sensitive.
+  - [Alerts](https://pulibrary.slack.com/archives/C081YK91P8A)
+    - Staging systems send information here
+    - Github also sends information here
+  - [Incidents](https://pulibrary.slack.com/archives/C092NAQB01Z)
+    - Production systems send information here
+    - This channel should be considered high priority
