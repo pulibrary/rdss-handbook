@@ -144,3 +144,7 @@ sudo cp /var/log/gridftp.log gridftp.log.$(date '+%Y-%m-%d')
 sudo chown pulsys *.$(date '+%Y-%m-%d')
 tar -cvf $(date '+%Y-%m-%d')-logs.tar *.log.$(date '+%Y-%m-%d')
 ```
+
+## A note about PDC buckets
+
+Precuration S3 buckets are deleted from precuration after they are successfully transferred to postcuration.  If a transfer is not successful, the bucket will remain in precuration.
