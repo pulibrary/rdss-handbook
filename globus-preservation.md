@@ -39,6 +39,6 @@ These instructions will help to create a preservation bucket in S3
    1. You can monitor the job by clicking refresh
 1. Check that the files match both the preservation and original bucket match
 1. Upload a new file and make sure it also shows up in the preservation bucket
-1. **for emabrgo only** Delete a file and make sure it is also deleted
+1. **for embargo only** Delete a file and make sure it is also deleted
    1. You may have to refresh a couple time     
-1. **for non emabrgo only** Delete a file and make sure it DOES NOT delete in the preservation     
+1. **for non embargo only** Delete a file and make sure it DOES NOT delete in the preservation     
