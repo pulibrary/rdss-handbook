@@ -38,4 +38,6 @@ gantt
     Security fixes and software library updates, etc: dsp1,2026-01-01, 293d
     Rolling dissertations processing: dsp2,2026-01-01, 151d
     DataSpace and OAR ongoing support: dsp3,2026-01-01, 293d
+    Solr improvements: dsp4,2026-08-26, 21d
+    Virtual All-IT Event: dsp5,2026-09-21, 3d
 ```
