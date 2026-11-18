@@ -61,7 +61,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Code Base: https://github.com/pulibrary/orcid_princeton_hanami
   - Product Owner: Neggin Keshavarzian
   - Slack channel(s): #orcid
-  - Analytics: [Plausible.io](https://plausible.io/)
+  - Analytics: [Plausible.io](https://plausible.io/) and [Umami](https://analytics.lib.princeton.edu)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
   - Authentication method: Entra ID
 - PDC_Describe
@@ -72,9 +72,9 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Code Base: https://github.com/pulibrary/pdc_describe
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research
-  - Analytics: none
+  - Analytics: In [Umami](https://analytics.lib.princeton.edu)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
-  - Authentication method: CAS
+  - Authentication method: Entra ID
 - PDC_Discovery
   - A Rails application providing a front end for discovery of Research Data in Princeton Data Commons, harvested from PDC_Describe
   - Status: In production
@@ -84,11 +84,21 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Product Owner: Matt Chandler
   - Slack channel(s): #digital_open_data_and_research
   - [Public monitoring page](https://d932489f-8a8c-4058-964b-df268f589f5a.site.hbuptime.com/)
-  - Analytics: [Plausible.io](https://plausible.io/)
+  - Analytics: [Plausible.io](https://plausible.io/) and [Umami](https://analytics.lib.princeton.edu)
   - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
   - Authentication method: N/A
+- Princeton Scholars Repository (PSR)
+  - A DSpaceCRIS 8.x instance for access and discovery of open access faculty publications; developed and hosted by the vendor 4Science
+  - Status: In development
+  - Public URL: Coming soon
+  - Code Base: N/A
+  - Product Owner: Hannah Hadley
+  - Slack channel(s): #digital_open_data_and_research
+  - Analytics: none
+  - [Dubbot](https://princeton.dubbot.com) status: In Dubbot
+  - Authentication method: Entra ID
 - Theses-Dissertations
-  - A DSpace instance for managing the annual submission, review, and publication of student theses, developed and hosted by the vendor 4Science
+  - A DSpace instance for managing the annual submission, review, and publication of student theses; developed and hosted by the vendor 4Science
   - Status: In production
   - Public URL: https://theses-dissertations.princeton.edu
   - Code Base: N/A
@@ -104,7 +114,7 @@ Unless otherwise noted, all applications below are Open Source and run on Librar
   - Staging URL: https://tigerdata-staging.lib.princeton.edu (must be connected to VPN)
   - Code Base: https://github.com/pulibrary/tigerdata-app
   - Product Owner: Matt Chandler
-  - Slack channel(s): #digital_open_data_and_research, #tiger-data (both channels for user-centered and technical discussion)
-  - Analytics: [Plausible.io](https://plausible.io/)
+  - Slack channel(s): #tiger-data (user-centered), #td-library-developers (technical)
+  - Analytics: [Plausible.io](https://plausible.io/) and [Umami](https://analytics.lib.princeton.edu)
   - [Dubbot](https://princeton.dubbot.com) status: To be added
   - Authentication method: CAS
